@@ -64,7 +64,6 @@ public class LoginActivity extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    Toast.makeText(LoginActivity.this, "Login Success.", Toast.LENGTH_SHORT).show();
                                     firebaseDatabase.getReference().child("Users").child("Personal Info")
                                             .child(user.getUid()).addValueEventListener(new ValueEventListener() {
                                                 @Override
@@ -73,8 +72,8 @@ public class LoginActivity extends AppCompatActivity {
                                                         User_Model users = snapshot.getValue(User_Model.class);
                                                         if (users.getUser_type().equals("Student")) {
                                                             Toast.makeText(LoginActivity.this, "Student", Toast.LENGTH_SHORT).show();
-//                                                            Intent intent = new Intent(Login_Activity.this, Home_Screen_New.class);
-//                                                            startActivity(intent);
+                                                            Intent intent = new Intent(LoginActivity.this, StudentJobsList.class);
+                                                            startActivity(intent);
                                                         } else if(users.getUser_type().equals("Recruiter")){
                                                             Toast.makeText(LoginActivity.this, "Recruiter", Toast.LENGTH_SHORT).show();
                                                             Intent intent = new Intent(LoginActivity.this, RecruiterJobsList.class);
