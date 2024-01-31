@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
 //                                                            startActivity(intent);
                                                         } else if(users.getUser_type().equals("Recruiter")){
                                                             Toast.makeText(LoginActivity.this, "Recruiter", Toast.LENGTH_SHORT).show();
-                                                            Intent intent = new Intent(LoginActivity.this, PostJobActivity.class);
+                                                            Intent intent = new Intent(LoginActivity.this, RecruiterJobsList.class);
                                                             startActivity(intent);
                                                         }
                                                     } catch (Exception e) {

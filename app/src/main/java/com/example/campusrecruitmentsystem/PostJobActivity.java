@@ -3,6 +3,7 @@ package com.example.campusrecruitmentsystem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,7 +21,7 @@ import java.util.Objects;
 public class PostJobActivity extends AppCompatActivity {
     TextInputEditText etJobTitle, etSalary, etEligibility, etLocation, etJobDescription;
     Button post_job;
-    DatabaseReference reference;
+    DatabaseReference reference, reference1;
     FirebaseAuth mAuth;
     FirebaseDatabase firebaseDatabase;
     @Override
@@ -51,11 +52,16 @@ public class PostJobActivity extends AppCompatActivity {
 
                 reference=FirebaseDatabase.getInstance().getReference().child("Jobs")
                         .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid())).push();
+                String key = reference.getKey();
+                reference1=FirebaseDatabase.getInstance().getReference().child("Student Jobs List").child(key);
 
                 reference.setValue(post_job_model).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
+                        reference1.setValue(post_job_model);
                         Toast.makeText(PostJobActivity.this, "Job Posted", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(PostJobActivity.this, RecruiterJobsList.class);
+                        startActivity(intent);
                     }
                 });
             }
