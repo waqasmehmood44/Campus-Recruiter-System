@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StudentJobsList">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/std_jobs_list_RecyclerView"
@@ -14,5 +19,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/appColor"
+        app:headerLayout="@layout/nav_header2"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/nav_menu2" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            />
+        <!-- Other items in your NavigationView -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!--                        <ImageView-->
+        <!--                            android:id="@+id/bottomImageView"-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="@dimen/_158sdp"-->
+        <!--                            android:src="@drawable/icon_navigation"-->
+        <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                            app:layout_constraintStart_toStartOf="parent" />-->
+        <!--                        <TextView-->
+        <!--                            android:id="@+id/textView4"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+        <!--                            android:gravity="top"-->
+        <!--                            android:text="Version 1.1.0"-->
+        <!--                            android:textColor="@color/white"-->
+        <!--                            android:layout_marginBottom="@dimen/_10sdp"-->
+        <!--                            android:textSize="@dimen/_10sdp"-->
+        <!--                            app:layout_constraintEnd_toEndOf="@id/bottomImageView"-->
+        <!--                            app:layout_constraintBottom_toBottomOf="@id/bottomImageView" />-->
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
