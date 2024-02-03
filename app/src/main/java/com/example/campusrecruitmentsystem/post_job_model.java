@@ -1,15 +1,17 @@
 package com.example.campusrecruitmentsystem;
 
 public class post_job_model {
-    String job, salary, eligibility, location, description,rec_id;
+    String job, salary, eligibility, location, description,rec_id, job_id;
 
-    public post_job_model(String job, String salary, String eligibility, String location, String description, String rec_id) {
+
+    public post_job_model(String job, String salary, String eligibility, String location, String description, String rec_id, String job_id) {
         this.job = job;
         this.salary = salary;
         this.eligibility = eligibility;
         this.location = location;
         this.description = description;
         this.rec_id = rec_id;
+        this.job_id = job_id;
     }
 
     public post_job_model() {
@@ -61,5 +63,13 @@ public class post_job_model {
 
     public void setRec_id(String rec_id) {
         this.rec_id = rec_id;
+    }
+
+    public String getJob_id() {
+        return job_id;
+    }
+
+    public void setJob_id(String job_id) {
+        this.job_id = job_id;
     }
 }

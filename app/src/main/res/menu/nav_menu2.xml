@@ -5,16 +5,16 @@
         android:id="@+id/group1"
         android:checkableBehavior="none" >
         <item
-            android:id="@+id/nav_item1"
-            android:title="Read Quran" />
+            android:id="@+id/jobs_list"
+            android:title="Jobs List" />
     </group>
 
     <group
         android:id="@+id/group6"
         android:checkableBehavior="none" >
         <item
-            android:id="@+id/nav_item6"
-            android:title="Languages" />
+            android:id="@+id/application_list"
+            android:title="Application" />
     </group>
 
 
