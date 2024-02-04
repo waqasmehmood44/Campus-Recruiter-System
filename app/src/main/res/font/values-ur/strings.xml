@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReadQuranApp</string>
+
+
+    <string name="btn_lightMode">لائٹ موڈ</string>
+    <string name="btn_DarkMode">ڈارک موڈ</string>
+    <string name="btn_DefaultMode">پہلے سے مخصوص موڈ</string>
+    <string name="tv_moonname">میرا نام چاند ہے</string>
+    <string name="countries" translatable="false">ملک</string>
+    <string name="tv_LanguageTextView">زبان منتخب کریں</string>
+    <string name="btn_Bismillah">بسم اللہ</string>
+    <string name="Versions">ورژنز</string>
+    <string name="privacy_policy"><u>پرائیویسی پالیسی</u></string>
+    <string name="grey_data">ملکی تاریخ</string>
+    <string name="hij_data">ہجری تاریخ</string>
+    <string name="CurrentTime">وقت</string>
+    <string name="tv_quran">قرآن پڑھیں</string>
+    <string name="tv_TasbeehCounter">تسبیح چھوڑیں</string>
+    <string name="tv_AsmaUlHasna">اسماء الحسنیٰ</string>
+    <string name="tv_Duas">اسلامی دعائیں</string>
+    <string name="tv_Qibla">قبلہ کمپاس</string>
+    <string name="tv_IslamicCalender">اسلامی کیلنڈر</string>
+    <string name="tv_6Kalma">شش کلمے</string>
+    <string name="tv_DailySurahs">روزانہ کی سورۃ</string>
+    <string name="permission_required">اجازت ڈائیلاگ</string>
+    <string name="permision_policy">Read Quran App میں خوش آمدید. ہم آپ کی رازی رکھنے اور آپ کو ہمارے ایپ کا استعمال کرنے کے لئے ایک محفوظ ماحول فراہم کرنے کے عہد ہیں. یہ پرائیویسی پالیسی وضاحت دیتی ہے کہ ہم آپ کی ذاتی معلومات کو کیسے جمع کرتے ہیں، استعمال کرتے ہیں، اور محفوظ رکھتے ہیں. ایپ کا استعمال کرکے، آپ اس پرائیویسی پالیسی کے شرائط سے متفق ہیں۔</string>
+    <string name="agree">متفق ہوں</string>
+    <string name="btn_nointernet_ok">ٹھیک ہے</string>
+    <string name="btn_exitno">رہیں</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="privacy_dialog_policy">Read Quran App میں خوش آمدید. ہم آپ کی رازی رکھنے اور آپ کو ہمارے ایپ کا استعمال کرنے کے لئے ایک محفوظ ماحول فراہم کرنے کے عہد ہیں. یہ پرائیویسی پالیسی وضاحت دیتی ہے کہ ہم آپ کی ذاتی معلومات کو کیسے جمع کرتے ہیں، استعمال کرتے ہیں، اور محفوظ رکھتے ہیں. ایپ کا استعمال کرکے، آپ اس پرائیویسی پالیسی کے شرائط سے متفق ہیں۔</string>
+    <string name="webViewAgreeButton">متفق ہوں</string>
+    <string name="no_internet">انٹرنیٹ نہیں</string>
+    <string name="no_internetText">براہ کرم اپنا انٹرنیٹ کنکشن چیک کریں</string>
+    <string name="tv_exitdialog">"کیا آپ ایپ بند کرنا چاہتے ہیں؟ \n باہر نکلیں ٹیپ کریں یا رہیں کریں تاکہ خود کو جاری رکھیں</string>
+    <string name="btn_exit">باہر نکلیں</string>
+    <string name="btnLanguages">زبانیں</string>
+    <string name="btnSettingThemes">سیٹنگ</string>
+    <string name="skip">چھوڑیں</string>
+    <string name="inviteFriends">دوستوں کو دعوت دیں</string>
+    <string name="beginYourJourney">اپنے روحانی سفر کا آغاز کریں ان کامیاب خصوصیات کے ساتھ</string>
+    <string name="tvSalam">السلام علیکم ورحمت اللہ وبرکاتہ</string>
+    <string name="tvDashboardTime">3:30 PM</string>
+    <string name="tvDashboardDayTimeYear">جمعرات، 7 اکت </string>
+    <string name="tvDashboardHijriDayDateYear">14، رمضان، 1440 ھجری</string>
+    <string name="tvNow">اب</string>
+    <string name="tvNowPrayer">مغرب</string>
+    <string name="tvUpcoming">آئندہ</string>
+    <string name="tvUpcomingPrayer">عشاء</string>
+    <string name="tvTodayPrayerTimings">آج کی نمازیں</string>
+    <string name="tvHadithOfTheDay">دن کا حدیث</string>
+    <string name="tvAyahOfTheDay">دن کی آیت</string>
+    <string name="tvDashboardCity">شہر</string>
+    <string name="AsmaUlhusna_transliteration">ترجمہ</string>
+    <string name="AsmaUlhusna_name">عربی نام</string>
+    <string name="AsmaUlhusna_meaning">معنی</string>
+    <string name="startyourday">نئے مقصد کے ساتھ اپنے دن کی شروعات کریں جب ہم روزانہ آپ کو دعاؤں، الہامی آیات، اور تفکر کے لمحے پیش کریں گے۔</string>
+    <string name="tvYourDailyBlessings">آپ کی روزانہ کی دعا</string>
+    <string name="tvReadQuran">قرآن پڑھیں</string>
+
+
+
+
+
+    <string name="btnListJuzz">جز</string>
+    <string name="btnListSurah">سورۃ</string>
+    <string name="tvAlifLaamMeemArb">آلم</string>
+    <string name="tvAlifLaamMeemEng">آلف-لام-میم</string>
+    <string name="tvVersesNo">148 آیات</string>
+    <string name="tvSurahNameEng">الفاتحہ</string>
+    <string name="tvSurahMean">آغاز</string>
+    <string name="tvSurahNameArb">سُورَۃُ الفَاتِحَة</string>
+    <string name="tvSavedSurah">محفوظ کردہ سورۃ</string>
+    <string name="tvSavedSurahDesc">آپ نے ابھی تک کوئی سورۃ محفوظ نہیں کی ہے۔ آپکی محفوظ کردہ سورۃ یہاں دکھائی جائیں گی۔</string>
+    <string name="tvSixKalima">چھ مصرف کلمے</string>
+    <string name="tvKalimaNameEng">پہلا کلمہ</string>
+    <string name="tvKalimaNameArb">كلمة طيبة</string>
+    <string name="tvDailySurah">روزانہ کی سورۃ</string>
+    <string name="tvSixKalimaImp">اہمیت</string>
+    <string name="tvSixKalimaDesc">اسلام میں چھ مصرف کلمے یا کلمہ اہم ہیں۔ یہ کلمے اسلام کی بنیادی اصولوں پر مبنی ہیں جو دین کی بنیاد ہیں۔</string>
+    <string name="tvKalimaRank">پہلا کلمہ</string>
+    <string name="tvtvKalimaMean">پاکیزگی</string>
+    <string name="tvKalimaArabic">لَآ اِلٰهَ اِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ  ؕ</string>
+    <string name="tvKalimaRoman">لَا اِلٰہَ اِلَّا اللّٰہُ مُحَمَّدٌ رَّسُوْلُ اللّٰہِ</string>
+    <string name="tvKalimaTranslation">اللہ کے سوا کوئی معبود نہیں، محمد صلی اللہ علیہ وآلہ وسلم اللہ کا رسول ہے۔</string>
+    <string name="tvDuasLastRead">آخری مطالعہ</string>
+    <string name="tvDuasRuqyah">رقیہ</string>
+    <string name="tvDuasEtiquettes">آداب</string>
+    <string name="tvDuasIstigfar">استغفار</string>
+    <string name="tvDuaCategory">صبح</string>
+    <string name="tvTotalDuas">15 دعائیں</string>
+    <string name="tvDuaName">جب آپ اٹھیں</string>
+    <string name="tvArabicArabic">اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ.</string>
+    <string name="tvDuaRoman">اللہم بِکَ اَصْبَحْنَا وَبِکَ اَمْسَيْنَا وَبِکَ نَحْيَا وَبِکَ نَمُوتُ وَاِلَیْکَ النُّشُورُ</string>
+    <string name="tvDuaTranslation">اے اللہ! تجھی سے ہم صبح ہوئے ہیں اور تجھی سے ہم شام ہوئے ہیں، تجھی سے ہم زندہ ہیں اور تجھی سے ہم مرتے ہیں، اور تیری ہی طرف لوٹ کر جانا ہے۔</string>
+    <string name="tvVersesNameArb">رَبَّنَا مَا خَلَقْتَ</string>
+    <string name="tvVersesNameEng">سورۃ ال عمران</string>
+    <string name="tvVerseNum">193</string>
+    <string name="tvVersesDetailReference">حوالہ</string>
+    <string name="tvVersesRefDetail">سورۃ ال عمران، آیت 191</string>
+    <string name="tvVerseDetailArabic">"رَبَّنَا مَا خَلَقْتَ هٰذَا بَاطِلًا ۚ سُبْحٰنَكَ فَقِنَا عَذَابَ النَّارِ. رَبَّنَآ اِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ اَخْزَيْتَهٗ ۭ وَمَا لِلظّٰلِمِيْنَ مِنْ اَنْصَارٍ. "</string>
+    <string name="tvVerseDetailRoman">"رَبَّنَا مَا خَلَقْتَ هٰذَا بَاطِلًا ۚ سُبْحٰنَكَ فَقِنَا عَذَابَ النَّارِ. رَبَّنَآ اِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ اَخْزَيْتَهٗ ۭ وَمَا لِلظّٰلِمِيْنَ مِنْ اَنْصَارٍ. "</string>
+    <string name="tvVersesDetailTranslation">ہمارے رب! تو نے یہ سب بے مقصد نہیں بنایا، تیری بلندیوں کی حمد ہے! ہمیں دوزخ کے عذاب سے نجات دے۔ ہمارے رب! بیشک جس کو تو دوزخ میں ڈالتا ہے، یہانی کہ تو نے اسے ذلیل کر دیا ہے اور ظالموں کے لئے کوئی مددگار نہیں ہوتا۔</string>
+    <string name="tvVerses">آیات</string>
+
+
+
+
+    <string name="tvCompass">قبلہ</string>
+    <string name="tvQiblaAngle">قبلہ کا زاویہ</string>
+    <string name="tvQiblaAngleDegg">276.00</string>
+    <string name="tvDegSign">°</string>
+    <string name="tvQiblaDistance">قبلہ کا فاصلہ</string>
+    <string name="tvQiblaDistanceDegg">4045 کلومیٹر</string>
+    <string name="tvCityName">راولپنڈی</string>
+    <string name="tvCompassDegg">213.55</string>
+    <string name="tvDegg">ڈگری</string>
+    <string name="tv_ReadQuranApp">قرآن پڑھیں</string>
+    <string name="tvFivePillars">پانچ ستون</string>
+    <string name="tvFaith">ایمان</string>
+    <string name="tvShahada">شہادت</string>
+    <string name="tv5Pillars">5 ستون</string>
+    <string name="tvDashDailySurah">روزانہ سورۃ</string>
+    <string name="tvAzkar">روزانہ\nاذکار</string>
+    <string name="tv6Kalmas">6 کلمات</string>
+    <string name="tvDashVerses">آیات</string>
+    <string name="tv_Calender">کیلنڈر</string>
+    <string name="tvPrayer">نماز</string>
+    <string name="tvSalat">صلاۃ</string>
+    <string name="tvFasting">روزہ</string>
+    <string name="tvSawm">صوم</string>
+    <string name="tvAlms">صدقہ</string>
+    <string name="tvZakat">زکوۃ</string>
+    <string name="tvHajj">حج</string>
+    <string name="tvPilgrimage">حج</string>
+    <string name="tvFirstPillar">پہلا ستون</string>
+    <string name="tvAzkarCategory">صبح کی اذکار</string>
+    <string name="tvTotalAzkar">5 اذکار</string>
+    <string name="tvAllah">اللہ</string>
+    <string name="tvAsmaUlHusnaMean">سب سے زیادہ رحم والا یا پوری طرح رحم کرنے والا</string>
+    <string name="tvCategoryDua">صبح کی دعا</string>
+    <string name="tvDuas">دعائیں</string>
+    <string name="tvFivePillarDetailHeaderText">شہادت</string>
+    <string name="tvFivePillarsDetailCategory">شہادت</string>
+    <string name="tvFivePillarsDetailCatRoman">ایمان</string>
+    <string name="asmaUlHasna">اسماء الحسنیٰ</string>
+    <string name="swipeForNext">اگلے کے لئے سوائپ کریں</string>
+    <string name="meaning">معنی</string>
+    <string name="explanation">تفسیر</string>
+    <string name="benifits">فوائد</string>
+    <string name="downloadTxt">براہ کرم انتظار کریں جب تک ڈاؤن لوڈ ہو رہا ہے\nیہ چند لمحے لیتا ہے</string>
+    <string name="tvFivePillarsShortDesc">تفصیل</string>
+    <string name="tvFivePillarsDetailExp">"لا الہ الا اللہ محمد رسول اللہ" یہ عقیدہ کہ "خدا کوئی معبود نہیں، بصورت یا اللہ ایک ہے، اور محمد اللہ کے رسول ہیں" اسلام کے لئے بہت اہم ہے۔ یہ عبارت عربی میں ہوتی ہے اور اسلام کی مقدس کتاب قرآن میں بھی اس کو اہمیت دی گئی ہے۔ اس عبارت کو پکا یقین کے ساتھ پڑھ کر ایک شخص مسلمان بنتا ہے۔</string>
+    <string name="tvFivePillarsDetailExpHead">توضیح</string>
+    <string name="juzName">الف لام میم</string>
+    <string name="asmaUlHasnaName">الرحمٰن</string>
+
+
+
+
+
+    <string name="tvZuhar">ظهر</string>
+    <string name="tvFajar">فجر</string>
+    <string name="tvFajarUrdu">صلاة الفجر</string>
+    <string name="tvDhurUrdu">صلاة الظهر</string>
+    <string name="tvAsar">عصر</string>
+    <string name="tvDhurAsr">صلاة العصر</string>
+    <string name="tvMaghribUrdu">صلاة المغرب</string>
+    <string name="tvMaghrib">مغرب</string>
+    <string name="tvIshaUrdu">صلاة العشاء</string>
+    <string name="tvIsha">عشاء</string>
+    <string name="tv_consentDialogText">آپ کی رازداری ہماری پہلی ترجیح ہے، اور آپ کا ڈیٹا محفوظ ہے۔ ایک مخصوص ایپ تجربے کے لئے اجازت دیں!</string>
+    <string name="btn_continue">جاری رہیں</string>
+    <string name="tv_permissionDialogText">آپ کی رازداری ہماری پہلی ترجیح ہے، اور آپ کا ڈیٹا محفوظ ہے۔ ایک مخصوص ایپ تجربے کے لئے اجازت دیں!</string>
+    <string name="tv_themeText">تھیم منتخب کریں</string>
+    <string name="tvLight">روشنی</string>
+    <string name="tvDark">اندھیرا</string>
+    <string name="tv_themeCancel">منسوخ کریں</string>
+    <string name="tv_themeApply">لاگو کریں</string>
+    <string name="tvPermissionScText">آپ کی قیمتی اجازت لوکیشن سروسز کے لئے ضروری ہے</string>
+    <string name="tvPermissionDesc">آپ کو خصوصی خصوصیات فراہم کرنے کے لئے ہم سے اپنے مقام تک رسائی حاصل کرنے کی خواہش ہے</string>
+    <string name="btn_Allow">اسے اجازت دیں</string>
+    <string name="btnDismiss">رد کریں</string>
+    <string name="tvNext">اگلا</string>
+    <string name="tvAyahOfTheDayHeading">دن کی آیت:</string>
+    <string name="tvHadithOfTheDayHeading">دن کا حدیث:</string>
+    <string name="hello_blank_fragment">ہیلو خالی فریگمنٹ</string>
+    <string name="tvIslamicTeachings">اسلامی تعلیمات</string>
+    <string name="tvDailyVerse">دن کی آیت</string>
+    <string name="tvReference">البقرہ - 2:127</string>
+    <string name="tvVerseArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvVerseTranslation">مسلمان پر کوئی تھکاوٹ، بیماری، فکر، غم، نقصان، غم یا کانٹے کا چبھنا نہیں آتا، جس پر اللہ نے اس سے کفر کر دیا ہے...</string>
+    <string name="tvSpiritualDevelopment">روحانی ترقی</string>
+    <string name="tvSpiritualDetail">یہاں تک کہ آپ جو بھی استعمال کرتے ہیں، جیسے کہ میڈیا، خوراک، اور مالی اشیاء، اس پر خود نظر رکھیں۔ اپنے انتخابات کو اسلامی قیمتوں کے ساتھ میلان کرنے کی کوشش کریں۔</string>
+    <string name="tvMosqueName">نیلا مسجد</string>
+
+
+
+
+
+    <string name="tvMosqueLocation">استنبول، ترکیہ</string>
+    <string name="tvMosqueDetail">یہ اس کے پروردگاری / لازمی ہونے کو ظاہر کرتا ہے۔ کچھ لوگ نام کو رحمانیت بخش سمجھتے ہیں...</string>
+    <string name="tvVirtueName">صدقہ کی فضائل</string>
+    <string name="tvVirtueDetail">اسلام میں صدقہ کے اہمیت اور اس کے فوائد کو نشانی دینے والے بھی بہت سے حدیثات ہیں...</string>
+    <string name="tvQuoteDetail">ایمان اللہ میں ہے، جو اللہ، اس کے فرشتوں، اس کی کتابوں، اس کے رسولوں، آخری دن میں یقین رکھنا ہے، اور نصیب میں بھلا بھلا ہونا ہے اور برا ہونا ہے۔</string>
+    <string name="tvQuoteName">صبر اور شکر</string>
+    <string name="tvDoyouKnowName">کیا آپ جانتے ہیں!</string>
+    <string name="tvDoYouKnowDetail">پیغمبر محمد صلی اللہ علیہ وآلہ وسلم ہر سال فرشتہ جبرائیل کے ساتھ قرآن کی آیات کا مراجعہ کرتے تھے۔ ان کی وفات سے ایک سال قبل، پیغمبر محمد صلی اللہ علیہ وآلہ وسلم نے جبرائیل کے ساتھ قرآن کا دو بار مراجعہ کیا۔</string>
+    <string name="tvShortVerseArabic">قُلۡ اِنَّ هُدَى اللّٰهِ هُوَ الۡهُدٰى</string>
+    <string name="tvShortVerseTranslation">یقیناً ہدایت اللہ ہی ہدایت ہے!</string>
+    <string name="tvShortVerseReference">(القرآن 6:7)</string>
+    <string name="tvhadithArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvHadithTranslation">مسلمان پر کوئی زحمت، بیماری، فکر، غم، نقصان، غم، یا ایک کانٹے کی چبھی ہوئی چیز نہیں آتی، اللہ اس کو اس کے گناہوں کے بدلے میں کفارہ فراہم کرتا ہے...</string>
+    <string name="tvDailyHadith">دن کی حدیث</string>
+    <string name="tvHadithReference">صحیح البخاری - 2028</string>
+    <string name="tvNameOfAllah">اللہ کا نام</string>
+    <string name="tvNameNumber">02/99</string>
+    <string name="tvAllahName">الرحیم</string>
+    <string name="tvAllahMean">جو بڑی مہربانی سے عمل کرتا ہے</string>
+    <string name="tvAllahNameDesc">یہ اس کے پروردگاری / لازمی ہونے کو ظاہر کرتا ہے۔ کچھ لوگ نام کو رحمانیت بخش سمجھتے ہیں...</string>
+    <string name="tvNameOfProphet_SAW">"پیغمبر محمد صلی اللہ علیہ وآلہ وسلم کا نام"</string>
+    <string name="tvReadMore">مزید دیکھیں</string>
+    <string name="tvTapOnScreen">اسکرین پر کہیں بھی ٹیپ کریں تاکہ گنتی شروع ہو سکے</string>
+    <string name="tvReset">ریسٹ</string>
+    <string name="tvQuickRead">تیزی سے\nپڑھیں</string>
+    <string name="tvFeed">دین ڈیں</string>
+    <string name="tvIslamicInsights">اسلامی بصائر</string>
+    <string name="tvMosqueCreation">1994 اور 2007 کے درمیان تختیب کیا گیا اور دسمبر 2007 میں افتتاح ہوا۔</string>
+    <string name="tvFeedDailyVerse">روزانہ\nآیت</string>
+    <string name="tvFeedDailyHadith">روزانہ\nحدیث</string>
+    <string name="tvFeedDailyAllahName">اللہ کا نام</string>
+
+
+
+
+
+    <string name="tvFeedDailyProphetName">پیغمبر کا نام</string>
+    <string name="SubhanAllah">سبحان اللہ</string>
+    <string name="save">محفوظ کریں</string>
+    <string name="history">تاریخ</string>
+    <string name="tvAddToList">فہرست میں شامل کریں</string>
+    <string name="editTextCounterText">براہ کرم اپنا عنوان یہاں ٹائپ کریں</string>
+    <string name="btnSave">محفوظ کریں</string>
+    <string name="btnCancel">منسوخ کریں</string>
+    <string name="tvZikrName">استغفار</string>
+    <string name="tvHistory">تاریخ</string>
+    <string name="tvTasbeehCounter">تسبیح کاؤنٹر</string>
+    <string name="tvDelete">"کیا آپ اس ذکر کو محفوظ سے ہٹانا چاہتے ہیں؟ \n ٹیپ ہٹائیں یا منسوخ کریں کریں۔</string>
+    <string name="btnDelete">حذف کریں</string>
+    <string name="zikrAlreadyAdded">ذکر پہلے ہی شامل ہے</string>
+    <string name="tvStartCount">اپنے ذکر کو گننا شروع کریں۔</string>
+    <string name="addNew">نیا شامل کریں</string>
+
+
+</resources>

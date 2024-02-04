@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReadQuranApp</string>
+
+
+    <string name="btn_lightMode">Lichte Modus</string>
+    <string name="btn_DarkMode">Donkere Modus</string>
+    <string name="btn_DefaultMode">Standaard Modus</string>
+    <string name="tv_moonname">MIJN NAAM IS MAAN</string>
+    <string name="countries" translatable="false">Landen</string>
+    <string name="tv_LanguageTextView">Kies de taal</string>
+    <string name="btn_Bismillah">Bismillah</string>
+    <string name="Versions">versies</string>
+    <string name="privacy_policy"><u>Privacybeleid</u></string>
+    <string name="grey_data">Gregoriaanse datum</string>
+    <string name="hij_data">Hijri-datum</string>
+    <string name="CurrentTime">Tijd</string>
+    <string name="tv_quran">Lees\nQuran</string>
+    <string name="tv_TasbeehCounter">Tasbeeh\nTeller</string>
+    <string name="tv_AsmaUlHasna">Asma ul\nHasna</string>
+    <string name="tv_Duas">Islamitische\nDuas</string>
+    <string name="tv_Qibla">Qibla\nKompas</string>
+    <string name="tv_IslamicCalender">Islamitische\nKalender</string>
+    <string name="tv_6Kalma">6 Kalma</string>
+    <string name="tv_DailySurahs">Dagelijkse Surahs</string>
+    <string name="permission_required">Toestemming Dialoog</string>
+    <string name="permision_policy">Welkom bij de Read Quran App. We zijn toegewijd aan het beschermen van uw privacy en het bieden van een veilige omgeving voor het gebruik van onze app. Dit privacybeleid legt uit hoe we uw persoonlijke informatie verzamelen, gebruiken en beschermen. Door de app te gebruiken, gaat u akkoord met de voorwaarden van dit privacybeleid.</string>
+    <string name="agree">Akkoord</string>
+    <string name="btn_nointernet_ok">OK</string>
+    <string name="btn_exitno">Blijven</string>
+    <string name="cancel">Annuleren</string>
+    <string name="privacy_dialog_policy">Welkom bij de Read Quran App. We zijn toegewijd aan het beschermen van uw privacy en het bieden van een veilige omgeving voor het gebruik van onze app. Dit privacybeleid legt uit hoe we uw persoonlijke informatie verzamelen, gebruiken en beschermen. Door de app te gebruiken, gaat u akkoord met de voorwaarden van dit privacybeleid.</string>
+    <string name="webViewAgreeButton">Akkoord</string>
+    <string name="no_internet">Geen internet</string>
+    <string name="no_internetText">Controleer uw internetverbinding</string>
+    <string name="tv_exitdialog">"Weet u zeker dat u de app wilt afsluiten? \n Tik op \'Afsluiten\' om te sluiten of \'Blijven\' om verder te verkennen</string>
+    <string name="btn_exit">Afsluiten</string>
+    <string name="btnLanguages">Talen</string>
+    <string name="btnSettingThemes">Instellingen</string>
+    <string name="skip">Overslaan</string>
+    <string name="inviteFriends">Vrienden uitnodigen</string>
+    <string name="beginYourJourney">Begin uw spirituele reis met deze belangrijke functies</string>
+    <string name="tvSalam">السلام عليكم ورحمة الله وبركاته</string>
+    <string name="tvDashboardTime">3:30 PM</string>
+    <string name="tvDashboardDayTimeYear">Do, 7 okt, 2023</string>
+    <string name="tvDashboardHijriDayDateYear">14, Ramadaan, 1440 A.H</string>
+    <string name="tvNow">Nu</string>
+    <string name="tvNowPrayer">Maghrib</string>
+    <string name="tvUpcoming">Aankomend</string>
+    <string name="tvUpcomingPrayer">Isha</string>
+    <string name="tvTodayPrayerTimings">Gebedstijden vandaag</string>
+    <string name="tvHadithOfTheDay">Hadith van de dag</string>
+    <string name="tvAyahOfTheDay">Ayah van de dag</string>
+    <string name="tvDashboardCity">Stad</string>
+    <string name="AsmaUlhusna_transliteration">Transliteratie</string>
+    <string name="AsmaUlhusna_name">Arabische naam</string>
+    <string name="AsmaUlhusna_meaning">Betekenis</string>
+    <string name="startyourday">Begin uw dag met vernieuwd doel terwijl we u dagelijkse zegeningen, inspirerende verzen en momenten van reflectie brengen.</string>
+    <string name="tvYourDailyBlessings">Uw dagelijkse zegening</string>
+    <string name="tvReadQuran">Lees Quran</string>
+
+
+
+
+
+    <string name="btnListJuzz">Juz</string>
+    <string name="btnListSurah">Surah</string>
+    <string name="tvAlifLaamMeemArb">آلم</string>
+    <string name="tvAlifLaamMeemEng">Alif-laam-meem</string>
+    <string name="tvVersesNo">148 verzen</string>
+    <string name="tvSurahNameEng">Al-Fatihah</string>
+    <string name="tvSurahMean">De Opening</string>
+    <string name="tvSurahNameArb">سُوْرَۃُ الفَاتِحَة</string>
+    <string name="tvSavedSurah">Opgeslagen Surah</string>
+    <string name="tvSavedSurahDesc">Je hebt nog geen enkele Surah opgeslagen. Je opgeslagen Surahs worden hier weergegeven.</string>
+    <string name="tvSixKalima">Zes Kalima\'s</string>
+    <string name="tvKalimaNameEng">Eerste Kalima</string>
+    <string name="tvKalimaNameArb">كلمة طيبة</string>
+    <string name="tvDailySurah">Dagelijkse Surah</string>
+    <string name="tvSixKalimaImp">Belangrijkheid</string>
+    <string name="tvSixKalimaDesc">De zes Kalima\'s of Kalima\'s in de islam zijn integraal voor het islamitische geloof. Deze Kalima\'s benadrukken de primaire en meest essentiële principes van de islam die de kern van de religie vormen.</string>
+    <string name="tvKalimaRank">Eerste Kalima</string>
+    <string name="tvtvKalimaMean">Zuiverheid</string>
+    <string name="tvKalimaArabic">لَآ اِلٰهَ اِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ  ؕ</string>
+    <string name="tvKalimaRoman">lā ilāha illā-llāh, muhammadu rasūl u-llāh</string>
+    <string name="tvKalimaTranslation">Er is geen god dan Allah, [en] Muhammad [VZMH] is de boodschapper van Allah</string>
+    <string name="tvDuasLastRead">Laatst Gelezen</string>
+    <string name="tvDuasRuqyah">Ruqyah</string>
+    <string name="tvDuasEtiquettes">Etiquette</string>
+    <string name="tvDuasIstigfar">Istigfar</string>
+    <string name="tvDuaCategory">Ochtend</string>
+    <string name="tvTotalDuas">15 Duas</string>
+    <string name="tvDuaName">Wanneer je wakker wordt</string>
+    <string name="tvArabicArabic">اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ.</string>
+    <string name="tvDuaRoman">Allahumma bika asbahna wabika amsayna, wabika nahya ,wabika namootu wa-ilaykan-nushoor</string>
+    <string name="tvDuaTranslation">O Allah, met Uw toestemming hebben we de ochtend bereikt en met Uw toestemming hebben we de avond bereikt, met Uw toestemming leven en sterven we en tot U is onze opstanding.</string>
+    <string name="tvVersesNameArb">رَبَّنَا مَا خَلَقْتَ</string>
+    <string name="tvVersesNameEng">Surah Al-Imran</string>
+    <string name="tvVerseNum">193</string>
+    <string name="tvVersesDetailReference">Referentie</string>
+    <string name="tvVersesRefDetail">Surah Al-Imran Vers 191</string>
+    <string name="tvVerseDetailArabic">"رَبَّنَا مَا خَلَقْتَ هٰذَا بَاطِلًا ۚ سُبْحٰنَكَ فَقِنَا عَذَابَ النَّارِ. رَبَّنَآ اِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ اَخْزَيْتَهٗ ۭ وَمَا لِلظّٰلِمِيْنَ مِنْ اَنْصَارٍ. "</string>
+    <string name="tvVerseDetailRoman">"Rabbana ma khalaqta hadha batila Subhanaka faqina \'adhaban-Naar. Rabbana innaka man tudkhilin nara faqad akhzaytah wa ma liDh-dhalimeena min ansar. "</string>
+    <string name="tvVersesDetailTranslation">Onze Heer! U heeft dit niet zonder doel geschapen, glorie aan U! (Verheven bent U boven alles waarmee zij U als partner associëren). Red ons van de straf van het Vuur. *Onze Heer! Werkelijk, wie U het Vuur binnenvoert, heeft U hem zeker vernederd, en de onrechtvaardigen zullen nooit enige helpers vinden.</string>
+    <string name="tvVerses">Verzen</string>
+
+
+
+    <string name="tvCompass">Kompas</string>
+    <string name="tvQiblaAngle">Qibla Hoek</string>
+    <string name="tvQiblaAngleDegg">276,00</string>
+    <string name="tvDegSign">o</string>
+    <string name="tvQiblaDistance">Qibla Afstand</string>
+    <string name="tvQiblaDistanceDegg">4045 km</string>
+    <string name="tvCityName">Rawalpindi</string>
+    <string name="tvCompassDegg">213,55</string>
+    <string name="tvDegg">GRADEN</string>
+    <string name="tv_ReadQuranApp">Lees de Koran</string>
+    <string name="tvFivePillars">Vijf Pilaren</string>
+    <string name="tvFaith">Geloof</string>
+    <string name="tvShahada">Shahada</string>
+    <string name="tv5Pillars">5 Pilaren</string>
+    <string name="tvDashDailySurah">Dagelijkse Surahs</string>
+    <string name="tvAzkar">Dagelijkse\nAzkar</string>
+    <string name="tv6Kalmas">6 Kalmas</string>
+    <string name="tvDashVerses">Verzen</string>
+    <string name="tv_Calender">Kalender</string>
+    <string name="tvPrayer">Gebed</string>
+    <string name="tvSalat">Salat</string>
+    <string name="tvFasting">Vasten</string>
+    <string name="tvSawm">Sawm</string>
+    <string name="tvAlms">Liefdadigheid</string>
+    <string name="tvZakat">Zakat</string>
+    <string name="tvHajj">Hadj</string>
+    <string name="tvPilgrimage">Bedevaart</string>
+    <string name="tvFirstPillar">Eerste Pilaar</string>
+    <string name="tvAzkarCategory">Ochtend Azkar</string>
+    <string name="tvTotalAzkar">5 Azkar</string>
+    <string name="tvAllah">Allah</string>
+    <string name="tvAsmaUlHusnaMean">De Meest Barmhartige</string>
+    <string name="tvCategoryDua">Ochtend Dua</string>
+    <string name="tvDuas">Duas</string>
+    <string name="tvFivePillarDetailHeaderText">Shahada</string>
+    <string name="tvFivePillarsDetailCategory">Shahada</string>
+    <string name="tvFivePillarsDetailCatRoman">Geloof</string>
+    <string name="asmaUlHasna">Asma Ul Hasna</string>
+    <string name="swipeForNext">Veeg voor volgende</string>
+    <string name="meaning">Betekenis</string>
+    <string name="explanation">Uitleg</string>
+    <string name="benifits">Voordelen</string>
+    <string name="downloadTxt">Wacht even terwijl het wordt gedownload\nHet duurt even</string>
+    <string name="tvFivePillarsShortDesc">Beschrijving</string>
+    <string name="tvFivePillarsDetailExp">Het geloof in "Er is geen god dan God, en Mohammed is de Boodschapper van God" staat centraal in de islam. Deze zin, geschreven in het Arabisch, wordt vaak prominent weergegeven in architectuur en verschillende objecten, waaronder de Koran, het heilige boek van de islamitische openbaringen. Men wordt moslim door deze zin met overtuiging uit te spreken.</string>
+    <string name="tvFivePillarsDetailExpHead">Uitleg</string>
+    <string name="juzName">Alif-laam-meem</string>
+    <string name="asmaUlHasnaName">Ar-Rahman</string>
+
+
+
+
+    <string name="tvZuhar">Dhuhur</string>
+    <string name="tvFajar">Fajar</string>
+    <string name="tvFajarUrdu">Fajr-gebed</string>
+    <string name="tvDhurUrdu">Dhuhr-gebed</string>
+    <string name="tvAsar">Asr</string>
+    <string name="tvDhurAsr">Asr-gebed</string>
+    <string name="tvMaghribUrdu">Maghrib-gebed</string>
+    <string name="tvMaghrib">Maghrib</string>
+    <string name="tvIshaUrdu">Isha-gebed</string>
+    <string name="tvIsha">Isha</string>
+    <string name="tv_consentDialogText">Uw privacy is onze prioriteit en uw gegevens zijn veilig. Geef toestemming voor een op maat gemaakte app-ervaring!</string>
+    <string name="btn_continue">Doorgaan</string>
+    <string name="tv_permissionDialogText">Uw privacy is onze prioriteit en uw gegevens zijn veilig. Geef toestemming voor een op maat gemaakte app-ervaring!</string>
+    <string name="tv_themeText">Kies Thema</string>
+    <string name="tvLight">Licht</string>
+    <string name="tvDark">Donker</string>
+    <string name="tv_themeCancel">Annuleren</string>
+    <string name="tv_themeApply">Toepassen</string>
+    <string name="tvPermissionScText">Uw waardevolle toestemming is vereist voor locatiediensten</string>
+    <string name="tvPermissionDesc">Om u gepersonaliseerde functies aan te bieden, vragen we vriendelijk toegang tot uw locatie</string>
+    <string name="btn_Allow">Toestaan</string>
+    <string name="btnDismiss">Afwijzen</string>
+    <string name="tvNext">Volgende</string>
+    <string name="tvAyahOfTheDayHeading">Ayat van de Dag:</string>
+    <string name="tvHadithOfTheDayHeading">Hadith van de Dag:</string>
+    <string name="hello_blank_fragment">Hallo leeg fragment</string>
+    <string name="tvIslamicTeachings">Islamitische Leerstellingen</string>
+    <string name="tvDailyVerse">Vers van de Dag</string>
+    <string name="tvReference">Al-Baqarah - 2:127</string>
+    <string name="tvVerseArabic">Geen vermoeidheid, ziekte, zorgen, verdriet, schade, verdriet of zelfs de prik van een doorn...</string>
+    <string name="tvVerseTranslation">...</string>
+    <string name="tvSpiritualDevelopment">Spirituele Ontwikkeling</string>
+    <string name="tvSpiritualDetail">Wees bewust van wat je consumeert, inclusief media, voedsel en materiële goederen. Streven naar afstemming van je keuzes met islamitische waarden.</string>
+    <string name="tvMosqueName">Blauwe Moskee</string>
+
+
+
+    <string name="tvMosqueLocation">Istanbul, Turkije</string>
+    <string name="tvMosqueDetail">Het verwijst naar Zijn onderhoud/oneindigheid. Sommigen beschouwen de naam als genadig...</string>
+    <string name="tvVirtueName">De Deugden van Sadaqah</string>
+    <string name="tvVirtueDetail">Er zijn ook talloze andere Hadith die de belangrijkheid ervan benadrukken en de voordelen van liefdadigheid in de islam...</string>
+    <string name="tvQuoteDetail">Geloof is geloven in Allah, Zijn engelen, Zijn boeken, Zijn boodschappers, de Laatste Dag, en geloven in het lot, zowel het goede als het slechte.</string>
+    <string name="tvQuoteName">Geduld en Dankbaarheid</string>
+    <string name="tvDoyouKnowName">WIST JE DAT!</string>
+    <string name="tvDoYouKnowDetail">Profeet Mohammed (VZMH) placht de verzen van de Koran jaarlijks te herzien met Engel Jibril. In het jaar voor zijn dood herzag Profeet Mohammed (VZMH) de Koran tweemaal met Jibril.</string>
+    <string name="tvShortVerseArabic">قُلۡ اِنَّ هُدَى اللّٰهِ هُوَ الۡهُدٰى</string>
+    <string name="tvShortVerseTranslation">Voorwaar, de enige leiding is de leiding van Allah!</string>
+    <string name="tvShortVerseReference">(Al-Quran 6:7)</string>
+    <string name="tvhadithArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvHadithTranslation">Geen vermoeidheid, ziekte, zorgen, verdriet, schade, pijn, of zelfs de prik van een doorn...</string>
+    <string name="tvDailyHadith">Hadith van de Dag</string>
+    <string name="tvHadithReference">Sahih Al Bukhari - 2028</string>
+    <string name="tvNameOfAllah">Naam van Allah</string>
+    <string name="tvNameNumber">02/99</string>
+    <string name="tvAllahName">Ar-Raheem</string>
+    <string name="tvAllahMean">Hij die handelt met extreme vriendelijkheid</string>
+    <string name="tvAllahNameDesc">Het verwijst naar Zijn onderhoud/oneindigheid. Sommigen beschouwen de naam als genadig voor...</string>
+    <string name="tvNameOfProphet_SAW">"Naam van Profeet Mohammed VZMH"</string>
+    <string name="tvReadMore">Zie Meer</string>
+    <string name="tvTapOnScreen">Tik ergens op het scherm om te beginnen met tellen</string>
+    <string name="tvReset">Herstellen</string>
+    <string name="tvQuickRead">Snel\nLezen</string>
+    <string name="tvFeed">Deen Feed</string>
+    <string name="tvIslamicInsights">Islamitische Inzichten</string>
+    <string name="tvMosqueCreation">Gebouwd tussen 1994 en 2007 en ingehuldigd in december 2007.</string>
+    <string name="tvFeedDailyVerse">Dagelijkse\nVers</string>
+    <string name="tvFeedDailyHadith">Dagelijkse\nHadith</string>
+    <string name="tvFeedDailyAllahName">Naam van\nAllah</string>
+
+
+
+
+
+    <string name="tvFeedDailyProphetName">Naam van\nProfeet</string>
+    <string name="SubhanAllah">Subhan Allah</string>
+    <string name="save">Opslaan</string>
+    <string name="history">Geschiedenis</string>
+    <string name="tvAddToList">Toevoegen aan lijst</string>
+    <string name="editTextCounterText">Typ hier uw titel</string>
+    <string name="btnSave">Opslaan</string>
+    <string name="btnCancel">Annuleren</string>
+    <string name="tvZikrName">Istighfar</string>
+    <string name="tvHistory">Geschiedenis</string>
+    <string name="tvTasbeehCounter">Tasbeeh Teller</string>
+    <string name="tvDelete">Weet u zeker dat u deze Dhikr uit de opgeslagen lijst wilt verwijderen? \n Tik op \'Verwijderen\' of \'Annuleren\'.</string>
+    <string name="btnDelete">Verwijderen</string>
+    <string name="zikrAlreadyAdded">Zikar bestaat al</string>
+    <string name="tvStartCount">Begin met het tellen van uw Zikar.</string>
+    <string name="addNew">Voeg Nieuwe Toe</string>
+
+</resources>

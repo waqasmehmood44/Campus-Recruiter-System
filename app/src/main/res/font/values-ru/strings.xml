@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReadQuranApp</string>
+
+    <string name="btn_lightMode">Светлый режим</string>
+    <string name="btn_DarkMode">Темный режим</string>
+    <string name="btn_DefaultMode">Режим по умолчанию</string>
+    <string name="tv_moonname">МЕНЯ ЗОВУТ ЛУНА</string>
+    <string name="countries" translatable="false">Страны</string>
+    <string name="tv_LanguageTextView">Выберите язык</string>
+    <string name="btn_Bismillah">Бисмиллах</string>
+    <string name="Versions">Версии</string>
+    <string name="privacy_policy"><u>Политика конфиденциальности</u></string>
+    <string name="grey_data">Грегорианская дата</string>
+    <string name="hij_data">Хиджри дата</string>
+    <string name="CurrentTime">Время</string>
+    <string name="tv_quran">Читать\nКоран</string>
+    <string name="tv_TasbeehCounter">Тасбих\nСчетчик</string>
+    <string name="tv_AsmaUlHasna">Асма уль\nХасна</string>
+    <string name="tv_Duas">Исламские\nДу\'а</string>
+    <string name="tv_Qibla">Кибла\nКомпас</string>
+    <string name="tv_IslamicCalender">Исламский\nКалендарь</string>
+    <string name="tv_6Kalma">6 Калма</string>
+    <string name="tv_DailySurahs">Ежедневные суры</string>
+    <string name="permission_required">Диалог разрешения</string>
+    <string name="permision_policy">Добро пожаловать в приложение для чтения Корана. Мы обязуемся защищать вашу конфиденциальность и предоставлять безопасную среду для использования нашего приложения. Эта Политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу личную информацию. Используя приложение, вы соглашаетесь с условиями этой Политики конфиденциальности.</string>
+    <string name="agree">Согласен</string>
+    <string name="btn_nointernet_ok">OK</string>
+    <string name="btn_exitno">Остаться</string>
+    <string name="cancel">Отмена</string>
+    <string name="privacy_dialog_policy">Добро пожаловать в приложение для чтения Корана. Мы обязуемся защищать вашу конфиденциальность и предоставлять безопасную среду для использования нашего приложения. Эта Политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу личную информацию. Используя приложение, вы соглашаетесь с условиями этой Политики конфиденциальности.</string>
+    <string name="webViewAgreeButton">Согласен</string>
+    <string name="no_internet">Нет интернета</string>
+    <string name="no_internetText">Пожалуйста, проверьте ваше интернет-соединение</string>
+    <string name="tv_exitdialog">"Вы уверены, что хотите выйти из приложения? \n Нажмите \'Выйти\', чтобы закрыть, или \'Остаться\', чтобы продолжить исследование</string>
+    <string name="btn_exit">Выйти</string>
+    <string name="btnLanguages">Языки</string>
+    <string name="btnSettingThemes">Настройки</string>
+    <string name="skip">Пропустить</string>
+    <string name="inviteFriends">Пригласить друзей</string>
+    <string name="beginYourJourney">Начните свой духовный путь с этими ключевыми функциями</string>
+    <string name="tvSalam">السلام عليكم ورحمة الله وبركاته</string>
+    <string name="tvDashboardTime">3:30 PM</string>
+    <string name="tvDashboardDayTimeYear">Чт, 7 окт, 2023</string>
+    <string name="tvDashboardHijriDayDateYear">14, Рамадан, 1440 г. х.</string>
+    <string name="tvNow">Сейчас</string>
+    <string name="tvNowPrayer">Магриб</string>
+    <string name="tvUpcoming">Предстоящие</string>
+    <string name="tvUpcomingPrayer">Иша</string>
+    <string name="tvTodayPrayerTimings">Время намаза сегодня</string>
+    <string name="tvHadithOfTheDay">Хадис дня</string>
+    <string name="tvAyahOfTheDay">Аят дня</string>
+    <string name="tvDashboardCity">Город</string>
+    <string name="AsmaUlhusna_transliteration">Транслитерация</string>
+    <string name="AsmaUlhusna_name">Арабское имя</string>
+    <string name="AsmaUlhusna_meaning">Значение</string>
+    <string name="startyourday">Начните свой день с обновленной цели, так как мы приносим вам ежедневные благословения, вдохновляющие стихи и моменты размышления.</string>
+    <string name="tvYourDailyBlessings">Ваши ежедневные благословения</string>
+    <string name="tvReadQuran">Читать Коран</string>
+
+
+
+
+    <string name="btnListJuzz">Джуз</string>
+    <string name="btnListSurah">Сура</string>
+    <string name="tvAlifLaamMeemArb">آл-лаам-мим</string>
+    <string name="tvAlifLaamMeemEng">Алиф-лаам-миим</string>
+    <string name="tvVersesNo">148 стихов</string>
+    <string name="tvSurahNameEng">Аль-Фатиха</string>
+    <string name="tvSurahMean">Открывающая</string>
+    <string name="tvSurahNameArb">سورة الفاتحة</string>
+    <string name="tvSavedSurah">Сохраненные Суры</string>
+    <string name="tvSavedSurahDesc">Вы еще не сохранили ни одной Суры. Ваши сохраненные Суры будут отображены здесь.</string>
+    <string name="tvSixKalima">Шесть Калим</string>
+    <string name="tvKalimaNameEng">Первая Калима</string>
+    <string name="tvKalimaNameArb">كلمة طيبة</string>
+    <string name="tvDailySurah">Ежедневная Сура</string>
+    <string name="tvSixKalimaImp">Важность</string>
+    <string name="tvSixKalimaDesc">Шесть Калим или Калимы в Исламе являются неотъемлемой частью исламской веры. Эти Калимы подчеркивают основные принципы ислама, которые составляют ядро религии.</string>
+    <string name="tvKalimaRank">Первая Калима</string>
+    <string name="tvtvKalimaMean">Чистота</string>
+    <string name="tvKalimaArabic">لَآ اِلٰهَ اِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ  ؕ</string>
+    <string name="tvKalimaRoman">Ла иляха иллялляху, Мухаммадуррасулулляхи</string>
+    <string name="tvKalimaTranslation">Нет бога, кроме Аллаха, [и] Мухаммад [мир ему] - посланник Аллаха</string>
+    <string name="tvDuasLastRead">Последнее Чтение</string>
+    <string name="tvDuasRuqyah">Рукъя</string>
+    <string name="tvDuasEtiquettes">Этикеты</string>
+    <string name="tvDuasIstigfar">Истигфар</string>
+    <string name="tvDuaCategory">Утро</string>
+    <string name="tvTotalDuas">15 Дуа</string>
+    <string name="tvDuaName">Когда вы просыпаетесь</string>
+    <string name="tvArabicArabic">اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ.</string>
+    <string name="tvDuaRoman">Аллахумма бика асбахна вабика амсайна, вабика нахья, вабика намуту ва-илайкан-нушур</string>
+    <string name="tvDuaTranslation">О Аллах, по Твоему великодушию мы достигли утра и по Твоему великодушию мы достигли вечера, по Твоему великодушию мы живем и умираем, и к Тебе воскресаем.</string>
+    <string name="tvVersesNameArb">ربنا ما خلقت</string>
+    <string name="tvVersesNameEng">Сура Аль-Имран</string>
+    <string name="tvVerseNum">193</string>
+    <string name="tvVersesDetailReference">Ссылка</string>
+    <string name="tvVersesRefDetail">Сура Аль-Имран, стих 191</string>
+    <string name="tvVerseDetailArabic">"رَبَّنَا مَا خَلَقْتَ هٰذَا بَاطِلًا ۚ سُبْحٰنَكَ فَقِنَا عَذَابَ النَّارِ. رَبَّنَآ اِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ اَخْزَيْتَهٗ ۭ وَمَا لِلظّٰلِمِيْنَ مِنْ اَنْصَارٍ. "</string>
+    <string name="tvVerseDetailRoman">"Раббана ма халакта хаза батила. Субханака факина 'адхабан-Нар. Раббана иннака ман тудхилин нара факад ахзайтаху ва ма лиз-зхалимина мин ансар."</string>
+    <string name="tvVersesDetailTranslation">Господь наш! Ты не сотворил это напрасно; слава Тебе! Убереги нас от мучений ада. Господь наш! Тот из нас, кого Ты введешь в огонь, будет великим унижением! Не будет в помощь залам (богопротивных).</string>
+    <string name="tvVerses">Стихи</string>
+
+
+
+
+    <string name="tvCompass">Компас</string>
+    <string name="tvQiblaAngle">Угол Каабы</string>
+    <string name="tvQiblaAngleDegg">276.00</string>
+    <string name="tvDegSign">o</string>
+    <string name="tvQiblaDistance">Расстояние до Каабы</string>
+    <string name="tvQiblaDistanceDegg">4045 км</string>
+    <string name="tvCityName">Равалпинди</string>
+    <string name="tvCompassDegg">213.55</string>
+    <string name="tvDegg">ГРАД</string>
+    <string name="tv_ReadQuranApp">Читать Коран</string>
+    <string name="tvFivePillars">Пять столпов</string>
+    <string name="tvFaith">Вера</string>
+    <string name="tvShahada">Шахада</string>
+    <string name="tv5Pillars">5 столпов</string>
+    <string name="tvDashDailySurah">Ежедневные суры</string>
+    <string name="tvAzkar">Ежедневные\nАзкары</string>
+    <string name="tv6Kalmas">6 Кальм</string>
+    <string name="tvDashVerses">Стихи</string>
+    <string name="tv_Calender">Календарь</string>
+    <string name="tvPrayer">Молитва</string>
+    <string name="tvSalat">Салат</string>
+    <string name="tvFasting">Пост</string>
+    <string name="tvSawm">Саум</string>
+    <string name="tvAlms">Милостыня</string>
+    <string name="tvZakat">Закат</string>
+    <string name="tvHajj">Хадж</string>
+    <string name="tvPilgrimage">Паломничество</string>
+    <string name="tvFirstPillar">Первый столп</string>
+    <string name="tvAzkarCategory">Утренние азкары</string>
+    <string name="tvTotalAzkar">5 Азкар</string>
+    <string name="tvAllah">Аллах</string>
+    <string name="tvAsmaUlHusnaMean">Самый Милосердный или Все Милосердный</string>
+    <string name="tvCategoryDua">Утренняя дуа</string>
+    <string name="tvDuas">Дуа</string>
+    <string name="tvFivePillarDetailHeaderText">Шахада</string>
+    <string name="tvFivePillarsDetailCategory">Шахада</string>
+    <string name="tvFivePillarsDetailCatRoman">Вера</string>
+    <string name="asmaUlHasna">Асма Уль Хасна</string>
+    <string name="swipeForNext">Проведите для перехода</string>
+    <string name="meaning">Значение</string>
+    <string name="explanation">Объяснение</string>
+    <string name="benifits">Преимущества</string>
+    <string name="downloadTxt">Подождите, пока идет загрузка\nЭто займет некоторое время</string>
+    <string name="tvFivePillarsShortDesc">Описание</string>
+    <string name="tvFivePillarsDetailExp">Вера в то, что "Нет бога, кроме Аллаха, и Мухаммад - посланник Аллаха", является основой ислама. Эта фраза, написанная на арабском языке, часто выделяется в архитектуре и различных объектах, включая Коран, священную книгу ислама. Человек становится мусульманином, произнося эту фразу с убеждением.</string>
+    <string name="tvFivePillarsDetailExpHead">Объяснение</string>
+    <string name="juzName">Алиф-лям-мим</string>
+    <string name="asmaUlHasnaName">Ар-Рахман</string>
+
+
+
+
+    <string name="tvZuhar">Зухар</string>
+    <string name="tvFajar">Фаджр</string>
+    <string name="tvFajarUrdu">صلاة الفجر</string>
+    <string name="tvDhurUrdu">صلاة الظهر</string>
+    <string name="tvAsar">Аср</string>
+    <string name="tvDhurAsr">صلاة العصر</string>
+    <string name="tvMaghribUrdu">صلاة المغرب</string>
+    <string name="tvMaghrib">Магриб</string>
+    <string name="tvIshaUrdu">صلاة العشاء</string>
+    <string name="tvIsha">Иша</string>
+    <string name="tv_consentDialogText">Ваша конфиденциальность для нас приоритетна, и ваши данные защищены. Предоставьте разрешение для персонализированного опыта использования приложения!</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="tv_permissionDialogText">Ваша конфиденциальность для нас приоритетна, и ваши данные защищены. Предоставьте разрешение для персонализированного опыта использования приложения!</string>
+    <string name="tv_themeText">Выберите тему</string>
+    <string name="tvLight">Светлая</string>
+    <string name="tvDark">Темная</string>
+    <string name="tv_themeCancel">Отмена</string>
+    <string name="tv_themeApply">Применить</string>
+    <string name="tvPermissionScText">Ваши ценные разрешения необходимы для службы геолокации</string>
+    <string name="tvPermissionDesc">Для предоставления вам персонализированных функций мы любезно просим предоставить доступ к вашему местоположению</string>
+    <string name="btn_Allow">Разрешить</string>
+    <string name="btnDismiss">Отклонить</string>
+    <string name="tvNext">Далее</string>
+    <string name="tvAyahOfTheDayHeading">Аят дня:</string>
+    <string name="tvHadithOfTheDayHeading">Хадис дня:</string>
+    <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
+    <string name="tvIslamicTeachings">Исламские учения</string>
+    <string name="tvDailyVerse">Слово дня</string>
+    <string name="tvReference">Аль-Бакара - 2:127</string>
+    <string name="tvVerseArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvVerseTranslation">Нет усталости, болезни, забот, печали, вреда, горя или даже колючки терна...</string>
+    <string name="tvSpiritualDevelopment">Духовное развитие</string>
+    <string name="tvSpiritualDetail">Будьте внимательны к тому, что вы употребляете, включая медиа, пищу и материальные блага. Старайтесь согласовать свои выборы с исламскими ценностями.</string>
+    <string name="tvMosqueName">Голубая мечеть</string>
+
+
+
+    <string name="tvMosqueLocation">Стамбул, Турция</string>
+    <string name="tvMosqueDetail">Это относится к Его поддержке/бесконечности. Некоторые видят это имя как милосердное...</string>
+    <string name="tvVirtueName">Достоинства Садаки</string>
+    <string name="tvVirtueDetail">Также существует множество других хадисов, которые подчеркивают его важность и выгоды милосердия в Исламе...</string>
+    <string name="tvQuoteDetail">Вера - это вера в Аллаха, Его ангелов, Его книги, Его посланников, Последний День и вера в предопределение, как в хорошее, так и в плохое.</string>
+    <string name="tvQuoteName">Терпение и благодарность</string>
+    <string name="tvDoyouKnowName">ЗНАЛИ ЛИ ВЫ!</string>
+    <string name="tvDoYouKnowDetail">Пророк Мухаммад (мир ему) обычно пересматривал стихи Корана с ангелом Джибрилом каждый год. В год перед своей смертью Пророк Мухаммад (мир ему) пересмотрел Коран с Джибрилом дважды.</string>
+    <string name="tvShortVerseArabic">قُلۡ اِنَّ هُدَى اللّٰهِ هُوَ الۡهُدٰى</string>
+    <string name="tvShortVerseTranslation">Воистину, единственное руководство - это руководство Аллаха!</string>
+    <string name="tvShortVerseReference">(Аль-Коран 6:7)</string>
+    <string name="tvhadithArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvHadithTranslation">Нет усталости, болезни, беспокойства, скорби, вреда, горя или даже укуса шипа...</string>
+    <string name="tvDailyHadith">Хадис дня</string>
+    <string name="tvHadithReference">Сахих Аль-Бухари - 2028</string>
+    <string name="tvNameOfAllah">Имя Аллаха</string>
+    <string name="tvNameNumber">02/99</string>
+    <string name="tvAllahName">Ар-Рахим</string>
+    <string name="tvAllahMean">Тот, кто действует с чрезвычайной добротой</string>
+    <string name="tvAllahNameDesc">Это относится к Его поддержке/бесконечности. Некоторые видят это имя как милосердное по отношению к...</string>
+    <string name="tvNameOfProphet_SAW">"Имя Пророка Мухаммада МФА"</string>
+    <string name="tvReadMore">Смотреть больше</string>
+    <string name="tvTapOnScreen">Коснитесь любого места на экране, чтобы начать подсчет</string>
+    <string name="tvReset">Сброс</string>
+    <string name="tvQuickRead">Быстро\nЧитать</string>
+    <string name="tvFeed">Лента Дина</string>
+    <string name="tvIslamicInsights">Исламские понимания</string>
+    <string name="tvMosqueCreation">Построена между 1994 и 2007 годами и была открыта в декабре 2007 года.</string>
+    <string name="tvFeedDailyVerse">Ежедневно\nСтих</string>
+    <string name="tvFeedDailyHadith">Ежедневно\nХадис</string>
+    <string name="tvFeedDailyAllahName">Имя\nАллаха</string>
+
+
+
+    <string name="tvFeedDailyProphetName">Имя\nПророка</string>
+    <string name="SubhanAllah">Субхан Аллах</string>
+    <string name="save">Сохранить</string>
+    <string name="history">История</string>
+    <string name="tvAddToList">Добавить в список</string>
+    <string name="editTextCounterText">Пожалуйста, введите ваш заголовок здесь</string>
+    <string name="btnSave">Сохранить</string>
+    <string name="btnCancel">Отмена</string>
+    <string name="tvZikrName">Истигфар</string>
+    <string name="tvHistory">История</string>
+    <string name="tvTasbeehCounter">Счетчик тасбиха</string>
+    <string name="tvDelete">"Вы уверены, что хотите удалить это дхикр из сохраненного? \n Нажмите \'Удалить\' или \'Отмена\'."</string>
+    <string name="btnDelete">Удалить</string>
+    <string name="zikrAlreadyAdded">Зикр уже существует</string>
+    <string name="tvStartCount">Начните считать свой зикр.</string>
+    <string name="addNew">Добавить новое</string>
+
+
+
+</resources>

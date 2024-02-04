@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReadQuranApp</string>
+
+    <string name="btn_lightMode">Mode Terang</string>
+    <string name="btn_DarkMode">Mode Gelap</string>
+    <string name="btn_DefaultMode">Mode Default</string>
+    <string name="tv_moonname">NAMAKU BULAN</string>
+    <string name="countries" translatable="false">Negara</string>
+    <string name="tv_LanguageTextView">Pilih Bahasa</string>
+    <string name="btn_Bismillah">Bismillah</string>
+    <string name="Versions">versi</string>
+    <string name="privacy_policy"><u>Kebijakan Privasi</u></string>
+    <string name="grey_data">Tanggal Gregorian</string>
+    <string name="hij_data">Tanggal Hijri</string>
+    <string name="CurrentTime">Waktu</string>
+    <string name="tv_quran">Baca\nQuran</string>
+    <string name="tv_TasbeehCounter">Hitung\nTasbeeh</string>
+    <string name="tv_AsmaUlHasna">Asma ul\nHasna</string>
+    <string name="tv_Duas">Doa\nIslam</string>
+    <string name="tv_Qibla">Kompas\nQibla</string>
+    <string name="tv_IslamicCalender">Kalender\nIslam</string>
+    <string name="tv_6Kalma">6 Kalma</string>
+    <string name="tv_DailySurahs">Surah Harian</string>
+    <string name="permission_required">Dialog Izin</string>
+    <string name="permision_policy">Selamat datang di Aplikasi Baca Quran. Kami berkomitmen untuk melindungi privasi Anda dan menyediakan lingkungan yang aman bagi Anda untuk menggunakan aplikasi kami. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda. Dengan menggunakan Aplikasi ini, Anda setuju dengan ketentuan Kebijakan Privasi ini.</string>
+    <string name="agree">Setuju</string>
+    <string name="btn_nointernet_ok">OK</string>
+    <string name="btn_exitno">Tetap</string>
+    <string name="cancel">Batal</string>
+    <string name="privacy_dialog_policy">Selamat datang di Aplikasi Baca Quran. Kami berkomitmen untuk melindungi privasi Anda dan menyediakan lingkungan yang aman bagi Anda untuk menggunakan aplikasi kami. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda. Dengan menggunakan Aplikasi ini, Anda setuju dengan ketentuan Kebijakan Privasi ini.</string>
+    <string name="webViewAgreeButton">Setuju</string>
+    <string name="no_internet">Tidak Ada Internet</string>
+    <string name="no_internetText">Harap Periksa Koneksi Internet Anda</string>
+    <string name="tv_exitdialog">"Apakah Anda yakin ingin keluar dari aplikasi? \n Ketuk 'Keluar' untuk menutup atau 'Tetap' untuk melanjutkan eksplorasi"</string>
+    <string name="btn_exit">Keluar</string>
+    <string name="btnLanguages">Bahasa</string>
+    <string name="btnSettingThemes">Pengaturan</string>
+    <string name="skip">Lewati</string>
+    <string name="inviteFriends">Undang Teman</string>
+    <string name="beginYourJourney">Mulailah perjalanan spiritual Anda dengan fitur utama ini</string>
+    <string name="tvSalam">السلام عليكم ورحمة الله وبركاته</string>
+    <string name="tvDashboardTime">3:30 PM</string>
+    <string name="tvDashboardDayTimeYear">Kam, 7 Okt, 2023</string>
+    <string name="tvDashboardHijriDayDateYear">14, Ramadhan, 1440 H</string>
+    <string name="tvNow">Sekarang</string>
+    <string name="tvNowPrayer">Maghrib</string>
+    <string name="tvUpcoming">Akan Datang</string>
+    <string name="tvUpcomingPrayer">Isya</string>
+    <string name="tvTodayPrayerTimings">Jadwal Sholat Hari Ini</string>
+    <string name="tvHadithOfTheDay">Hadis Hari Ini</string>
+    <string name="tvAyahOfTheDay">Ayat Hari Ini</string>
+    <string name="tvDashboardCity">Kota</string>
+    <string name="AsmaUlhusna_transliteration">Transliterasi</string>
+    <string name="AsmaUlhusna_name">Nama Arab</string>
+    <string name="AsmaUlhusna_meaning">Arti</string>
+    <string name="startyourday">Mulailah hari Anda dengan tujuan yang diperbaharui saat kami membawa Anda berkat harian, ayat inspiratif, dan momen refleksi.</string>
+    <string name="tvYourDailyBlessings">Berkat Harian Anda</string>
+    <string name="tvReadQuran">Baca Quran</string>
+
+
+
+
+    <string name="btnListJuzz">Juz</string>
+    <string name="btnListSurah">Surah</string>
+    <string name="tvAlifLaamMeemArb">آلم</string>
+    <string name="tvAlifLaamMeemEng">Alif-lam-meem</string>
+    <string name="tvVersesNo">148 Ayat</string>
+    <string name="tvSurahNameEng">Al-Fatihah</string>
+    <string name="tvSurahMean">Pembukaan</string>
+    <string name="tvSurahNameArb">سُوْرَۃُ الفَاتِحَة</string>
+    <string name="tvSavedSurah">Surah Tersimpan</string>
+    <string name="tvSavedSurahDesc">Anda belum menyimpan surah apapun. Surah yang tersimpan akan ditampilkan di sini.</string>
+    <string name="tvSixKalima">Enam Kalimat</string>
+    <string name="tvKalimaNameEng">Kalimat Pertama</string>
+    <string name="tvKalimaNameArb">كلمة طيبة</string>
+    <string name="tvDailySurah">Surah Harian</string>
+    <string name="tvSixKalimaImp">Kepentingan</string>
+    <string name="tvSixKalimaDesc">Enam Kalima atau Kalimat dalam Islam merupakan bagian integral dari iman Islam. Kalimat-kalimat ini menyoroti prinsip-prinsip utama dan paling esensial yang membentuk inti dari agama.</string>
+    <string name="tvKalimaRank">Kalimat Pertama</string>
+    <string name="tvtvKalimaMean">Kemurnian</string>
+    <string name="tvKalimaArabic">لَآ اِلٰهَ اِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ  ؕ</string>
+    <string name="tvKalimaRoman">lā ilāha illā-llāh, muhammadu rasūl u-llāh</string>
+    <string name="tvKalimaTranslation">Tiada Tuhan selain Allah, [dan] Muhammad [SAW] adalah utusan Allah</string>
+    <string name="tvDuasLastRead">Terakhir Dibaca</string>
+    <string name="tvDuasRuqyah">Ruqyah</string>
+    <string name="tvDuasEtiquettes">Etiket</string>
+    <string name="tvDuasIstigfar">Istigfar</string>
+    <string name="tvDuaCategory">Pagi</string>
+    <string name="tvTotalDuas">15 Doa</string>
+    <string name="tvDuaName">Ketika Anda Bangun</string>
+    <string name="tvArabicArabic">اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ.</string>
+    <string name="tvDuaRoman">Allahumma bika asbahna wabika amsayna, wabika nahya ,wabika namootu wa-ilaykan-nushoor</string>
+    <string name="tvDuaTranslation">Ya Allah, dengan izin-Mu kami telah mencapai pagi dan dengan izin-Mu kami telah mencapai petang, dengan izin-Mu kami hidup dan mati, dan kepada-Mu kami akan dihidupkan kembali.</string>
+    <string name="tvVersesNameArb">رَبَّنَا مَا خَلَقْتَ</string>
+    <string name="tvVersesNameEng">Surah Al-Imran</string>
+    <string name="tvVerseNum">193</string>
+    <string name="tvVersesDetailReference">Referensi</string>
+    <string name="tvVersesRefDetail">Surah Al-Imran Ayat 191</string>
+    <string name="tvVerseDetailArabic">"رَبَّنَا مَا خَلَقْتَ هٰذَا بَاطِلًا ۚ سُبْحٰنَكَ فَقِنَا عَذَابَ النَّارِ. رَبَّنَآ اِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ اَخْزَيْتَهٗ ۭ وَمَا لِلظّٰلِمِيْنَ مِنْ اَنْصَارٍ. "</string>
+    <string name="tvVerseDetailRoman">"Rabbana ma khalaqta hadha batila Subhanaka faqina 'adhaban-Naar. Rabbana innaka man tudkhilin nara faqad akhzaytah wa ma liDh-dhalimeena min ansar. "</string>
+    <string name="tvVersesDetailTranslation">Ya Tuhan kami! Engkau tidak menciptakan ini tanpa tujuan, Maha Suci Engkau! Berilah kami keselamatan dari siksa neraka. *Ya Tuhan kami! Sesungguhnya barangsiapa yang Engkau masukkan ke dalam neraka, sungguh, Engkau telah menghinakannya dan orang-orang zalim tidak akan memperoleh seorang penolong pun.</string>
+    <string name="tvVerses">Ayat-ayat</string>
+
+
+
+
+
+    <string name="tvCompass">Kompas</string>
+    <string name="tvQiblaAngle">Sudut Kiblat</string>
+    <string name="tvQiblaAngleDegg">276,00</string>
+    <string name="tvDegSign">o</string>
+    <string name="tvQiblaDistance">Jarak Kiblat</string>
+    <string name="tvQiblaDistanceDegg">4045 km</string>
+    <string name="tvCityName">Rawalpindi</string>
+    <string name="tvCompassDegg">213,55</string>
+    <string name="tvDegg">DERAJAT</string>
+    <string name="tv_ReadQuranApp">Baca Al-Qur\'an</string>
+    <string name="tvFivePillars">Lima Pilar</string>
+    <string name="tvFaith">Iman</string>
+    <string name="tvShahada">Syahadat</string>
+    <string name="tv5Pillars">5 Pilar</string>
+    <string name="tvDashDailySurah">Surah Harian</string>
+    <string name="tvAzkar">Azkar\nHarian</string>
+    <string name="tv6Kalmas">6 Kalimat</string>
+    <string name="tvDashVerses">Ayat</string>
+    <string name="tv_Calender">Kalender</string>
+    <string name="tvPrayer">Doa</string>
+    <string name="tvSalat">Salat</string>
+    <string name="tvFasting">Puasa</string>
+    <string name="tvSawm">Sawm</string>
+    <string name="tvAlms">Zakat</string>
+    <string name="tvZakat">Zakat</string>
+    <string name="tvHajj">Haji</string>
+    <string name="tvPilgrimage">Ibadah Haji</string>
+    <string name="tvFirstPillar">Pilar Pertama</string>
+    <string name="tvAzkarCategory">Azkar Pagi</string>
+    <string name="tvTotalAzkar">5 Azkar</string>
+    <string name="tvAllah">Allah</string>
+    <string name="tvAsmaUlHusnaMean">Maha Pemurah</string>
+    <string name="tvCategoryDua">Doa Pagi</string>
+    <string name="tvDuas">Doa</string>
+    <string name="tvFivePillarDetailHeaderText">Syahadat</string>
+    <string name="tvFivePillarsDetailCategory">Syahadat</string>
+    <string name="tvFivePillarsDetailCatRoman">Iman</string>
+    <string name="asmaUlHasna">Asma Ul Hasna</string>
+    <string name="swipeForNext">Geser untuk selanjutnya</string>
+    <string name="meaning">Arti</string>
+    <string name="explanation">Penjelasan</string>
+    <string name="benifits">Manfaat</string>
+    <string name="downloadTxt">Mohon tunggu saat mengunduh\nIni akan memakan waktu</string>
+    <string name="tvFivePillarsShortDesc">Deskripsi</string>
+    <string name="tvFivePillarsDetailExp">Keyakinan bahwa "Tidak ada tuhan selain Allah, dan Muhammad adalah Utusan Allah" adalah inti dari Islam. Frasa ini, ditulis dalam bahasa Arab, seringkali menonjol dalam arsitektur dan berbagai objek, termasuk Al-Qur\'an, kitab suci Islam berisi wahyu ilahi. Seseorang menjadi Muslim dengan membaca frasa ini dengan keyakinan.</string>
+    <string name="tvFivePillarsDetailExpHead">Penjelasan</string>
+    <string name="juzName">Alif-laam-meem</string>
+    <string name="asmaUlHasnaName">Ar-Rahman</string>
+
+
+
+
+
+    <string name="tvZuhar">Dhuhur</string>
+    <string name="tvFajar">Fajar</string>
+    <string name="tvFajarUrdu">Sholat Fajar</string>
+    <string name="tvDhurUrdu">Sholat Dzuhur</string>
+    <string name="tvAsar">Ashar</string>
+    <string name="tvDhurAsr">Sholat Ashar</string>
+    <string name="tvMaghribUrdu">Sholat Maghrib</string>
+    <string name="tvMaghrib">Maghrib</string>
+    <string name="tvIshaUrdu">Sholat Isya</string>
+    <string name="tvIsha">Isya</string>
+    <string name="tv_consentDialogText">Privasi Anda adalah prioritas kami, dan data Anda aman. Berikan izin untuk pengalaman aplikasi yang disesuaikan!</string>
+    <string name="btn_continue">Lanjutkan</string>
+    <string name="tv_permissionDialogText">Privasi Anda adalah prioritas kami, dan data Anda aman. Berikan izin untuk pengalaman aplikasi yang disesuaikan!</string>
+    <string name="tv_themeText">Pilih Tema</string>
+    <string name="tvLight">Terang</string>
+    <string name="tvDark">Gelap</string>
+    <string name="tv_themeCancel">Batal</string>
+    <string name="tv_themeApply">Terapkan</string>
+    <string name="tvPermissionScText">Izin Berharga Anda Diperlukan untuk Layanan Lokasi</string>
+    <string name="tvPermissionDesc">Untuk menawarkan fitur yang dipersonalisasi, kami meminta akses ke lokasi Anda dengan hormat</string>
+    <string name="btn_Allow">Izinkan</string>
+    <string name="btnDismiss">Tutup</string>
+    <string name="tvNext">Berikutnya</string>
+    <string name="tvAyahOfTheDayHeading">Ayat Hari Ini:</string>
+    <string name="tvHadithOfTheDayHeading">Hadis Hari Ini:</string>
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="tvIslamicTeachings">Ajaran Islam</string>
+    <string name="tvDailyVerse">Ayat Hari Ini</string>
+    <string name="tvReference">Al-Baqarah - 2:127</string>
+    <string name="tvVerseArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvVerseTranslation">Tidak ada kelelahan, penyakit, kekhawatiran, kesedihan, bahaya, duka, atau bahkan tusukan duri...</string>
+    <string name="tvSpiritualDevelopment">Pengembangan Spiritual</string>
+    <string name="tvSpiritualDetail">Bersikaplah sadar terhadap apa yang Anda konsumsi, termasuk media, makanan, dan barang-barang materi. Berusaha untuk menyelaraskan pilihan Anda dengan nilai-nilai Islam.</string>
+    <string name="tvMosqueName">Masjid Biru</string>
+
+
+
+    <string name="tvMosqueLocation">Istanbul, Turki</string>
+    <string name="tvMosqueDetail">Ini merujuk pada keberlanjutan/kekayaan-Nya. Beberapa menganggap nama ini sebagai kasih sayang-Nya...</string>
+    <string name="tvVirtueName">Keutamaan Sadaqah</string>
+    <string name="tvVirtueDetail">Ada juga banyak Hadis lain yang menyoroti pentingnya dan manfaat amal kebajikan dalam Islam...</string>
+    <string name="tvQuoteDetail">Iman adalah percaya kepada Allah, malaikat-Nya, kitab-kitab-Nya, rasul-rasul-Nya, hari kiamat, dan percaya kepada takdir, baik dan buruk.</string>
+    <string name="tvQuoteName">Sabar dan Syukur</string>
+    <string name="tvDoyouKnowName">TAHKAH ANDA!</string>
+    <string name="tvDoYouKnowDetail">Nabi Muhammad (SAW) biasa meninjau ayat-ayat Al-Quran dengan Malaikat Jibril setiap tahun. Pada tahun sebelum kematiannya, Nabi Muhammad (SAW) meninjau Al-Quran dengan Jibril dua kali.</string>
+    <string name="tvShortVerseArabic">قُلۡ اِنَّ هُدَى اللّٰهِ هُوَ الۡهُدٰى</string>
+    <string name="tvShortVerseTranslation">Sesungguhnya petunjuk hanyalah petunjuk dari Allah!</string>
+    <string name="tvShortVerseReference">(Al-Quran 6:7)</string>
+    <string name="tvhadithArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvHadithTranslation">Tidak ada kelelahan, penyakit, kekhawatiran, kesedihan, kerusakan, kesedihan, atau bahkan tusukan duri...</string>
+    <string name="tvDailyHadith">Hadis Hari Ini</string>
+    <string name="tvHadithReference">Sahih Al Bukhari - 2028</string>
+    <string name="tvNameOfAllah">Nama Allah</string>
+    <string name="tvNameNumber">02/99</string>
+    <string name="tvAllahName">Ar-Raheem</string>
+    <string name="tvAllahMean">Yang bertindak dengan kebaikan yang luar biasa</string>
+    <string name="tvAllahNameDesc">Ini merujuk pada keberlanjutan/kekayaan-Nya. Beberapa menganggap nama ini sebagai kasih sayang kepada...</string>
+    <string name="tvNameOfProphet_SAW">"Nama Nabi Muhammad SAW"</string>
+    <string name="tvReadMore">Lihat Lebih Banyak</string>
+    <string name="tvTapOnScreen">Ketuk di mana saja di layar untuk mulai menghitung</string>
+    <string name="tvReset">Reset</string>
+    <string name="tvQuickRead">Baca\nCepat</string>
+    <string name="tvFeed">Deen Feed</string>
+    <string name="tvIslamicInsights">Wawasan Islam</string>
+    <string name="tvMosqueCreation">Dibangun antara tahun 1994 dan 2007 dan diresmikan pada Desember 2007.</string>
+    <string name="tvFeedDailyVerse">Ayat\nHarian</string>
+    <string name="tvFeedDailyHadith">Hadis\nHarian</string>
+    <string name="tvFeedDailyAllahName">Nama\nAllah</string>
+
+    <string name="tvFeedDailyProphetName">Nama\nNabi</string>
+    <string name="SubhanAllah">Subhan Allah</string>
+    <string name="save">Simpan</string>
+    <string name="history">Sejarah</string>
+    <string name="tvAddToList">Tambahkan ke Daftar</string>
+    <string name="editTextCounterText">Silakan ketik judul Anda di sini</string>
+    <string name="btnSave">Simpan</string>
+    <string name="btnCancel">Batal</string>
+    <string name="tvZikrName">Istighfar</string>
+    <string name="tvHistory">Sejarah</string>
+    <string name="tvTasbeehCounter">Penghitung Tasbeeh</string>
+    <string name="tvDelete">"Apakah Anda yakin ingin menghapus Dzikir ini dari yang disimpan? \n Ketuk 'Hapus' atau 'Batal'."</string>
+    <string name="btnDelete">Hapus</string>
+    <string name="zikrAlreadyAdded">Dzikir sudah ada</string>
+    <string name="tvStartCount">Mulai menghitung Dzikir Anda.</string>
+    <string name="addNew">Tambah Baru</string>
+
+
+</resources>
