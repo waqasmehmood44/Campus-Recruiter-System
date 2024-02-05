@@ -48,11 +48,12 @@ public class PostJobActivity extends AppCompatActivity {
                 location = String.valueOf(etLocation.getText());
                 description = String.valueOf(etJobDescription.getText());
 
-                post_job_model post_job_model = new post_job_model(job, salary, eligibility, location,description, FirebaseAuth.getInstance().getCurrentUser().getUid());
+
 
                 reference=FirebaseDatabase.getInstance().getReference().child("Jobs")
                         .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid())).push();
                 String key = reference.getKey();
+                post_job_model post_job_model = new post_job_model(job, salary, eligibility, location,description, FirebaseAuth.getInstance().getCurrentUser().getUid(),key);
                 reference1=FirebaseDatabase.getInstance().getReference().child("Student Jobs List").child(key);
 
                 reference.setValue(post_job_model).addOnCompleteListener(new OnCompleteListener<Void>() {

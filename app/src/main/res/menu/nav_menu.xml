@@ -5,8 +5,8 @@
         android:id="@+id/group1"
         android:checkableBehavior="none" >
     <item
-        android:id="@+id/nav_item1"
-        android:title="Read Quran" />
+        android:id="@+id/jobs_list_rec"
+        android:title="Jobs List" />
     </group>
 
     <group

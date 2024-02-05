@@ -1,18 +1,27 @@
 package com.example.campusrecruitmentsystem;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -23,73 +32,40 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class RecruiterJobsList extends AppCompatActivity {
-    FirebaseAuth fauth;
-    String key;
-    ScrollView scroll_view_33;
-    jobs_list_view_adapter adapter;
-    ArrayList<post_job_model> list;
-    Button post_job;
-    DatabaseReference reference, reference1;
+    DrawerLayout drawerLayout;
+    MaterialToolbar materialToolbar;
+    FrameLayout frameLayout;
+    NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recruiter_jobs_list);
-        fauth = FirebaseAuth.getInstance();
-        post_job = findViewById(R.id.post_job);
-        list = new ArrayList<>();
-        RecyclerView recyclerView = findViewById(R.id.rec_jobs_list_RecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        drawerLayout = findViewById(R.id.drawer_layout1);
+        materialToolbar = findViewById(R.id.material_toolbar);
+        navigationView = findViewById(R.id.nav_view_1);
+        replaceFragment(new RecruiterJobsListFrag());
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(RecruiterJobsList.this, drawerLayout,materialToolbar,
+        R.string.drawer_close, R.string.drawer_open);
+        drawerLayout.addDrawerListener(toggle);
 
-        reference = FirebaseDatabase.getInstance().getReference().child("Jobs")
-                .child(fauth.getCurrentUser().getUid());
-
-        reference.addValueEventListener(new ValueEventListener() {
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if(item.getItemId() == R.id.jobs_list_rec){
+                    Toast.makeText(RecruiterJobsList.this, "Jobs List", Toast.LENGTH_SHORT).show();
+                    replaceFragment(new RecruiterJobsListFrag());
+                    drawerLayout.closeDrawers();
+                    return true;
 
-                if(snapshot.exists()){
-                 // Add Text on Screen if DataSnapshot is not available
                 }
-
-                for (DataSnapshot appSnapshot : snapshot.getChildren()) {
-                    key = appSnapshot.getKey();
-
-                    list.clear();
-                    reference1 = FirebaseDatabase.getInstance().getReference().child("Jobs")
-                            .child(fauth.getCurrentUser().getUid()).child(key);
-                    recyclerView.setHasFixedSize(true);
-                    recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                    reference1.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot sp_snapshot) {
-                            post_job_model jobs_list = sp_snapshot.getValue(post_job_model.class);
-                            list.add(jobs_list);
-                            adapter.notifyDataSetChanged();
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
-                    });
-                    adapter = new jobs_list_view_adapter(getApplicationContext(),list);
-                    recyclerView.setAdapter(adapter);
-                }
-                list.clear();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
+                return false;
             }
         });
-
-        post_job.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(RecruiterJobsList.this, PostJobActivity.class);
-                startActivity(intent);
-            }
-        });
+    }
+    private void replaceFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame_layout1, fragment);
+        fragmentTransaction.commit();
     }
 }
