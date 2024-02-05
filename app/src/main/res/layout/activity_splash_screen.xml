@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity">
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivBackground"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/Splash"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginVertical="@dimen/_50sdp"-->
+<!--        android:src="@drawable/icon_launcher"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.2" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvYourDailyBlessings"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/play_fair_display_medium"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/tvYourDailyBlessings"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_25sdp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView2" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvStartYourDay"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="@dimen/_30sdp"-->
+<!--        android:fontFamily="@font/opensans_regular"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/startyourday"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_12sdp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvYourDailyBlessings" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/getStarted"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_45sdp"-->
+<!--        android:layout_marginHorizontal="@dimen/_25sdp"-->
+<!--        android:layout_marginVertical="@dimen/_35sdp"-->
+<!--        android:layout_marginBottom="@dimen/_10sdp"-->
+<!--        android:background="@drawable/button_shape_background_rounded"-->
+<!--        android:fontFamily="@font/open_sans_semi_bold"-->
+<!--        android:text="@string/btn_Bismillah"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/getStarted">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvPrivacyPolicy"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/opensans_regular"-->
+<!--            android:text="@string/privacy_policy"-->
+<!--            android:layout_marginEnd="@dimen/_10sdp"-->
+<!--            android:textColor="@color/white" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvVersions"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/opensans_regular"-->
+<!--            android:text="@string/Versions"-->
+<!--            android:textColor="@color/white" />-->
+
+<!--    </LinearLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

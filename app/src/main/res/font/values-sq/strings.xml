@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReadQuranApp</string>
+
+
+    <string name="btn_lightMode">Režim Dritë</string>
+    <string name="btn_DarkMode">Režim i Errët</string>
+    <string name="btn_DefaultMode">Režim i Paracaktuar</string>
+    <string name="tv_moonname">EMRI IM ËSHTË HËNA</string>
+    <string name="countries" translatable="false">Vendet</string>
+    <string name="tv_LanguageTextView">Zgjidhni gjuhën</string>
+    <string name="btn_Bismillah">Bismillah</string>
+    <string name="Versions">versionet</string>
+    <string name="privacy_policy"><u>Politika e Privatësisë</u></string>
+    <string name="grey_data">Data Grigore</string>
+    <string name="hij_data">Data Hixhri</string>
+    <string name="CurrentTime">Koha</string>
+    <string name="tv_quran">Lexo\nKuranin</string>
+    <string name="tv_TasbeehCounter">Tasbih\nNumrues</string>
+    <string name="tv_AsmaUlHasna">Asma ul\nHasna</string>
+    <string name="tv_Duas">Dua\nIslame</string>
+    <string name="tv_Qibla">Kibla\nKompas</string>
+    <string name="tv_IslamicCalender">Kalendar\nIslam</string>
+    <string name="tv_6Kalma">6 Kalma</string>
+    <string name="tv_DailySurahs">Suret\nDitore</string>
+    <string name="permission_required">Dialogu i Lejes</string>
+    <string name="permision_policy">Mirë se vini në aplikacionin Lexo Kur\anin. Ne jemi të përkushtuar për të mbrojtur privatësinë tuaj dhe ofruar një mjedis të sigurt për përdorimin e aplikacionit tonë. Kjo Politikë e Privatësisë shpjegon se si mblidhemi, përdorim dhe mbrojmë informacionin tuaj personal. Duke përdorur aplikacionin, ju pranoni kushtet e kësaj Politike të Privatësisë.</string>
+    <string name="agree">Pranoj</string>
+    <string name="btn_nointernet_ok">OK</string>
+    <string name="btn_exitno">Rri</string>
+    <string name="cancel">Anulo</string>
+    <string name="privacy_dialog_policy">Mirë se vini në aplikacionin Lexo Kur\anin. Ne jemi të përkushtuar për të mbrojtur privatësinë tuaj dhe ofruar një mjedis të sigurt për përdorimin e aplikacionit tonë. Kjo Politikë e Privatësisë shpjegon se si mblidhemi, përdorim dhe mbrojmë informacionin tuaj personal. Duke përdorur aplikacionin, ju pranoni kushtet e kësaj Politike të Privatësisë.</string>
+    <string name="webViewAgreeButton">Pranoj</string>
+    <string name="no_internet">Pa Internet</string>
+    <string name="no_internetText">Ju lutem kontrolloni lidhjen tuaj të internetit</string>
+    <string name="tv_exitdialog">"A jeni të sigurt se doni të mbyllni aplikacionin? \n Përcillni Dalje për të mbyllur ose Rri për të vazhduar eksplorimin</string>
+    <string name="btn_exit">Dalje</string>
+    <string name="btnLanguages">Gjuhët</string>
+    <string name="btnSettingThemes">Cilësimet</string>
+    <string name="skip">Kalo</string>
+    <string name="inviteFriends">Fto Miqtë</string>
+    <string name="beginYourJourney">Fillo udhëtimin tënd shpirtëror me këto veçori kyçe</string>
+    <string name="tvSalam">السلام عليكم ورحمة الله وبركاته</string>
+    <string name="tvDashboardTime">3:30 MD</string>
+    <string name="tvDashboardDayTimeYear">E enjte, 7 Tetor, 2023</string>
+    <string name="tvDashboardHijriDayDateYear">14, Ramazan, 1440 H</string>
+    <string name="tvNow">Tani</string>
+    <string name="tvNowPrayer">Maghrib</string>
+    <string name="tvUpcoming">Në vijim</string>
+    <string name="tvUpcomingPrayer">Isha</string>
+    <string name="tvTodayPrayerTimings">Oraret e Namazit të Sotëm</string>
+    <string name="tvHadithOfTheDay">Hadith i Ditës</string>
+    <string name="tvAyahOfTheDay">Ajet i Ditës</string>
+    <string name="tvDashboardCity">Qyteti</string>
+    <string name="AsmaUlhusna_transliteration">Transliterimi</string>
+    <string name="AsmaUlhusna_name">Emri Arab</string>
+    <string name="AsmaUlhusna_meaning">Kuptimi</string>
+    <string name="startyourday">Fillo ditën tënde me një qëllim të rinovuar, duke sjellë bënimet ditore, ajete inspiruese dhe momente refleksioni.</string>
+    <string name="tvYourDailyBlessings">Bënimet Tuaja Ditore</string>
+    <string name="tvReadQuran">Lexo Kur\anin</string>
+
+
+
+
+    <string name="btnListJuzz">Juz</string>
+    <string name="btnListSurah">Sureja</string>
+    <string name="tvAlifLaamMeemArb">آلم</string>
+    <string name="tvAlifLaamMeemEng">Alif-laam-meem</string>
+    <string name="tvVersesNo">148 Ajete</string>
+    <string name="tvSurahNameEng">Al-Fatiha</string>
+    <string name="tvSurahMean">Hapja</string>
+    <string name="tvSurahNameArb">سُوْرَۃُ الفَاتِحَة</string>
+    <string name="tvSavedSurah">Sureja e Ruajtur</string>
+    <string name="tvSavedSurahDesc">Ende nuk keni ruajtur asnjë Sure. Suret e ruajtura do të shfaqen këtu.</string>
+    <string name="tvSixKalima">Gjashtë Kalimat</string>
+    <string name="tvKalimaNameEng">Kalima e Parë</string>
+    <string name="tvKalimaNameArb">كلمة طيبة</string>
+    <string name="tvDailySurah">Sureja e Ditës</string>
+    <string name="tvSixKalimaImp">Rëndësia</string>
+    <string name="tvSixKalimaDesc">Gjashtë Kalimat ose Kalimat në Islam janë të pandashme për besimin Islam. Këto Kalima theksojnë parimet kryesore dhe më të rëndësishme të Islamit që formojnë bazën e besimit.</string>
+    <string name="tvKalimaRank">Kalima e Parë</string>
+    <string name="tvtvKalimaMean">Pastërtia</string>
+    <string name="tvKalimaArabic">لَآ اِلٰهَ اِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ  ؕ</string>
+    <string name="tvKalimaRoman">lā ilāha illā-llāh, muhammadu rasūl u-llāh</string>
+    <string name="tvKalimaTranslation">Nuk ka Zot tjetër përveç Allahut, [dhe] Muhammedi [FHM] është dërguesi i Allahut</string>
+    <string name="tvDuasLastRead">Lexuar e Fundit</string>
+    <string name="tvDuasRuqyah">Ruqyah</string>
+    <string name="tvDuasEtiquettes">Etiketat</string>
+    <string name="tvDuasIstigfar">Istigfar</string>
+    <string name="tvDuaCategory">Mëngjes</string>
+    <string name="tvTotalDuas">15 Duas</string>
+    <string name="tvDuaName">Kur zgjohesh</string>
+    <string name="tvArabicArabic">اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ.</string>
+    <string name="tvDuaRoman">Allahumma bika asbahna wabika amsayna, wabika nahya ,wabika namootu wa-ilaykan-nushoor</string>
+    <string name="tvDuaTranslation">O Allah, me lejen tënde kemi arritur mëngjesin dhe me lejen tënde kemi arritur mbrëmjen, me lejen tënde ne jetojmë dhe vdesim dhe teje është ngjallja jonë.</string>
+    <string name="tvVersesNameArb">رَبَّنَا مَا خَلَقْتَ</string>
+    <string name="tvVersesNameEng">Sureja Al-Imran</string>
+    <string name="tvVerseNum">193</string>
+    <string name="tvVersesDetailReference">Referenca</string>
+    <string name="tvVersesRefDetail">Sureja Al-Imran Ajeti 191</string>
+    <string name="tvVerseDetailArabic">"رَبَّنَا مَا خَلَقْتَ هٰذَا بَاطِلًا ۚ سُبْحٰنَكَ فَقِنَا عَذَابَ النَّارِ. رَبَّنَآ اِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ اَخْزَيْتَهٗ ۭ وَمَا لِلظّٰلِمِيْنَ مِنْ اَنْصَارٍ. "</string>
+    <string name="tvVerseDetailRoman">"Rabbana ma khalaqta hadha batila Subhanaka faqina adhaban-Naar. Rabbana innaka man tudkhilin nara faqad akhzaytah wa ma liDh-dhalimeena min ansar. "</string>
+    <string name="tvVersesDetailTranslation">Zotëri ynë! Ti nuk ke krijuar (të gjitha) këto pa qëllim, lavdi të Teje! (Lartësohet je Ti mbi çdo gjë që ata e bashkojnë me Ty si bashkëudhëtar). Na jep shpëtim nga vuajtja e Zjarrit. Zotëri ynë! Vërtet, kë të Ti futesh në Zjarr, në të vërtetë, e ke poshtëruar atë dhe asnjëherë Zalimët (të pafajshmit dhe të kqijt) nuk do të gjejnë ndihmësues.</string>
+    <string name="tvVerses">Ajetet</string>
+
+
+
+
+    <string name="tvCompass">Busulli</string>
+    <string name="tvQiblaAngle">Këndi i Qiblas</string>
+    <string name="tvQiblaAngleDegg">276.00</string>
+    <string name="tvDegSign">o</string>
+    <string name="tvQiblaDistance">Distanca e Qiblas</string>
+    <string name="tvQiblaDistanceDegg">4045 km</string>
+    <string name="tvCityName">Rawalpindi</string>
+    <string name="tvCompassDegg">213.55</string>
+    <string name="tvDegg">GRAD</string>
+    <string name="tv_ReadQuranApp">Lexo Kur\anin</string>
+    <string name="tvFivePillars">Pesë Shtyllat</string>
+    <string name="tvFaith">Besimi</string>
+    <string name="tvShahada">Shahada</string>
+    <string name="tv5Pillars">5 Shtyllat</string>
+    <string name="tvDashDailySurah">Suret e Përditshme</string>
+    <string name="tvAzkar">Azkar Ditore</string>
+    <string name="tv6Kalmas">6 Kalima</string>
+    <string name="tvDashVerses">Ayetet</string>
+    <string name="tv_Calender">Kalendar</string>
+    <string name="tvPrayer">Namazi</string>
+    <string name="tvSalat">Salat</string>
+    <string name="tvFasting">Agjërimi</string>
+    <string name="tvSawm">Sawm</string>
+    <string name="tvAlms">Xhentilesa</string>
+    <string name="tvZakat">Zakat</string>
+    <string name="tvHajj">Haxhi</string>
+    <string name="tvPilgrimage">Haxhi</string>
+    <string name="tvFirstPillar">Shtylla e Parë</string>
+    <string name="tvAzkarCategory">Azkar në Mëngjes</string>
+    <string name="tvTotalAzkar">5 Azkar</string>
+    <string name="tvAllah">Allahu</string>
+    <string name="tvAsmaUlHusnaMean">Më i Mëshira ose i Plotësisht i Mëshira</string>
+    <string name="tvCategoryDua">Dua në Mëngjes</string>
+    <string name="tvDuas">Duas</string>
+    <string name="tvFivePillarDetailHeaderText">Shahada</string>
+    <string name="tvFivePillarsDetailCategory">Shahada</string>
+    <string name="tvFivePillarsDetailCatRoman">Besimi</string>
+    <string name="asmaUlHasna">Asma Ul Hasna</string>
+    <string name="swipeForNext">Leviz për të vijuar</string>
+    <string name="meaning">Kuptimi</string>
+    <string name="explanation">Shpjegimi</string>
+    <string name="benifits">Avantazhet</string>
+    <string name="downloadTxt">Ju lutem prisni ndërsa po shkarkohet\nDo të marrë pak kohë</string>
+    <string name="tvFivePillarsShortDesc">Përshkrim</string>
+    <string name="tvFivePillarsDetailExp">Besimi se "Nuk ka Zot tjetër veç All-llahut, dhe Muhammedi është i Dërguari i Allahut" është qendror për Islam. Ky frazë, e shkruar në arabisht, shpesh shfaqet në mënyrë të dukshme në arkitekturë dhe në një gamë objektesh, përfshirë Kuranin, librin e shenjtë të Islamit me shpallje hyjnore. Një person bëhet mysliman duke përsëritur këtë frazë me bindje.</string>
+    <string name="tvFivePillarsDetailExpHead">Shpjegim</string>
+    <string name="juzName">Alif-laam-meem</string>
+    <string name="asmaUlHasnaName">Ar-Rahman</string>
+
+
+
+
+    <string name="tvZuhar">Dhuhr</string>
+    <string name="tvFajar">Fajr</string>
+    <string name="tvFajarUrdu">Namazi i sabahut</string>
+    <string name="tvDhurUrdu">Namazi i drekës</string>
+    <string name="tvAsar">Ikindia</string>
+    <string name="tvDhurAsr">Namazi i ikindisë</string>
+    <string name="tvMaghribUrdu">Namazi i mbremjes</string>
+    <string name="tvMaghrib">Mbremja</string>
+    <string name="tvIshaUrdu">Namazi i jacisë</string>
+    <string name="tvIsha">Jacisë</string>
+    <string name="tv_consentDialogText">Privatësia juaj është e parëndësishme për ne, dhe të dhënat tuaja janë të sigurta. Jepni lejen për një përvojë të adaptuar të aplikacionit!</string>
+    <string name="btn_continue">Vazhdo</string>
+    <string name="tv_permissionDialogText">Privatësia juaj është e parëndësishme për ne, dhe të dhënat tuaja janë të sigurta. Jepni lejen për një përvojë të adaptuar të aplikacionit!</string>
+    <string name="tv_themeText">Zgjidhni Temën</string>
+    <string name="tvLight">Dritë</string>
+    <string name="tvDark">Errësirë</string>
+    <string name="tv_themeCancel">Anulo</string>
+    <string name="tv_themeApply">Zbato</string>
+    <string name="tvPermissionScText">Leja juaj e çmuar kërkohet për shërbimet e vendndodhjes</string>
+    <string name="tvPermissionDesc">Për të ofruar karakteristika personalizuar, kërkojmë miratimin tuaj për akses në vendndodhjen tuaj</string>
+    <string name="btn_Allow">Lejoje</string>
+    <string name="btnDismiss">Refuzo</string>
+    <string name="tvNext">Vijueshëm</string>
+    <string name="tvAyahOfTheDayHeading">Ajeti i Ditës:</string>
+    <string name="tvHadithOfTheDayHeading">Hadithi i Ditës:</string>
+    <string name="hello_blank_fragment">Përshëndetje fragment i zbrazët</string>
+    <string name="tvIslamicTeachings">Mësimet Islame</string>
+    <string name="tvDailyVerse">Ajeti i Ditës</string>
+    <string name="tvReference">Al-Baqarah - 2:127</string>
+    <string name="tvVerseArabic">Çfarëdo mund të ndodhë muslimanit prej mundimeje, sëmundjeje, shqetësimeje, hidhërimi, dëmimi, pikëllimi ose thikës së një gjëre...</string>
+    <string name="tvVerseTranslation">Asnjë lodhje, sëmundje, shqetësim, hidhërim, dëm, pikëllim, ose edhe thika e një tharr...</string>
+    <string name="tvSpiritualDevelopment">Zhvillimi Shpirtëror</string>
+    <string name="tvSpiritualDetail">Merrni parasysh se çfarë konsumoni, duke përfshirë mediat, ushqimin dhe mallrat. Përpjekuni të pajtoheni zgjedhjet tuaja me vlerat islame.</string>
+    <string name="tvMosqueName">Xhamia e Kuqe</string>
+
+
+
+
+    <string name="tvMosqueLocation">Istanbul, Turqi</string>
+    <string name="tvMosqueDetail">Ajo lidhet me vazhdimësinë e Tij/pafundësinë. Disa e shohin emrin si të mëshirshëm...</string>
+    <string name="tvVirtueName">Virtutet e Sadaqah</string>
+    <string name="tvVirtueDetail">Ka gjithashtu shumë hadithe të tjera që theksojnë rëndësinë dhe përfitimet e bamirësisë në Islam....</string>
+    <string name="tvQuoteDetail">Besimi është të besosh në All-llahun, engjëjt e Tij, librat e Tij, profetët e Tij, Ditën e Fundit, dhe të besosh në destin, të mirën dhe të keqen.</string>
+    <string name="tvQuoteName">Durim dhe Mirënjohje</string>
+    <string name="tvDoyouKnowName">A E DINI!</string>
+    <string name="tvDoYouKnowDetail">Profeti Muhamed (FHM) zakonisht rishikonte ajetet e Kuranit me Engjëllin Xhibril çdo vit. Në vitin para vdekjes së tij, Profeti Muhamed (FHM) rishikoi Kuranin me Xhibril dy herë.</string>
+    <string name="tvShortVerseArabic">قُلۡ اِنَّ هُدَى اللّٰهِ هُوَ الۡهُدٰى</string>
+    <string name="tvShortVerseTranslation">Vërtet, udhëzimi i vetëm është Udha e Allahut!</string>
+    <string name="tvShortVerseReference">(Al-Qurani 6:7)</string>
+    <string name="tvhadithArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvHadithTranslation">Asnjë lodhje, sëmundje, shqetësim, hidhërim, dëm, trishti, ose edhe gërshet e një thore...</string>
+    <string name="tvDailyHadith">Hadithi i Dites</string>
+    <string name="tvHadithReference">Sahih Al Bukhari - 2028</string>
+    <string name="tvNameOfAllah">Emri i Allahut</string>
+    <string name="tvNameNumber">02/99</string>
+    <string name="tvAllahName">Ar-Raheem</string>
+    <string name="tvAllahMean">Ai që vepron me mirësi ekstreme</string>
+    <string name="tvAllahNameDesc">Ajo lidhet me vazhdimësinë e Tij/pafundësinë. Disa e shohin emrin si të mëshirshëm ndaj...</string>
+    <string name="tvNameOfProphet_SAW">"Emri i Profetit Muhamed FHM "</string>
+    <string name="tvReadMore">Shiko Më Shumë</string>
+    <string name="tvTapOnScreen">Shtyp kudo në ekran për të filluar numërimin</string>
+    <string name="tvReset">Rivendos</string>
+    <string name="tvQuickRead">Lexim I Shpejtë</string>
+    <string name="tvFeed">Deen Feed</string>
+    <string name="tvIslamicInsights">Përvoja Islame</string>
+    <string name="tvMosqueCreation">Ndërtuar nga viti 1994 deri në 2007 dhe u inaugurua në dhjetor 2007.</string>
+    <string name="tvFeedDailyVerse">Ajeti i\nDites</string>
+    <string name="tvFeedDailyHadith">Hadithi i\nDites</string>
+    <string name="tvFeedDailyAllahName">Emri i\nAllahut</string>
+
+
+
+
+    <string name="tvFeedDailyProphetName">Emri i\nProfetit</string>
+    <string name="SubhanAllah">Subhan Allah</string>
+    <string name="save">Ruaj</string>
+    <string name="history">Historia</string>
+    <string name="tvAddToList">Shto në Listë</string>
+    <string name="editTextCounterText">Ju lutem shkruani titullin tuaj këtu</string>
+    <string name="btnSave">Ruaj</string>
+    <string name="btnCancel">Anulo</string>
+    <string name="tvZikrName">Istighfar</string>
+    <string name="tvHistory">Historia</string>
+    <string name="tvTasbeehCounter">Numërimi i Tasbihut</string>
+    <string name="tvDelete">"A jeni të sigurt se dëshironi ta hiqni këtë Zikr nga i ruajturi? \n Shtyp Hiqe ose Anulo."</string>
+    <string name="btnDelete">Fshi</string>
+    <string name="zikrAlreadyAdded">Zikr već ekziston</string>
+    <string name="tvStartCount">Fillo numërimin e Zikrit tuaj.</string>
+    <string name="addNew">Shto të Re</string>
+
+</resources>

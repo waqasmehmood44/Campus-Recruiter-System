@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReadQuranApp</string>
+
+    <string name="btn_lightMode">Modalità chiara</string>
+    <string name="btn_DarkMode">Modalità scura</string>
+    <string name="btn_DefaultMode">Modalità predefinita</string>
+    <string name="tv_moonname">IL MIO NOME È LUNA</string>
+    <string name="countries" translatable="false">Paesi</string>
+    <string name="tv_LanguageTextView">Scegli la lingua</string>
+    <string name="btn_Bismillah">Bismillah</string>
+    <string name="Versions">versioni</string>
+    <string name="privacy_policy"><u>Informativa sulla privacy</u></string>
+    <string name="grey_data">Data gregoriana</string>
+    <string name="hij_data">Data hijri</string>
+    <string name="CurrentTime">Ora</string>
+    <string name="tv_quran">Leggi\nil Corano</string>
+    <string name="tv_TasbeehCounter">Contatore Tasbeeh</string>
+    <string name="tv_AsmaUlHasna">Asma ul\nHasna</string>
+    <string name="tv_Duas">Duas islamici</string>
+    <string name="tv_Qibla">Bussola Qibla</string>
+    <string name="tv_IslamicCalender">Calendario islamico</string>
+    <string name="tv_6Kalma">6 Kalma</string>
+    <string name="tv_DailySurahs">Sura quotidiane</string>
+    <string name="permission_required">Dialogo di autorizzazione</string>
+    <string name="permision_policy">Benvenuti nell\'App Read Quran. Ci impegniamo a proteggere la tua privacy e a fornire un ambiente sicuro per l\'uso dell\'app. Questa informativa sulla privacy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali. Utilizzando l\'app, accetti i termini di questa informativa sulla privacy.</string>
+    <string name="agree">Accetto</string>
+    <string name="btn_nointernet_ok">OK</string>
+    <string name="btn_exitno">Rimani</string>
+    <string name="cancel">Annulla</string>
+    <string name="privacy_dialog_policy">Benvenuti nell\'App Read Quran. Ci impegniamo a proteggere la tua privacy e a fornire un ambiente sicuro per l\'uso dell\'app. Questa informativa sulla privacy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali. Utilizzando l\'app, accetti i termini di questa informativa sulla privacy.</string>
+    <string name="webViewAgreeButton">Accetto</string>
+    <string name="no_internet">Nessuna connessione Internet</string>
+    <string name="no_internetText">Controlla la tua connessione Internet</string>
+    <string name="tv_exitdialog">"Sei sicuro di voler uscire dallapp? \n Tocca Esci per chiudere o Rimani per continuare a esplorare</string>
+    <string name="btn_exit">Esci</string>
+    <string name="btnLanguages">Lingue</string>
+    <string name="btnSettingThemes">Impostazioni</string>
+    <string name="skip">Salta</string>
+    <string name="inviteFriends">Invita amici</string>
+    <string name="beginYourJourney">Inizia il tuo viaggio spirituale con queste funzionalità chiave</string>
+    <string name="tvSalam">السلام عليكم ورحمة الله وبركاته</string>
+    <string name="tvDashboardTime">15:30</string>
+    <string name="tvDashboardDayTimeYear">Gio, 7 ott, 2023</string>
+    <string name="tvDashboardHijriDayDateYear">14, Ramadan, 1440 A.H</string>
+    <string name="tvNow">Ora</string>
+    <string name="tvNowPrayer">Maghrib</string>
+    <string name="tvUpcoming">Prossimo</string>
+    <string name="tvUpcomingPrayer">Isha</string>
+    <string name="tvTodayPrayerTimings">Orari delle preghiere di oggi</string>
+    <string name="tvHadithOfTheDay">Hadith del giorno</string>
+    <string name="tvAyahOfTheDay">Ayah del giorno</string>
+    <string name="tvDashboardCity">Città</string>
+    <string name="AsmaUlhusna_transliteration">Traslitterazione</string>
+    <string name="AsmaUlhusna_name">Nome arabo</string>
+    <string name="AsmaUlhusna_meaning">Significato</string>
+    <string name="startyourday">Inizia la tua giornata con un proposito rinnovato portandoti benedizioni quotidiane, versetti ispiratori e momenti di riflessione.</string>
+    <string name="tvYourDailyBlessings">Le tue benedizioni quotidiane</string>
+    <string name="tvReadQuran">Leggi il Corano</string>
+
+
+
+
+    <string name="btnListJuzz">Juz</string>
+    <string name="btnListSurah">Surah</string>
+    <string name="tvAlifLaamMeemArb">آلم</string>
+    <string name="tvAlifLaamMeemEng">Alif-laam-meem</string>
+    <string name="tvVersesNo">148 Versetti</string>
+    <string name="tvSurahNameEng">Al-Fatihah</string>
+    <string name="tvSurahMean">L\'Apertura</string>
+    <string name="tvSurahNameArb">سُوْرَۃُ الفَاتِحَة</string>
+    <string name="tvSavedSurah">Surah Salvate</string>
+    <string name="tvSavedSurahDesc">Non hai ancora salvato nessuna Surah. Le tue Surah salvate saranno visualizzate qui.</string>
+    <string name="tvSixKalima">Sei Kalime</string>
+    <string name="tvKalimaNameEng">Prima Kalima</string>
+    <string name="tvKalimaNameArb">كلمة طيبة</string>
+    <string name="tvDailySurah">Surah Giornaliera</string>
+    <string name="tvSixKalimaImp">Importanza</string>
+    <string name="tvSixKalimaDesc">Le sei Kalime o Kalimas dell\'Islam sono fondamentali per la fede islamica. Queste Kalime evidenziano i principi primari e più essenziali dell\'Islam che formano il nucleo della religione.</string>
+    <string name="tvKalimaRank">Prima Kalima</string>
+    <string name="tvtvKalimaMean">Purezza</string>
+    <string name="tvKalimaArabic">لَآ اِلٰهَ اِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ  ؕ</string>
+    <string name="tvKalimaRoman">lā ilāha illā-llāh, muhammadu rasūl u-llāh</string>
+    <string name="tvKalimaTranslation">Non c\'è dio se non Allah, [e] Muhammad [PBUH] è il messaggero di Allah</string>
+    <string name="tvDuasLastRead">Ultima Lettura</string>
+    <string name="tvDuasRuqyah">Ruqyah</string>
+    <string name="tvDuasEtiquettes">Etichette</string>
+    <string name="tvDuasIstigfar">Istigfar</string>
+    <string name="tvDuaCategory">Mattina</string>
+    <string name="tvTotalDuas">15 Duas</string>
+    <string name="tvDuaName">Quando ti svegli</string>
+    <string name="tvArabicArabic">اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ.</string>
+    <string name="tvDuaRoman">Allahumma bika asbahna wabika amsayna, wabika nahya ,wabika namootu wa-ilaykan-nushoor</string>
+    <string name="tvDuaTranslation">O Allah, con il Tuo permesso abbiamo raggiunto il mattino e con il Tuo permesso abbiamo raggiunto la sera, con il Tuo permesso viviamo e moriamo e a Te è la nostra risurrezione.</string>
+    <string name="tvVersesNameArb">رَبَّنَا مَا خَلَقْتَ</string>
+    <string name="tvVersesNameEng">Surah Al-Imran</string>
+    <string name="tvVerseNum">193</string>
+    <string name="tvVersesDetailReference">Riferimento</string>
+    <string name="tvVersesRefDetail">Surah Al-Imran Versetto 191</string>
+    <string name="tvVerseDetailArabic">"رَبَّنَا مَا خَلَقْتَ هٰذَا بَاطِلًا ۚ سُبْحٰنَكَ فَقِنَا عَذَابَ النَّارِ. رَبَّنَآ اِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ اَخْزَيْتَهٗ ۭ وَمَا لِلظّٰلِمِيْنَ مِنْ اَنْصَارٍ. "</string>
+    <string name="tvVerseDetailRoman">"Rabbana ma khalaqta hadha batila Subhanaka faqina adhaban-Naar. Rabbana innaka man tudkhilin nara faqad akhzaytah wa ma liDh-dhalimeena min ansar. "</string>
+    <string name="tvVersesDetailTranslation">Nostro Signore! Non hai creato tutto ciò senza un motivo, gloria a Te! (Elevato sei Tu al di sopra di tutto ciò che associano a Te come partner). Concedici la salvezza dal tormento del Fuoco. *Nostro Signore! In verità, chi Tu fai entrare nel Fuoco, in verità, Tu lo hai umiliato, e mai gli ingiusti troveranno soccorso.</string>
+    <string name="tvVerses">Versetto</string>
+
+
+
+
+
+    <string name="tvCompass">Bussola</string>
+    <string name="tvQiblaAngle">Angolo della Qibla</string>
+    <string name="tvQiblaAngleDegg">276.00</string>
+    <string name="tvDegSign">°</string>
+    <string name="tvQiblaDistance">Distanza della Qibla</string>
+    <string name="tvQiblaDistanceDegg">4045 km</string>
+    <string name="tvCityName">Rawalpindi</string>
+    <string name="tvCompassDegg">213.55</string>
+    <string name="tvDegg">GRADI</string>
+    <string name="tv_ReadQuranApp">Leggi il Corano</string>
+    <string name="tvFivePillars">Cinque Pilastri</string>
+    <string name="tvFaith">Fede</string>
+    <string name="tvShahada">Shahada</string>
+    <string name="tv5Pillars">5 Pilastri</string>
+    <string name="tvDashDailySurah">Sura quotidiane</string>
+    <string name="tvAzkar">Azkar giornalieri</string>
+    <string name="tv6Kalmas">6 Kalmas</string>
+    <string name="tvDashVerses">Versetti</string>
+    <string name="tv_Calender">Calendario</string>
+    <string name="tvPrayer">Preghiera</string>
+    <string name="tvSalat">Salat</string>
+    <string name="tvFasting">Digiuno</string>
+    <string name="tvSawm">Sawm</string>
+    <string name="tvAlms">Elemosina</string>
+    <string name="tvZakat">Zakat</string>
+    <string name="tvHajj">Hajj</string>
+    <string name="tvPilgrimage">Pellegrinaggio</string>
+    <string name="tvFirstPillar">Primo Pilastro</string>
+    <string name="tvAzkarCategory">Azkar mattutini</string>
+    <string name="tvTotalAzkar">5 Azkar</string>
+    <string name="tvAllah">Allah</string>
+    <string name="tvAsmaUlHusnaMean">Il Misericordioso</string>
+    <string name="tvCategoryDua">Dua mattutina</string>
+    <string name="tvDuas">Dua</string>
+    <string name="tvFivePillarDetailHeaderText">Shahada</string>
+    <string name="tvFivePillarsDetailCategory">Shahada</string>
+    <string name="tvFivePillarsDetailCatRoman">Fede</string>
+    <string name="asmaUlHasna">Asma Ul Hasna</string>
+    <string name="swipeForNext">Scorri per il successivo</string>
+    <string name="meaning">Significato</string>
+    <string name="explanation">Spiegazione</string>
+    <string name="benifits">Benefici</string>
+    <string name="downloadTxt">Attendi mentre il download\nRichiederà un po di tempo</string>
+    <string name="tvFivePillarsShortDesc">Descrizione</string>
+    <string name="tvFivePillarsDetailExp">La convinzione che "Non cè dio tranne Allah e Maometto è il Messaggero di Allah" è centrale nell\'Islam. Questa frase, scritta in arabo, è spesso evidenziata nell\'architettura e in una varietà di oggetti, tra cui il Corano, il libro sacro dell\'Islam delle rivelazioni divine. Si diventa musulmani recitando questa frase con convinzione.</string>
+    <string name="tvFivePillarsDetailExpHead">Spiegazione</string>
+    <string name="juzName">Alif-laam-meem</string>
+    <string name="asmaUlHasnaName">Ar-Rahman</string>
+
+
+
+
+
+    <string name="tvZuhar">Dhuhr</string>
+    <string name="tvFajar">Fajr</string>
+    <string name="tvFajarUrdu">Salat al-Fajr</string>
+    <string name="tvDhurUrdu">Salat al-Dhuhr</string>
+    <string name="tvAsar">Asr</string>
+    <string name="tvDhurAsr">Salat al-Asr</string>
+    <string name="tvMaghribUrdu">Salat al-Maghrib</string>
+    <string name="tvMaghrib">Maghrib</string>
+    <string name="tvIshaUrdu">Salat al-Isha</string>
+    <string name="tvIsha">Isha</string>
+    <string name="tv_consentDialogText">La tua privacy è la nostra priorità e i tuoi dati sono sicuri. Concedi il permesso per un\'esperienza personalizzata con l\'app!</string>
+    <string name="btn_continue">Continua</string>
+    <string name="tv_permissionDialogText">La tua privacy è la nostra priorità e i tuoi dati sono sicuri. Concedi il permesso per un\'esperienza personalizzata con l\'app!</string>
+    <string name="tv_themeText">Scegli il tema</string>
+    <string name="tvLight">Chiaro</string>
+    <string name="tvDark">Scuro</string>
+    <string name="tv_themeCancel">Annulla</string>
+    <string name="tv_themeApply">Applica</string>
+    <string name="tvPermissionScText">La tua preziosa autorizzazione è richiesta per i servizi di localizzazione</string>
+    <string name="tvPermissionDesc">Per offrirti funzionalità personalizzate, ti chiediamo gentilmente l\'accesso alla tua posizione</string>
+    <string name="btn_Allow">Consenti</string>
+    <string name="btnDismiss">Annulla</string>
+    <string name="tvNext">Avanti</string>
+    <string name="tvAyahOfTheDayHeading">Versetto del giorno:</string>
+    <string name="tvHadithOfTheDayHeading">Hadith del giorno:</string>
+    <string name="hello_blank_fragment">Ciao frammento vuoto</string>
+    <string name="tvIslamicTeachings">Insegnamenti islamici</string>
+    <string name="tvDailyVerse">Versetto del giorno</string>
+    <string name="tvReference">Al-Baqarah - 2:127</string>
+    <string name="tvVerseArabic">Non colpisce il musulmano fatica, malattia, preoccupazione, tristezza, danno, dolore o anche la puntura di una spina...</string>
+    <string name="tvVerseTranslation">Nessuna fatica, malattia, preoccupazione, tristezza, danno, dolore o anche la puntura di una spina...</string>
+    <string name="tvSpiritualDevelopment">Sviluppo spirituale</string>
+    <string name="tvSpiritualDetail">Sii consapevole di ciò che consumi, inclusi media, cibo e beni materiali. Cerca di allineare le tue scelte con i valori islamici.</string>
+    <string name="tvMosqueName">Moschea Blu</string>
+
+
+
+
+
+    <string name="tvMosqueLocation">Istanbul, Turchia</string>
+    <string name="tvMosqueDetail">Si riferisce al suo sostegno/all\'infinito. Alcuni lo considerano misericordioso...</string>
+    <string name="tvVirtueName">Le virtù della Sadaqah</string>
+    <string name="tvVirtueDetail">Ci sono anche numerosi altri Hadith che ne sottolineano l\'importanza e i benefici della carità nell\'Islam...</string>
+    <string name="tvQuoteDetail">La fede è credere in Allah, nei suoi angeli, nei suoi libri, nei suoi messaggeri, nell\'Ultimo Giorno e credere nel destino, sia esso buono che cattivo.</string>
+    <string name="tvQuoteName">Pazienza e Gratitudine</string>
+    <string name="tvDoyouKnowName">SAPEVATE CHE!</string>
+    <string name="tvDoYouKnowDetail">Il Profeta Muhammad (PBUH) aveva l\'abitudine di rivedere i versetti del Corano con l\'Angelo Jibril ogni anno. Nell\'anno prima della sua morte, il Profeta Muhammad (PBUH) ha riveduto il Corano con Jibril due volte.</string>
+    <string name="tvShortVerseArabic">قُلۡ اِنَّ هُدَى اللّٰهِ هُوَ الۡهُدٰى</string>
+    <string name="tvShortVerseTranslation">In verità, l\'unica guida è la Guida di Allah!</string>
+    <string name="tvShortVerseReference">(Al-Corano 6:7)</string>
+    <string name="tvhadithArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvHadithTranslation">Nessuna fatica, malattia, preoccupazione, tristezza, danno, dolore o anche la puntura di una spina...</string>
+    <string name="tvDailyHadith">Hadith del Giorno</string>
+    <string name="tvHadithReference">Sahih Al Bukhari - 2028</string>
+    <string name="tvNameOfAllah">Nome di Allah</string>
+    <string name="tvNameNumber">02/99</string>
+    <string name="tvAllahName">Ar-Raheem</string>
+    <string name="tvAllahMean">Colui che agisce con estrema gentilezza</string>
+    <string name="tvAllahNameDesc">Si riferisce al suo sostegno/all\'infinito. Alcuni lo considerano misericordioso...</string>
+    <string name="tvNameOfProphet_SAW">"Nome del Profeta Muhammad SAW"</string>
+    <string name="tvReadMore">Leggi di più</string>
+    <string name="tvTapOnScreen">Tocca ovunque sullo schermo per iniziare a contare</string>
+    <string name="tvReset">Ripristina</string>
+    <string name="tvQuickRead">Lettura\nVeloce</string>
+    <string name="tvFeed">Feed Deen</string>
+    <string name="tvIslamicInsights">Illuminazioni Islamiche</string>
+    <string name="tvMosqueCreation">Costruita tra il 1994 e il 2007 e inaugurata nel dicembre 2007.</string>
+    <string name="tvFeedDailyVerse">Versetto\nGiornaliero</string>
+    <string name="tvFeedDailyHadith">Hadith\nGiornaliero</string>
+    <string name="tvFeedDailyAllahName">Nome di\nAllah</string>
+
+
+
+
+
+    <string name="tvFeedDailyProphetName">Nome di\nProfeta</string>
+    <string name="SubhanAllah">Subhan Allah</string>
+    <string name="save">Salva</string>
+    <string name="history">Storia</string>
+    <string name="tvAddToList">Aggiungi alla Lista</string>
+    <string name="editTextCounterText">Si prega di digitare il titolo qui</string>
+    <string name="btnSave">Salva</string>
+    <string name="btnCancel">Annulla</string>
+    <string name="tvZikrName">Istighfar</string>
+    <string name="tvHistory">Storia</string>
+    <string name="tvTasbeehCounter">Contatore Tasbeeh</string>
+    <string name="tvDelete">"Sei sicuro di voler rimuovere questo Dhikr dai salvati? \n Tocca \Rimuovi\' o \'Annulla\'."</string>
+    <string name="btnDelete">Elimina</string>
+    <string name="zikrAlreadyAdded">Zikar già presente</string>
+    <string name="tvStartCount">Inizia a contare il tuo Zikar.</string>
+    <string name="addNew">Aggiungi Nuovo</string>
+
+</resources>

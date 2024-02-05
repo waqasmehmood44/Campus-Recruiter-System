@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReadQuranApp</string>
+
+
+    <string name="btn_lightMode">Lyst modus</string>
+    <string name="btn_DarkMode">Mørk modus</string>
+    <string name="btn_DefaultMode">Standard modus</string>
+    <string name="tv_moonname">MITT NAVN ER MÅNE</string>
+    <string name="countries" translatable="false">Land</string>
+    <string name="tv_LanguageTextView">Velg språk</string>
+    <string name="btn_Bismillah">Bismillah</string>
+    <string name="Versions">versjoner</string>
+    <string name="privacy_policy"><u>Personvernerklæring</u></string>
+    <string name="grey_data">Gregoriansk dato</string>
+    <string name="hij_data">Hijri-dato</string>
+    <string name="CurrentTime">Tid</string>
+    <string name="tv_quran">Les\nQuran</string>
+    <string name="tv_TasbeehCounter">Tasbeeh\nTeller</string>
+    <string name="tv_AsmaUlHasna">Asma ul\nHasna</string>
+    <string name="tv_Duas">Islamske\nDuas</string>
+    <string name="tv_Qibla">Qibla\nKompass</string>
+    <string name="tv_IslamicCalender">Islamsk\nKalender</string>
+    <string name="tv_6Kalma">6 Kalma</string>
+    <string name="tv_DailySurahs">Daglige suraer</string>
+    <string name="permission_required">Tillatelsesdialog</string>
+    <string name="permision_policy">Velkommen til Les Quran App. Vi er forpliktet til å beskytte ditt personvern og tilby en sikker plattform for deg å bruke appen vår. Denne personvernerklæringen forklarer hvordan vi samler inn, bruker og beskytter dine personopplysninger. Ved å bruke appen samtykker du til vilkårene i denne personvernerklæringen.</string>
+    <string name="agree">Enig</string>
+    <string name="btn_nointernet_ok">OK</string>
+    <string name="btn_exitno">Bli</string>
+    <string name="cancel">Avbryt</string>
+    <string name="privacy_dialog_policy">Velkommen til Les Quran App. Vi er forpliktet til å beskytte ditt personvern og tilby en sikker plattform for deg å bruke appen vår. Denne personvernerklæringen forklarer hvordan vi samler inn, bruker og beskytter dine personopplysninger. Ved å bruke appen samtykker du til vilkårene i denne personvernerklæringen.</string>
+    <string name="webViewAgreeButton">Enig</string>
+    <string name="no_internet">Ingen internett</string>
+    <string name="no_internetText">Vennligst sjekk internettforbindelsen din</string>
+    <string name="tv_exitdialog">"Er du sikker på at du vil avslutte appen? \n Trykk \'Avslutt\' for å lukke eller \'Bli\' for å fortsette utforskingen</string>
+    <string name="btn_exit">Avslutt</string>
+    <string name="btnLanguages">Språk</string>
+    <string name="btnSettingThemes">Innstilling</string>
+    <string name="skip">Hopp over</string>
+    <string name="inviteFriends">Inviter venner</string>
+    <string name="beginYourJourney">Start din åndelige reise med disse nøkkelegenskapene</string>
+    <string name="tvSalam">السلام عليكم ورحمة الله وبركاته</string>
+    <string name="tvDashboardTime">3:30 PM</string>
+    <string name="tvDashboardDayTimeYear">Tors, 7. okt, 2023</string>
+    <string name="tvDashboardHijriDayDateYear">14, Ramadaan, 1440 A.H</string>
+    <string name="tvNow">Nå</string>
+    <string name="tvNowPrayer">Maghrib</string>
+    <string name="tvUpcoming">Kommende</string>
+    <string name="tvUpcomingPrayer">Isha</string>
+    <string name="tvTodayPrayerTimings">Dagens bønnetider</string>
+    <string name="tvHadithOfTheDay">Dagens hadith</string>
+    <string name="tvAyahOfTheDay">Dagens ayah</string>
+    <string name="tvDashboardCity">By</string>
+    <string name="AsmaUlhusna_transliteration">Transliterasjon</string>
+    <string name="AsmaUlhusna_name">Arabisk navn</string>
+    <string name="AsmaUlhusna_meaning">Betydning</string>
+    <string name="startyourday">Start dagen din med fornyet formål mens vi bringer deg daglige velsignelser, inspirerende vers og stunder for refleksjon.</string>
+    <string name="tvYourDailyBlessings">Din daglige velsignelse</string>
+    <string name="tvReadQuran">Les Quran</string>
+
+
+
+
+    <string name="btnListJuzz">Juz</string>
+    <string name="btnListSurah">Surah</string>
+    <string name="tvAlifLaamMeemArb">آلم</string>
+    <string name="tvAlifLaamMeemEng">Alif-laam-meem</string>
+    <string name="tvVersesNo">148 vers</string>
+    <string name="tvSurahNameEng">Al-Fatihah</string>
+    <string name="tvSurahMean">Åpningen</string>
+    <string name="tvSurahNameArb">سُوْرَۃُ الفَاتِحَة</string>
+    <string name="tvSavedSurah">Lagret Surah</string>
+    <string name="tvSavedSurahDesc">Du har ikke lagret noen Surah ennå. Dine lagrede Surahs vil bli vist her.</string>
+    <string name="tvSixKalima">Seks Kalimaer</string>
+    <string name="tvKalimaNameEng">Første Kalima</string>
+    <string name="tvKalimaNameArb">كلمة طيبة</string>
+    <string name="tvDailySurah">Daglig Surah</string>
+    <string name="tvSixKalimaImp">Betydning</string>
+    <string name="tvSixKalimaDesc">De seks Kalimaene eller Kalimas i islam er integrert i den islamske troen. Disse Kalimaene fremhever islams primære og mest essensielle prinsipper som danner kjernen i religionen.</string>
+    <string name="tvKalimaRank">Første Kalima</string>
+    <string name="tvtvKalimaMean">Renhet</string>
+    <string name="tvKalimaArabic">لَآ اِلٰهَ اِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ  ؕ</string>
+    <string name="tvKalimaRoman">lā ilāha illā-llāh, muhammadu rasūl u-llāh</string>
+    <string name="tvKalimaTranslation">Det er ingen annen gud enn Allah, [og] Muhammad [FVMH] er Allahs sendebud</string>
+    <string name="tvDuasLastRead">Siste lest</string>
+    <string name="tvDuasRuqyah">Ruqyah</string>
+    <string name="tvDuasEtiquettes">Etikette</string>
+    <string name="tvDuasIstigfar">Istigfar</string>
+    <string name="tvDuaCategory">Morgen</string>
+    <string name="tvTotalDuas">15 Duas</string>
+    <string name="tvDuaName">Når du våkner opp</string>
+    <string name="tvArabicArabic">اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ.</string>
+    <string name="tvDuaRoman">Allahumma bika asbahna wabika amsayna, wabika nahya ,wabika namootu wa-ilaykan-nushoor</string>
+    <string name="tvDuaTranslation">Å Allah, ved ditt samtykke har vi nådd morgenen, og ved ditt samtykke har vi nådd kvelden, ved ditt samtykke lever vi og dør, og til deg er vår oppstandelse.</string>
+    <string name="tvVersesNameArb">رَبَّنَا مَا خَلَقْتَ</string>
+    <string name="tvVersesNameEng">Surah Al-Imran</string>
+    <string name="tvVerseNum">193</string>
+    <string name="tvVersesDetailReference">Referanse</string>
+    <string name="tvVersesRefDetail">Surah Al-Imran Vers 191</string>
+    <string name="tvVerseDetailArabic">"رَبَّنَا مَا خَلَقْتَ هٰذَا بَاطِلًا ۚ سُبْحٰنَكَ فَقِنَا عَذَابَ النَّارِ. رَبَّنَآ اِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ اَخْزَيْتَهٗ ۭ وَمَا لِلظّٰلِمِيْنَ مِنْ اَنْصَارٍ. "</string>
+    <string name="tvVerseDetailRoman">"Rabbana ma khalaqta hadha batila Subhanaka faqina \'adhaban-Naar. Rabbana innaka man tudkhilin nara faqad akhzaytah wa ma liDh-dhalimeena min ansar. "</string>
+    <string name="tvVersesDetailTranslation">Vår Herre! Du har ikke skapt alt dette uten formål, ære være deg! Gi oss frelse fra helvetes straff. * Vår Herre! Sannelig, den som Du fører inn i ilden, har du virkelig vanæret ham, og de urettferdige vil aldri finne noen hjelpere.</string>
+    <string name="tvVerses">Vers</string>
+
+
+
+
+
+    <string name="tvCompass">Kompass</string>
+    <string name="tvQiblaAngle">Qibla-vinkel</string>
+    <string name="tvQiblaAngleDegg">276.00</string>
+    <string name="tvDegSign">o</string>
+    <string name="tvQiblaDistance">Qibla-avstand</string>
+    <string name="tvQiblaDistanceDegg">4045 km</string>
+    <string name="tvCityName">Rawalpindi</string>
+    <string name="tvCompassDegg">213.55</string>
+    <string name="tvDegg">DEG</string>
+    <string name="tv_ReadQuranApp">Les Quran</string>
+    <string name="tvFivePillars">Fem søyler</string>
+    <string name="tvFaith">Tro</string>
+    <string name="tvShahada">Shahada</string>
+    <string name="tv5Pillars">5 søyler</string>
+    <string name="tvDashDailySurah">Daglige surahs</string>
+    <string name="tvAzkar">Daglig\nAzkar</string>
+    <string name="tv6Kalmas">6 Kalmas</string>
+    <string name="tvDashVerses">Vers</string>
+    <string name="tv_Calender">Kalender</string>
+    <string name="tvPrayer">Bønn</string>
+    <string name="tvSalat">Salat</string>
+    <string name="tvFasting">Fast</string>
+    <string name="tvSawm">Sawm</string>
+    <string name="tvAlms">Almisser</string>
+    <string name="tvZakat">Zakat</string>
+    <string name="tvHajj">Hajj</string>
+    <string name="tvPilgrimage">Pilegrimsferd</string>
+    <string name="tvFirstPillar">Første søyle</string>
+    <string name="tvAzkarCategory">Morgen Azkar</string>
+    <string name="tvTotalAzkar">5 Azkar</string>
+    <string name="tvAllah">Allah</string>
+    <string name="tvAsmaUlHusnaMean">Den mest barmhjertige</string>
+    <string name="tvCategoryDua">Morgen Dua</string>
+    <string name="tvDuas">Duas</string>
+    <string name="tvFivePillarDetailHeaderText">Shahada</string>
+    <string name="tvFivePillarsDetailCategory">Shahada</string>
+    <string name="tvFivePillarsDetailCatRoman">Tro</string>
+    <string name="asmaUlHasna">Asma Ul Hasna</string>
+    <string name="swipeForNext">Sveip for neste</string>
+    <string name="meaning">Betydning</string>
+    <string name="explanation">Forklaring</string>
+    <string name="benifits">Fordeler</string>
+    <string name="downloadTxt">Vennligst vent mens det lastes ned\nDet vil ta litt tid</string>
+    <string name="tvFivePillarsShortDesc">Beskrivelse</string>
+    <string name="tvFivePillarsDetailExp">Troen på "Det er ingen gud unntatt Gud, og Muhammed er Guds sendebud" er sentral i islam. Denne frasen, skrevet på arabisk, er ofte tydelig fremhevet i arkitektur og en rekke objekter, inkludert Koranen, islams hellige bok med guddommelige åpenbaringer. Man blir muslim ved å resitere denne frasen med overbevisning.</string>
+    <string name="tvFivePillarsDetailExpHead">Forklaring</string>
+    <string name="juzName">Alif-laam-meem</string>
+    <string name="asmaUlHasnaName">Ar-Rahman</string>
+
+
+
+
+    <string name="tvZuhar">Dhuhur</string>
+    <string name="tvFajar">Fajar</string>
+    <string name="tvFajarUrdu">Fajr-bønn</string>
+    <string name="tvDhurUrdu">Dhuhr-bønn</string>
+    <string name="tvAsar">Asar</string>
+    <string name="tvDhurAsr">Asr-bønn</string>
+    <string name="tvMaghribUrdu">Maghrib-bønn</string>
+    <string name="tvMaghrib">Maghrib</string>
+    <string name="tvIshaUrdu">Isha-bønn</string>
+    <string name="tvIsha">Isha</string>
+    <string name="tv_consentDialogText">Ditt personvern er vår prioritet, og dataene dine er sikre. Gi tillatelse for en tilpasset appopplevelse!</string>
+    <string name="btn_continue">Fortsett</string>
+    <string name="tv_permissionDialogText">Ditt personvern er vår prioritet, og dataene dine er sikre. Gi tillatelse for en tilpasset appopplevelse!</string>
+    <string name="tv_themeText">Velg tema</string>
+    <string name="tvLight">Lyst</string>
+    <string name="tvDark">Mørkt</string>
+    <string name="tv_themeCancel">Avbryt</string>
+    <string name="tv_themeApply">Bruk</string>
+    <string name="tvPermissionScText">Din verdifulle tillatelse er nødvendig for stedstjenester</string>
+    <string name="tvPermissionDesc">For å tilby deg personlige funksjoner, ber vi vennligst om tilgang til posisjonen din</string>
+    <string name="btn_Allow">Tillat</string>
+    <string name="btnDismiss">Avvis</string>
+    <string name="tvNext">Neste</string>
+    <string name="tvAyahOfTheDayHeading">Dagens vers:</string>
+    <string name="tvHadithOfTheDayHeading">Dagens hadith:</string>
+    <string name="hello_blank_fragment">Hei tom fragment</string>
+    <string name="tvIslamicTeachings">Islamske læresetninger</string>
+    <string name="tvDailyVerse">Dagens vers</string>
+    <string name="tvReference">Al-Baqarah - 2:127</string>
+    <string name="tvVerseArabic">Ingen tretthet, sykdom, bekymring, sorg, skade, sorg, eller til og med stikk av en torn...</string>
+    <string name="tvVerseTranslation">Ingen tretthet, sykdom, bekymring, sorg, skade, sorg, eller til og med stikk av en torn...</string>
+    <string name="tvSpiritualDevelopment">Åndelig utvikling</string>
+    <string name="tvSpiritualDetail">Vær bevisst på hva du konsumerer, inkludert medier, mat og materielle varer. Strive to align your choices with Islamic values.</string>
+    <string name="tvMosqueName">Blå moské</string>
+
+
+
+
+    <string name="tvMosqueLocation">Istanbul, Tyrkia</string>
+    <string name="tvMosqueDetail">Det refererer til Hans opprettholdelse/uendelighet. Noen ser navnet som barmhjertig...</string>
+    <string name="tvVirtueName">Forrettene av Sadaqah</string>
+    <string name="tvVirtueDetail">Det er også mange andre hadith som fremhever dens betydning og fordeler ved veldedighet i islam....</string>
+    <string name="tvQuoteDetail">Tro er å tro på Allah, Hans engler, Hans bøker, Hans sendebud, Den siste dagen, og å tro på skjebnen, både det gode og det dårlige.</string>
+    <string name="tvQuoteName">Tålmodighet og takknemlighet</string>
+    <string name="tvDoyouKnowName">VISSTE DU DET!</string>
+    <string name="tvDoYouKnowDetail">Profeten Muhammad (FVMH) pleide å gjennomgå versene i Koranen med engelen Jibril hvert år. I året før hans død reviderte Profeten Muhammad (FVMH) Koranen med Jibril to ganger.</string>
+    <string name="tvShortVerseArabic">قُلۡ اِنَّ هُدَى اللّٰهِ هُوَ الۡهُدٰى</string>
+    <string name="tvShortVerseTranslation">Sannelig, den eneste veiledningen er Allahs veiledning!</string>
+    <string name="tvShortVerseReference">(Al-Quran 6:7)</string>
+    <string name="tvhadithArabic">مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ لشَّوْكَةِ كَفَّرَ اللَّهُ بِهَا ...</string>
+    <string name="tvHadithTranslation">Ingen tretthet, sykdom, bekymring, sorg, skade, sorg, eller til og med stikk av en torn...</string>
+    <string name="tvDailyHadith">Hadith of the Day</string>
+    <string name="tvHadithReference">Sahih Al Bukhari - 2028</string>
+    <string name="tvNameOfAllah">Allahs navn</string>
+    <string name="tvNameNumber">02/99</string>
+    <string name="tvAllahName">Ar-Raheem</string>
+    <string name="tvAllahMean">Den som handler med ekstrem godhet</string>
+    <string name="tvAllahNameDesc">Det refererer til Hans opprettholdelse/uendelighet. Noen ser navnet som barmhjertig mot...</string>
+    <string name="tvNameOfProphet_SAW">"Navn på Profet Muhammad SAW "</string>
+    <string name="tvReadMore">Se mer</string>
+    <string name="tvTapOnScreen">Trykk hvor som helst på skjermen for å begynne tellingen</string>
+    <string name="tvReset">Nullstille</string>
+    <string name="tvQuickRead">Hurtiglesning</string>
+    <string name="tvFeed">Deen Feed</string>
+    <string name="tvIslamicInsights">Islamske innsikter</string>
+    <string name="tvMosqueCreation">Bygget mellom 1994 og 2007 og ble innviet i desember 2007.</string>
+    <string name="tvFeedDailyVerse">Daglig\nVers</string>
+    <string name="tvFeedDailyHadith">Daglig\nHadith</string>
+    <string name="tvFeedDailyAllahName">Allahs\nNavn</string>
+
+
+
+
+    <string name="tvFeedDailyProphetName">Profetens\nNavn</string>
+    <string name="SubhanAllah">Subhan Allah</string>
+    <string name="save">Lagre</string>
+    <string name="history">Historie</string>
+    <string name="tvAddToList">Legg til i listen</string>
+    <string name="editTextCounterText">Vennligst skriv inn tittelen din her</string>
+    <string name="btnSave">Lagre</string>
+    <string name="btnCancel">Avbryt</string>
+    <string name="tvZikrName">Istighfar</string>
+    <string name="tvHistory">Historie</string>
+    <string name="tvTasbeehCounter">Tasbeeh-teller</string>
+    <string name="tvDelete">"Er du sikker på at du vil fjerne denne Dhikr fra lagret? \n Trykk \'Fjern\' eller \'Avbryt\'."</string>
+    <string name="btnDelete">Slett</string>
+    <string name="zikrAlreadyAdded">Zikar eksisterer allerede</string>
+    <string name="tvStartCount">Begynn å telle din Zikar.</string>
+    <string name="addNew">Legg til ny</string>
+
+</resources>

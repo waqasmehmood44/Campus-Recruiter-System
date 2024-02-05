@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_margin="10dp"
+    android:background="@drawable/shape_round_8dp"
+    android:padding="@dimen/_10sdp"
+    android:elevation="@dimen/_10sdp"
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
@@ -12,52 +15,104 @@
         android:layout_height="match_parent"
         app:cardCornerRadius="5dp"
         app:cardElevation="5dp"
-        tools:layout_editor_absoluteX="10dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/black"
+            android:padding="@dimen/_5sdp"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/job_name_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/appColor"
+                android:textSize="18sp"
+                android:text="Job Name" />
 
             <TextView
                 android:id="@+id/job_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="15sp"
                 android:text="Job Name" />
+
+            <TextView
+                android:id="@+id/job_salary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/appColor"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text="Salary" />
 
             <TextView
                 android:id="@+id/job_salary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
                 android:text="Salary" />
 
             <TextView
-                android:id="@+id/job_eligiblity"
+                android:id="@+id/job_eligibility_heading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/appColor"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text="Eligibility" />
+
+            <TextView
+                android:id="@+id/job_eligibility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:text="Eligibility" />
+
+            <TextView
+                android:id="@+id/job_location_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/appColor"
+                android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:text="Eligiblity" />
+                android:text="Location" />
 
             <TextView
                 android:id="@+id/job_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
                 android:text="Location" />
+
+            <TextView
+                android:id="@+id/job_description_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/appColor"
+                android:layout_marginTop="5dp"
+                android:text="Description" />
 
             <TextView
                 android:id="@+id/job_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
                 android:text="Description" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
