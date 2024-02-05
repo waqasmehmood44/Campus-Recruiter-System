@@ -53,6 +53,8 @@ public class student_joblist_adapter extends RecyclerView.Adapter<student_jobs_l
                         Intent intent = new Intent(context, Student_job_apply.class);
                         intent.putExtra("rec_id", itemList.get(clickedPosition).getRec_id());
                         intent.putExtra("job_id", itemList.get(clickedPosition).getJob_id());
+                        intent.putExtra("job_name", itemList.get(clickedPosition).getJob());
+                        intent.putExtra("job_salary", itemList.get(clickedPosition).getSalary());
                         context.startActivity(intent);
                     }
                 }

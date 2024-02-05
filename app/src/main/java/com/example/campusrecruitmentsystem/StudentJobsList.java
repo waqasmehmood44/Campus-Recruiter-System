@@ -20,6 +20,7 @@ import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
+import com.example.campusrecruitmentsystem.StudentFargments.Student_Job_Applications;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -44,7 +45,6 @@ public class StudentJobsList extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         materialToolbar = findViewById(R.id.material_toolbar);
         navigationView = findViewById(R.id.nav_view);
-//        drawerLayout = findViewById(R.id.drawer_layout);
 
         replaceFragment(new StudentJobsListFrag());
 
@@ -57,11 +57,14 @@ public class StudentJobsList extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if(item.getItemId() == R.id.jobs_list){
-                    Toast.makeText(StudentJobsList.this, "Jobs List", Toast.LENGTH_SHORT).show();
                     replaceFragment(new StudentJobsListFrag());
                     drawerLayout.closeDrawers();
                     return true;
 
+                } else if(item.getItemId() == R.id.applications_list){
+                    replaceFragment(new Student_Job_Applications());
+                    drawerLayout.closeDrawers();
+                    return true;
                 }
                 return false;
             }

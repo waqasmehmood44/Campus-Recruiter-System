@@ -13,8 +13,8 @@
         android:id="@+id/group6"
         android:checkableBehavior="none" >
         <item
-            android:id="@+id/application_list"
-            android:title="Application" />
+            android:id="@+id/applications_list"
+            android:title="Applications" />
     </group>
 
 
