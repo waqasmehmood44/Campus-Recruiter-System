@@ -34,23 +34,32 @@ public class student_joblist_adapter extends RecyclerView.Adapter<student_jobs_l
     }
 
     @Override
+//
     public void onBindViewHolder(@NonNull student_jobs_list_view_holder holder, int position) {
         holder.job_name.setText(itemList.get(position).getJob());
         holder.job_salary.setText(itemList.get(position).getSalary());
         holder.job_eligiblity.setText(itemList.get(position).getEligibility());
         holder.job_location.setText(itemList.get(position).getLocation());
         holder.job_description.setText(itemList.get(position).getDescription());
+
         holder.apply_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context.getApplicationContext(), "Apply", Toast.LENGTH_SHORT).show();
-                if (context != null) {
-                    Intent intent = new Intent(context, Student_job_apply.class);
-                    context.startActivity(intent);
+
+                int clickedPosition = holder.getAdapterPosition();
+                if (clickedPosition != RecyclerView.NO_POSITION) {
+                    if (context != null) {
+                        Intent intent = new Intent(context, Student_job_apply.class);
+                        intent.putExtra("rec_id", itemList.get(clickedPosition).getRec_id());
+                        intent.putExtra("job_id", itemList.get(clickedPosition).getJob_id());
+                        context.startActivity(intent);
+                    }
                 }
             }
         });
     }
+
 
     @Override
     public int getItemCount() {
