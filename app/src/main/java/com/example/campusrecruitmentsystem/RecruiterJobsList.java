@@ -20,6 +20,7 @@ import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
+import com.example.campusrecruitmentsystem.RecruiterFragments.Recruiter_std_Job_Applications;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -52,11 +53,14 @@ public class RecruiterJobsList extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if(item.getItemId() == R.id.jobs_list_rec){
-                    Toast.makeText(RecruiterJobsList.this, "Jobs List", Toast.LENGTH_SHORT).show();
                     replaceFragment(new RecruiterJobsListFrag());
                     drawerLayout.closeDrawers();
                     return true;
 
+                } if(item.getItemId() == R.id.rec_job_applications){
+                    replaceFragment(new Recruiter_std_Job_Applications());
+                    drawerLayout.closeDrawers();
+                    return true;
                 }
                 return false;
             }
