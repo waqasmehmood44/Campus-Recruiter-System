@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
-    <TextView
+
+    <ImageView
         android:id="@+id/tvStudentForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/opensans_bold"
+        android:src="@drawable/loginicon"
         android:textSize="25sp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -63,12 +64,13 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login_btn"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_background_shape_blue"
             android:text="Sign In"
             android:textAllCaps="false"
+            android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

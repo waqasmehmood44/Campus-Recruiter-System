@@ -6,17 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PostJobActivity">
-
-    <TextView
-        android:id="@+id/tvJobPost"
+    <ImageView
+        android:id="@+id/tvStudentForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Job Post"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/opensans_bold"
+        android:src="@drawable/loginicon"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="25sp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -25,7 +26,7 @@
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvJobPost">
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentForm">
 
         <!-- Job Title -->
         <com.google.android.material.textfield.TextInputLayout
@@ -114,6 +115,7 @@
             android:background="@drawable/button_background_shape_blue"
             android:text="Post"
             android:textAllCaps="false"
+            android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent=".14"

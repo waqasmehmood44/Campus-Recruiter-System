@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".RecruiterFormActivity">
 
-    <TextView
-        android:id="@+id/tvRecruiterForm"
+    <ImageView
+        android:id="@+id/tvStudentForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recruiter Form"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/opensans_bold"
+        android:src="@drawable/loginicon"
         android:textSize="25sp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRecruiterForm">
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentForm">
     <!-- Recruiter Name -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilRecruiterName"
