@@ -27,7 +27,7 @@ import java.util.Objects;
 public class StudentFormActivity extends AppCompatActivity {
     TextInputEditText tilName, tilEmail,  tilContactNo, tilAddress, tilDepartment, signUp_pass;
     AppCompatButton signUp_btn;
-    AutoCompleteTextView userType;
+    AutoCompleteTextView userType111;
     FirebaseAuth mAuth;
     String[] user_type = {"Student", "Recruiter"};
     TextView already_have_account;
@@ -43,14 +43,15 @@ public class StudentFormActivity extends AppCompatActivity {
         tilEmail = findViewById(R.id.etEmail);
         tilContactNo = findViewById(R.id.etContactNo);
         tilAddress = findViewById(R.id.etAddress);
-        tilDepartment = findViewById(R.id.etAddress);
+        tilDepartment = findViewById(R.id.etDepartment);
         signUp_pass = findViewById(R.id.etsignUp_pass);
         signUp_btn = findViewById(R.id.signUp_btn);
         already_have_account = findViewById(R.id.already_have_account);
-        userType = findViewById(R.id.userType);
+        userType111 = findViewById(R.id.userType__reg);
         //Spinner Code****************************************
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, R.layout.dropdown_usertype, user_type);
-        userType.setAdapter(arrayAdapter);
+        String[] user_type = {"Student", "Recruiter"};
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, user_type);
+        userType111.setAdapter(arrayAdapter);
 
 
         signUp_btn.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +81,7 @@ public class StudentFormActivity extends AppCompatActivity {
                                     contact_no = String.valueOf(tilContactNo.getText());
                                     address = String.valueOf(tilAddress.getText());
                                     department = String.valueOf(tilDepartment.getText());
-                                    user_type = String.valueOf(userType.getText());
+                                    user_type = String.valueOf(userType111.getText());
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(StudentFormActivity.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
 
@@ -108,6 +109,12 @@ public class StudentFormActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(StudentFormActivity.this, LoginActivity.class);
                 startActivity(intent);
+            }
+        });
+        userType111.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                userType111.showDropDown();
             }
         });
     }

@@ -1,11 +1,6 @@
-
-<TextView
-    android:id="@+id/textView"
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="14dp"
-    android:textColor="@color/black"
-    android:textStyle="bold"
-    android:text="TextView"
-    android:textSize="16sp"
-    xmlns:android="http://schemas.android.com/apk/res/android"/>
+    android:padding="16dp"
+    android:textAppearance="?attr/textAppearanceListItemSmall"
+    android:gravity="start|center_vertical" />

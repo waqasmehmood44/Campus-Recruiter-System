@@ -62,8 +62,8 @@ public class Student_job_apply extends AppCompatActivity {
                         Uri url = uriTask.getResult();
 
 
-                        pdfClass pdfClass = new pdfClass(etstd_name.getText().toString(),url.toString());
-                        databaseReference.child(databaseReference.push().getKey()).setValue(pdfClass);
+//                        pdfClass pdfClass = new pdfClass(etstd_name.getText().toString(),url.toString());
+//                        databaseReference.child(databaseReference.push().getKey()).setValue(pdfClass);
 
                         Toast.makeText(Student_job_apply.this, "File Uploaded!", Toast.LENGTH_SHORT).show();
                     }

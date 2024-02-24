@@ -14,10 +14,10 @@ public class jobs_list_view_holder extends RecyclerView.ViewHolder {
     public TextView job_description;
     public jobs_list_view_holder(@NonNull View itemView) {
         super(itemView);
-//        job_name = itemView.findViewById(R.id.job_name);
-//        job_salary = itemView.findViewById(R.id.job_salary);
-//        job_eligiblity = itemView.findViewById(R.id.job_eligibility);
-//        job_location = itemView.findViewById(R.id.job_location);
-//        job_description = itemView.findViewById(R.id.job_description);
+        job_name = itemView.findViewById(R.id.job_name);
+        job_salary = itemView.findViewById(R.id.job_salary);
+        job_eligiblity = itemView.findViewById(R.id.job_eligiblity);
+        job_location = itemView.findViewById(R.id.job_location);
+        job_description = itemView.findViewById(R.id.job_description);
     }
 }
