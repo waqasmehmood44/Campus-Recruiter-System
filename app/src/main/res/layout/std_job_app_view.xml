@@ -25,32 +25,67 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/job_name_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/appColor"
+                android:textSize="18sp"
+                android:text="Job Name" />
+            <TextView
                 android:id="@+id/std_job_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Job Name" />
-
+            <TextView
+                android:id="@+id/job_salary_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/appColor"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text="Salary" />
             <TextView
             android:id="@+id/std_job_salary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Salary" />
-
+            <TextView
+                android:id="@+id/job_eligibility_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/appColor"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text="Job Location" />
             <TextView
                 android:id="@+id/std_job_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Job Location" />
-
+            <TextView
+                android:id="@+id/job_description_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/appColor"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text="Job Description" />
             <TextView
                 android:id="@+id/std_job_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Job Description" />
-
+            <TextView
+                android:id="@+id/job_cv_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/appColor"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text="Applicant CV" />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,13 +107,15 @@
                     android:text="Job CV" />
             </LinearLayout>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/view_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="end"
+                android:textColor="@color/white"
                 android:layout_marginEnd="30dp"
+                android:background="@drawable/button_background_shape_blue"
                 android:text="View"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

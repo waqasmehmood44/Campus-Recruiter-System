@@ -52,7 +52,7 @@ public class StudentFormActivity extends AppCompatActivity {
         String[] user_type = {"Student", "Recruiter"};
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, user_type);
         userType111.setAdapter(arrayAdapter);
-
+        userType111.setInputType(0);
 
         signUp_btn.setOnClickListener(new View.OnClickListener() {
             @Override

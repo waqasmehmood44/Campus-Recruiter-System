@@ -11,14 +11,15 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/post_job"
     />
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/post_job"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Post Job"
+        android:textColor="@color/white"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:background="@drawable/button_background_shape_blue"
         android:layout_margin="16dp"/> <!-- Add margin for better spacing -->
 
 </RelativeLayout>

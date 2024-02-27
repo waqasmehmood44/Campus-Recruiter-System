@@ -16,35 +16,12 @@
             android:id="@+id/applications_list"
             android:title="Applications" />
     </group>
-
-
-    <group
-        android:id="@+id/group2"
-        android:checkableBehavior="none" >
-        <item
-            android:id="@+id/nav_itemPremium"
-            android:title="Premium" />
-    </group>
-    <group
-        android:id="@+id/group3"
-        android:checkableBehavior="none" >
-        <item
-            android:id="@+id/nav_item3"
-            android:title="Privacy Policy" />
-    </group>
-    <group
-        android:id="@+id/group4"
-        android:checkableBehavior="none" >
-        <item
-            android:id="@+id/nav_item4"
-            android:title="Share App" />
-    </group>
     <group
         android:id="@+id/group5"
         android:checkableBehavior="none" >
         <item
             android:id="@+id/nav_item5"
-            android:title="Rate App" />
+            android:title="Logout" />
     </group>
     <!-- Add more items as needed -->
 </menu>

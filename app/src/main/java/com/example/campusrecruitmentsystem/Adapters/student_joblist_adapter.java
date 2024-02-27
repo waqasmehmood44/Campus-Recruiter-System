@@ -45,19 +45,18 @@ public class student_joblist_adapter extends RecyclerView.Adapter<student_jobs_l
         holder.apply_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context.getApplicationContext(), "Apply", Toast.LENGTH_SHORT).show();
 
-                int clickedPosition = holder.getAdapterPosition();
-                if (clickedPosition != RecyclerView.NO_POSITION) {
+
+//                int clickedPosition = holder.getAdapterPosition();
+                Toast.makeText(context.getApplicationContext(), itemList.get(position).getJob_id(), Toast.LENGTH_SHORT).show();
+//                if (clickedPosition != RecyclerView.NO_POSITION) {
                     if (context != null) {
                         Intent intent = new Intent(context, Student_job_apply.class);
-                        intent.putExtra("rec_id", itemList.get(clickedPosition).getRec_id());
-                        intent.putExtra("job_id", itemList.get(clickedPosition).getJob_id());
-                        intent.putExtra("job_name", itemList.get(clickedPosition).getJob());
-                        intent.putExtra("job_salary", itemList.get(clickedPosition).getSalary());
+                        intent.putExtra("rec_id", itemList.get(position).getRec_id());
+                        intent.putExtra("job_id", itemList.get(position).getJob_id());
                         context.startActivity(intent);
                     }
-                }
+//                }
             }
         });
     }

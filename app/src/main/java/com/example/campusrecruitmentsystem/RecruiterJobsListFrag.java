@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -30,7 +31,7 @@ public class RecruiterJobsListFrag extends Fragment {
     ScrollView scroll_view_33;
     jobs_list_view_adapter adapter;
     ArrayList<post_job_model> list;
-    Button post_job;
+    AppCompatButton post_job;
     DatabaseReference reference, reference1;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
