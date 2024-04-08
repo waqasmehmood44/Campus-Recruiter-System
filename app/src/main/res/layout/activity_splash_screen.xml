@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity">
 
 
     <!--    <TextView-->
-<!--        android:id="@+id/tvYourDailyBlessings"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:fontFamily="@font/play_fair_display_medium"-->
-<!--        android:gravity="center"-->
-<!--        android:text="@string/tvYourDailyBlessings"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="@dimen/_25sdp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/imageView2" />-->
+    <!--        android:id="@+id/tvYourDailyBlessings"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/play_fair_display_medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="@string/tvYourDailyBlessings"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="@dimen/_25sdp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView2" />-->
 
     <ImageView
         android:id="@+id/ivBackground"
@@ -49,18 +50,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
         android:fontFamily="@font/opensans_regular"
         android:gravity="center"
-        android:textStyle="bold"
         android:text="Get Started With Your Job Posting"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/_20sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/getStarted"
-        android:layout_marginBottom="@dimen/_20sdp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/getStarted"
@@ -71,16 +71,14 @@
         android:layout_marginBottom="@dimen/_10sdp"
         android:background="@drawable/button_background_shape_blue"
         android:fontFamily="@font/open_sans_semi_bold"
-        android:text="Get Started"
-        android:textSize="@dimen/_14sdp"
         android:gravity="center"
+        android:text="Get Started"
         android:textAllCaps="false"
         android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
