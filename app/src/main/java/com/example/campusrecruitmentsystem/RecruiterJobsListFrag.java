@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.ScrollView;
 
 import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
+import com.example.campusrecruitmentsystem.TestCreation.create_test_questions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -31,7 +32,7 @@ public class RecruiterJobsListFrag extends Fragment {
     ScrollView scroll_view_33;
     jobs_list_view_adapter adapter;
     ArrayList<post_job_model> list;
-    AppCompatButton post_job;
+    AppCompatButton post_job,create_test;
     DatabaseReference reference, reference1;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,6 +41,7 @@ public class RecruiterJobsListFrag extends Fragment {
 
         fauth = FirebaseAuth.getInstance();
         post_job = rootView.findViewById(R.id.post_job);
+        create_test = rootView.findViewById(R.id.create_test);
         list = new ArrayList<>();
         RecyclerView recyclerView = rootView.findViewById(R.id.rec_jobs_list_RecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -91,6 +93,13 @@ public class RecruiterJobsListFrag extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), PostJobActivity.class);
+                startActivity(intent);
+            }
+        });
+        create_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), create_test_questions.class);
                 startActivity(intent);
             }
         });

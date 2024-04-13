@@ -92,7 +92,7 @@ public class Student_job_apply extends AppCompatActivity {
                         Uri url = uriTask.getResult();
 
                         Submit_Application submit_Application = new Submit_Application(etstd_name.getText().toString(),url.toString(), rec_id, job_id, FirebaseAuth.getInstance().getUid(), job_info.getJob(),job_info.getSalary(),
-                                job_info.getLocation(),job_info.getDescription());
+                                job_info.getLocation(),job_info.getDescription(), "New", "");
                         databaseReference2 = FirebaseDatabase.getInstance().getReference("Recruiter Job Applications")
                                 .child(rec_id).child(job_id);
                         databaseReference.child(FirebaseAuth.getInstance().getUid()).child(job_id).setValue(submit_Application);

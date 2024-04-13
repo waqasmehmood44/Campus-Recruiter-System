@@ -52,7 +52,7 @@ public class Recruiter_std_Job_Applications extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 if(snapshot.exists()){
-                    // Add Text on Screen if DataSnapshot is not available
+
                 }
 
                 for (DataSnapshot appSnapshot : snapshot.getChildren()) {

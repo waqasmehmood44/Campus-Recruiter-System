@@ -1,12 +1,12 @@
 package com.example.campusrecruitmentsystem;
 
 public class Submit_Application {
-    public String name, uri, rec_id, job_id,student_id, job_name, job_salary, job_location, job_desc;
+    public String name, uri, rec_id, job_id,student_id, job_name, job_salary, job_location, job_desc, application_status, test_id;
 
     public Submit_Application() {
     }
 
-    public Submit_Application(String name, String uri, String rec_id, String job_id, String student_id, String job_name, String job_salary, String job_location, String job_desc) {
+    public Submit_Application(String name, String uri, String rec_id, String job_id, String student_id, String job_name, String job_salary, String job_location, String job_desc, String application_status, String test_id) {
         this.name = name;
         this.uri = uri;
         this.rec_id = rec_id;
@@ -16,6 +16,8 @@ public class Submit_Application {
         this.job_salary = job_salary;
         this.job_location = job_location;
         this.job_desc = job_desc;
+        this.application_status = application_status;
+        this.test_id = test_id;
     }
 
     public String getName() {
@@ -88,5 +90,21 @@ public class Submit_Application {
 
     public void setJob_desc(String job_desc) {
         this.job_desc = job_desc;
+    }
+
+    public String getApplication_status() {
+        return application_status;
+    }
+
+    public void setApplication_status(String application_status) {
+        this.application_status = application_status;
+    }
+
+    public String getTest_id() {
+        return test_id;
+    }
+
+    public void setTest_id(String test_id) {
+        this.test_id = test_id;
     }
 }

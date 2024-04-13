@@ -23,12 +23,6 @@ import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
 import com.example.campusrecruitmentsystem.RecruiterFragments.Recruiter_std_Job_Applications;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
