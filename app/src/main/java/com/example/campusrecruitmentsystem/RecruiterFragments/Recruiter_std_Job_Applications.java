@@ -75,7 +75,7 @@ public class Recruiter_std_Job_Applications extends Fragment {
 
                         }
                     });
-                    adapter = new std_job_app_adapter(getContext(),list);
+                    adapter = new std_job_app_adapter(getContext(),list,false);
                     recyclerView.setAdapter(adapter);
                 }
                 list.clear();

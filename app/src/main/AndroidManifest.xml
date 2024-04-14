@@ -13,6 +13,10 @@
         android:theme="@style/Theme.CampusRecruitmentSystem"
         tools:targetApi="31">
         <activity
+            android:name=".StudentTest.student_test"
+            android:exported="false"
+            android:theme="@style/Theme.CampusRecruitmentSystem" />
+        <activity
             android:name=".TestCreation.create_test_questions"
             android:exported="false" />
         <activity
@@ -35,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".PostJobActivity"
             android:exported="false" />

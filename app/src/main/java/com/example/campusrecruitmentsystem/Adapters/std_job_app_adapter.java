@@ -1,6 +1,9 @@
 package com.example.campusrecruitmentsystem.Adapters;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
@@ -13,13 +16,17 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.example.campusrecruitmentsystem.LoginActivity;
 import com.example.campusrecruitmentsystem.R;
+import com.example.campusrecruitmentsystem.StudentFormActivity;
+import com.example.campusrecruitmentsystem.StudentTest.student_test;
 import com.example.campusrecruitmentsystem.Submit_Application;
 import com.example.campusrecruitmentsystem.ViewHolders.std_job_app_view_holder;
 import com.example.campusrecruitmentsystem.post_job_model;
@@ -38,12 +45,16 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
     Context context;
     String key;
     ArrayList<String> testNamesList = new ArrayList<>();
+    ArrayList<String> testidList = new ArrayList<>();
     DatabaseReference reference, reference1,test_list_ref,test_name_ref;
-    ArrayAdapter<String> adapter;
+
+    String[] items = {"Item 1", "Item 2", "Item 3"};
     List<Submit_Application> itemList;
-    public std_job_app_adapter(Context context, List<Submit_Application> itemList) {
+    boolean std_fragment;
+    public std_job_app_adapter(Context context, List<Submit_Application> itemList,boolean std_fragment) {
         this.context = context;
         this.itemList = itemList;
+        this.std_fragment = std_fragment;
     }
         @NonNull
     @Override
@@ -60,10 +71,56 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
         holder.std_job_location.setText(itemList.get(position).getJob_location());
         holder.std_job_desc.setText(itemList.get(position).getJob_desc());
         holder.std_job_cv.setText(itemList.get(position).getName());
+        Toast.makeText(context.getApplicationContext(), String.valueOf(std_fragment), Toast.LENGTH_SHORT).show();
+        if (std_fragment) {
+            holder.recruiter_layout.setVisibility(View.GONE);
+            holder.student_layout.setVisibility(View.VISIBLE);
+        } else {
+            holder.recruiter_layout.setVisibility(View.VISIBLE);
+            holder.student_layout.setVisibility(View.GONE);
+        }
+        holder.take_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, student_test.class);
+                intent.putExtra("Test_id",itemList.get(position).getTest_id());
+                intent.putExtra("recruiter_id",itemList.get(position).getRec_id());
+                context.startActivity(intent);
+            }
+        });
+        holder.select_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder.setTitle("Select Test");
+                final String[] itemsArray = testNamesList.toArray(new String[testNamesList.size()]);
+                builder.setItems(itemsArray, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String selectedItem = testNamesList.get(which);
+                        String selectedId = testidList.get(which);
+                        Map<String, Object> updateTestId = new HashMap<>();
+                        updateTestId.put("test_id", selectedId);
+                        reference1.updateChildren(updateTestId);
+                        reference.updateChildren(updateTestId);
+                        Toast.makeText(context.getApplicationContext(), "Test Assigned", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                // Create and show the AlertDialog
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
         if("Accepted".equals(itemList.get(position).getApplication_status()) || "Rejected".equals(itemList.get(position).getApplication_status())){
             holder.accept_btn.setVisibility(View.GONE);
             holder.reject_btn.setVisibility(View.GONE);
-            holder.spinner_layout.setVisibility(View.VISIBLE);
+            holder.select_test.setVisibility(View.VISIBLE);
+        }
+        if (!"".equals(itemList.get(position).getTest_id())) {
+            holder.accept_btn.setVisibility(View.GONE);
+            holder.reject_btn.setVisibility(View.GONE);
+            holder.select_test.setVisibility(View.GONE);
         }
         //get Tests List
         test_list_ref = FirebaseDatabase.getInstance().getReference().child("Applicants Test Names")
@@ -74,7 +131,7 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
                 if(!snapshot.exists()){
                     if("Accepted".equals(itemList.get(position).getApplication_status()) || "Rejected".equals(itemList.get(position).getApplication_status())){
                         holder.create_test_button.setVisibility(View.VISIBLE);
-                        holder.spinner_layout.setVisibility(View.GONE);
+                        holder.select_test.setVisibility(View.GONE);
                     }
                 }
                 testNamesList.clear();
@@ -92,9 +149,9 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
 
                             // Extract the test name from the HashMap
                             String test_name = (String) data.get("test_name");
+                            String test_id = (String) data.get("test_id");
                             testNamesList.add(test_name);
-                            holder.test_list.setSelected(true);
-                            holder.test_list.setSelection(testNamesList.indexOf(0));
+                            testidList.add(test_id);
                         }
 
                         @Override
@@ -102,15 +159,6 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
 
                         }
                     });
-                    // Create an ArrayAdapter using the string array and a default Spinner layout
-                    adapter = new ArrayAdapter<>(context.getApplicationContext(), android.R.layout.simple_spinner_item, testNamesList);
-
-                    // Specify the layout to use when the list of choices appears
-                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-                    // Set the adapter to the Spinner
-                    holder.test_list.setAdapter(adapter);
-                    holder.test_list.setSelection(0);
                 }
                 testNamesList.clear();
             }
@@ -118,27 +166,6 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
-            }
-        });
-        //Set Click Listner on test list
-        holder.test_list.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                // Perform action when an item is selected
-                String selectedTestName = testNamesList.get(position);
-                Log.d("TAG", "Selected Test Name: " + selectedTestName); // Log selected test name for debugging
-                if (holder.spinner_text != null) {
-                    holder.spinner_text.setText(selectedTestName);
-                    Log.d("TAG", "Text set on holder.spinner_text: " + selectedTestName); // Log text set on spinner_text for debugging
-                } else {
-                    Log.e("TAG", "holder.spinner_text is null"); // Log if spinner_text is null for debugging
-                }
-                Toast.makeText(context.getApplicationContext(), "Selected Test: " + selectedTestName, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parentView) {
-                // Do nothing when nothing is selected
             }
         });
 
@@ -169,7 +196,7 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
                     public void onSuccess(Void aVoid) {
                         holder.accept_btn.setVisibility(View.GONE);
                         holder.reject_btn.setVisibility(View.GONE);
-                        holder.spinner_layout.setVisibility(View.VISIBLE);
+                        holder.select_test.setVisibility(View.VISIBLE);
                         Toast.makeText(v.getContext(), "Application Accepted", Toast.LENGTH_SHORT).show();
                     }
                 })

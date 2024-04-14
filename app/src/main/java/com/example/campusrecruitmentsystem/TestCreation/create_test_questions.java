@@ -57,6 +57,7 @@ public class create_test_questions extends AppCompatActivity {
                 Map<String, Object> testDetails = new HashMap<>();
                 testDetails.put("test_name", test_name.getText().toString());
 
+
                 Map<String, Object> questionDetails = new HashMap<>();
                 questionDetails.put("question_text", question_text.getText().toString());
                 questionDetails.put("option_1", option_1.getText().toString());
@@ -69,6 +70,8 @@ public class create_test_questions extends AppCompatActivity {
                                 public void onSuccess(Void aVoid) {
                                     // Data saved successfully
                                     testid = reference.getKey(); // Get the ID of the newly created test
+                                    testDetails.put("test_id", testid);
+                                    reference.setValue(testDetails);
                                     Toast.makeText(getApplicationContext(), "New test ID: " + testid, Toast.LENGTH_SHORT).show();
                                     reference1 = FirebaseDatabase.getInstance().getReference().child("Applicants Test Questions").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(testid).push();
                                     reference1.setValue(questionDetails);

@@ -17,10 +17,10 @@ public class std_job_app_view_holder extends RecyclerView.ViewHolder{
     public TextView std_job_location;
     public TextView std_job_desc;
     public TextView std_job_salary;
-    public  TextView std_job_cv,spinner_text;
-    public Button accept_btn,reject_btn,create_test_button;
-    public Spinner test_list;
-    public LinearLayout spinner_layout;
+    public  TextView std_job_cv;
+    public LinearLayout recruiter_layout,student_layout;
+    public Button accept_btn,reject_btn,create_test_button,select_test,take_test;
+
 
     public std_job_app_view_holder(@NonNull View itemView) {
         super(itemView);
@@ -31,10 +31,11 @@ public class std_job_app_view_holder extends RecyclerView.ViewHolder{
         std_job_cv = itemView.findViewById(R.id.std_job_cv);
         accept_btn = itemView.findViewById(R.id.accept_btn);
         reject_btn = itemView.findViewById(R.id.reject_btn);
-        test_list = itemView.findViewById(R.id.test_list);
-        spinner_text = itemView.findViewById(R.id.spinner_text);
-        spinner_layout = itemView.findViewById(R.id.spinner_layout);
+        select_test = itemView.findViewById(R.id.select_test);
         create_test_button = itemView.findViewById(R.id.create_test_button);
+        recruiter_layout = itemView.findViewById(R.id.recruiter_layout);
+        take_test = itemView.findViewById(R.id.take_test);
+        student_layout = itemView.findViewById(R.id.student_layout);
         std_job_cv.setPaintFlags(std_job_cv.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
     }
