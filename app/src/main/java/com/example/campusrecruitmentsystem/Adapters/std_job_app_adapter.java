@@ -71,7 +71,6 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
         holder.std_job_location.setText(itemList.get(position).getJob_location());
         holder.std_job_desc.setText(itemList.get(position).getJob_desc());
         holder.std_job_cv.setText(itemList.get(position).getName());
-        Toast.makeText(context.getApplicationContext(), String.valueOf(std_fragment), Toast.LENGTH_SHORT).show();
         if (std_fragment) {
             holder.recruiter_layout.setVisibility(View.GONE);
             holder.student_layout.setVisibility(View.VISIBLE);
@@ -85,6 +84,8 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
                 Intent intent = new Intent(context, student_test.class);
                 intent.putExtra("Test_id",itemList.get(position).getTest_id());
                 intent.putExtra("recruiter_id",itemList.get(position).getRec_id());
+                intent.putExtra("student_id",itemList.get(position).getStudent_id());
+                intent.putExtra("job_Id",itemList.get(position).getJob_id());
                 context.startActivity(intent);
             }
         });

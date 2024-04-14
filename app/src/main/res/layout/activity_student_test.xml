@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:textColor="@color/appColor"
         android:textSize="18sp"
-        android:text="Test Name:" />
+        android:gravity="center"
+        android:text="Recruitment Test" />
     <TextView
         android:id="@+id/test_name11"
         android:layout_marginTop="@dimen/_5sdp"
@@ -25,7 +26,23 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:id="@+id/student_test_RecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/_430sdp"
         android:layout_above="@+id/post_job"
         />
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Answer all questions before click save button." />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_test"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:text="Save Test"
+        android:layout_gravity="end"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background_shape_blue"
+        android:layout_margin="10dp"/>
+
 </LinearLayout>

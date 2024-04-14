@@ -18,25 +18,26 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:textSize="@dimen/_15sdp"
+        android:textSize="@dimen/_12sdp"
         android:text="Question Text" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Correct"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:textColor="@color/successColor"
-        android:gravity="end"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="end"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:textColor="@color/error"
-        android:text="Wrong"/>
+<!--    <TextView-->
+<!--        android:id="@+id/corect_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Correct"-->
+<!--        android:layout_marginRight="@dimen/_20sdp"-->
+<!--        android:textColor="@color/successColor"-->
+<!--        android:gravity="end"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/wrong_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="end"-->
+<!--        android:layout_marginRight="@dimen/_20sdp"-->
+<!--        android:textColor="@color/error"-->
+<!--        android:text="Wrong"/>-->
     <RadioGroup
         android:id="@+id/radio_group"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">

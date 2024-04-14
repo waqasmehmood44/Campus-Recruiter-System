@@ -1,12 +1,12 @@
 package com.example.campusrecruitmentsystem;
 
 public class Submit_Application {
-    public String name, uri, rec_id, job_id,student_id, job_name, job_salary, job_location, job_desc, application_status, test_id;
+    public String name, uri, rec_id, job_id,student_id, job_name, job_salary, job_location, job_desc, application_status, test_id, correct_ans, totals_questions;
 
     public Submit_Application() {
     }
 
-    public Submit_Application(String name, String uri, String rec_id, String job_id, String student_id, String job_name, String job_salary, String job_location, String job_desc, String application_status, String test_id) {
+    public Submit_Application(String name, String uri, String rec_id, String job_id, String student_id, String job_name, String job_salary, String job_location, String job_desc, String application_status, String test_id, String correct_ans, String totals_questions) {
         this.name = name;
         this.uri = uri;
         this.rec_id = rec_id;
@@ -18,6 +18,8 @@ public class Submit_Application {
         this.job_desc = job_desc;
         this.application_status = application_status;
         this.test_id = test_id;
+        this.correct_ans = correct_ans;
+        this.totals_questions = totals_questions;
     }
 
     public String getName() {
@@ -106,5 +108,21 @@ public class Submit_Application {
 
     public void setTest_id(String test_id) {
         this.test_id = test_id;
+    }
+
+    public String getCorrect_ans() {
+        return correct_ans;
+    }
+
+    public void setCorrect_ans(String correct_ans) {
+        this.correct_ans = correct_ans;
+    }
+
+    public String getTotals_questions() {
+        return totals_questions;
+    }
+
+    public void setTotals_questions(String totals_questions) {
+        this.totals_questions = totals_questions;
     }
 }
