@@ -106,78 +106,215 @@
                     android:textSize="@dimen/_13sdp"
                     android:textColor="@android:color/holo_blue_dark"
                     android:text="Job CV" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/recruiter_layout"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:layout_gravity="end"
-                android:layout_width="wrap_content"
+                android:id="@+id/marks_layout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/accept_btn"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="end"
-                    android:textColor="@color/white"
-                    android:layout_marginEnd="30dp"
-                    android:background="@drawable/button_background_shape_blue"
-                    android:text="Accept"/>
+                    android:text="Marks"
+                    android:textColor="@color/appColor"
+                    android:textSize="18sp"/>
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/reject_btn"
+                <TextView
+                    android:id="@+id/marks"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="end"
-                    android:textColor="@color/white"
-                    android:layout_marginEnd="30dp"
-                    android:background="@drawable/button_background_shape_blue"
-                    android:text="Reject"/>
-                <androidx.appcompat.widget.AppCompatButton
-                    android:visibility="gone"
-                    android:id="@+id/create_test_button"
-                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:text="Marks"
+                    android:textSize="@dimen/_10sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/recruiter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/selected_time_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="end"
-                    android:textColor="@color/white"
-                    android:layout_marginEnd="30dp"
-                    android:background="@drawable/button_background_shape_blue"
-                    android:text="Create Test"/>
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/select_test"
                     android:visibility="gone"
-                    android:layout_width="@dimen/_90sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="end"
-                    android:textColor="@color/white"
-                    android:layout_marginEnd="30dp"
-                    android:background="@drawable/button_background_shape_blue"
-                    android:text="Select Test"/>
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selected Time"
+                        android:textColor="@color/appColor"
+                        android:textSize="18sp"/>
 
+                    <TextView
+                        android:id="@+id/selected_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:text="Selected Time"
+                        android:textSize="@dimen/_10sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/accept_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/button_background_shape_blue"
+                        android:text="Accept"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/reject_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/button_background_shape_blue"
+                        android:text="Reject"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:visibility="gone"
+                        android:id="@+id/create_test_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/button_background_shape_blue"
+                        android:text="Create Test"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/select_test"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/button_background_shape_blue"
+                        android:text="Select Test"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/assign_int_time"
+                        android:layout_width="@dimen/_150sdp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/button_background_shape_blue"
+                        android:text="Assign Interview Time"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/send_int_link"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/button_background_shape_blue"
+                        android:text="Send Invitation"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/generate_offer_letter"
+                        android:layout_width="@dimen/_150sdp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/button_background_shape_blue"
+                        android:text="Offer Letter"/>
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/student_layout"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:layout_gravity="end"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/take_test"
-                    android:layout_width="@dimen/_90sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/time_option_1_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time Option 1"
+                        android:textColor="@color/appColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/time_option_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:text="Marks"
+                        android:textSize="@dimen/_10sdp"/>
+                    <RadioButton
+                        android:id="@+id/radio_button_int_time1"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/time_option_2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time Option 2"
+                        android:textColor="@color/appColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/time_option_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:text="Marks"
+                        android:textSize="@dimen/_10sdp"/>
+                    <RadioButton
+                        android:id="@+id/radio_button_int_time2"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_gravity="end"
-                    android:textColor="@color/white"
-                    android:layout_marginEnd="30dp"
-                    android:background="@drawable/button_background_shape_blue"
-                    android:text="Take Test"/>
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/take_test"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/button_background_shape_blue"
+                        android:text="Take Test"/>
+            </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

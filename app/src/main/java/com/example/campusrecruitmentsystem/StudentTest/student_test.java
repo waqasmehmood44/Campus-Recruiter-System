@@ -19,6 +19,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
 import com.example.campusrecruitmentsystem.R;
+import com.example.campusrecruitmentsystem.StudentJobsList;
+import com.example.campusrecruitmentsystem.Student_Job_Apply.Student_job_apply;
 import com.example.campusrecruitmentsystem.post_job_model;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -111,8 +113,8 @@ public class student_test extends AppCompatActivity {
         save_test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            int questionsCount = adapter.getQuestionsCount();
-            int ansCount = adapter.getAnsCount();
+            String questionsCount = String.valueOf(adapter.getQuestionsCount());
+            String ansCount = String.valueOf(adapter.getAnsCount());
             update_ans_ref_std = FirebaseDatabase.getInstance().getReference().child("Student Applications").child(student_id).child(job_Id);
             update_ans_ref_rec = FirebaseDatabase.getInstance().getReference().child("Recruiter Job Applications").child(recruiter_id).child(job_Id);
             Map<String, Object> updates = new HashMap<>();
@@ -120,7 +122,8 @@ public class student_test extends AppCompatActivity {
             updates.put("totals_questions", questionsCount);
             update_ans_ref_std.updateChildren(updates);
             update_ans_ref_rec.updateChildren(updates);
-            Toast.makeText(student_test.this, ansCount+"/"+ questionsCount, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(student_test.this, StudentJobsList.class);
+                startActivity(intent);
             }
         });
     }

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:text="Select Interview Time"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <!-- Radio button 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"/>
+
+        <!-- EditText 1 -->
+        <EditText
+            android:id="@+id/edit_text1"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="Select Time"
+            android:focusable="false"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <!-- Row 2: Radio button 2 and EditText 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Radio button 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"/>
+
+        <!-- EditText 2 -->
+        <EditText
+            android:id="@+id/edit_text2"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="Select Time"
+            android:focusable="false"
+            android:clickable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/student_layout"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_time_options"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/button_background_shape_blue"
+            android:text="Save"/>
+    </LinearLayout>
+
+</LinearLayout>

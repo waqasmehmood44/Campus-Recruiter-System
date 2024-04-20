@@ -18,9 +18,11 @@ import com.example.campusrecruitmentsystem.R;
 import com.example.campusrecruitmentsystem.StudentJobsList;
 import com.example.campusrecruitmentsystem.Submit_Application;
 import com.example.campusrecruitmentsystem.post_job_model;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,6 +32,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.util.HashMap;
+
 public class Student_job_apply extends AppCompatActivity {
 
     Button upload_docs, app_submit;
@@ -37,6 +41,9 @@ public class Student_job_apply extends AppCompatActivity {
     Uri path;
     TextView success_msg;
     ImageView success_icon;
+    String student_name;
+
+    String user_email;
     StorageReference storageReference;
     DatabaseReference databaseReference, databaseReference2,reference;
     String rec_id, job_id;
@@ -83,6 +90,26 @@ public class Student_job_apply extends AppCompatActivity {
         app_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+                if (currentUser != null) {
+                    user_email = currentUser.getEmail();
+                }
+                DatabaseReference studentInfoRef = FirebaseDatabase.getInstance().getReference("Users").child("Personal Info")
+                        .child(currentUser.getUid());
+                studentInfoRef.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        HashMap<String, Object> data = (HashMap<String, Object>) snapshot.getValue();
+
+                        // Extract the test name from the HashMap
+                        student_name = (String) data.get("name");
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
                 StorageReference reference  = storageReference.child("Student Applications/"+System.currentTimeMillis()+".pdf");
                 reference.putFile(path).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
@@ -92,13 +119,18 @@ public class Student_job_apply extends AppCompatActivity {
                         Uri url = uriTask.getResult();
 
                         Submit_Application submit_Application = new Submit_Application(etstd_name.getText().toString(),url.toString(), rec_id, job_id, FirebaseAuth.getInstance().getUid(), job_info.getJob(),job_info.getSalary(),
-                                job_info.getLocation(),job_info.getDescription(), "New", "","","");
+                                job_info.getLocation(),job_info.getDescription(), "New", "","","","","","","",user_email,student_name);
                         databaseReference2 = FirebaseDatabase.getInstance().getReference("Recruiter Job Applications")
                                 .child(rec_id).child(job_id);
                         databaseReference.child(FirebaseAuth.getInstance().getUid()).child(job_id).setValue(submit_Application);
                         databaseReference2.setValue(submit_Application);
                         Intent intent = new Intent(Student_job_apply.this, StudentJobsList.class);
                         startActivity(intent);
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(Student_job_apply.this, "Upload failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
             }

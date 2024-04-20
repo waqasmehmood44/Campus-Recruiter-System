@@ -50,7 +50,6 @@ public class student_test_adapter extends RecyclerView.Adapter<student_test_view
                 counts++;
                 if(correct_ans.equals(itemList.get(position).getOption_1())){
                     ans++; // Increment ans by 1
-                    Toast.makeText(context, position + "Correct 1:::   " + ans, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -63,7 +62,6 @@ public class student_test_adapter extends RecyclerView.Adapter<student_test_view
                 counts++;
                 if(correct_ans.equals(itemList.get(position).getOption_2())){
                     ans++; // Increment ans by 1
-                    Toast.makeText(context, position +"Correct 2:::   " + ans, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -76,7 +74,6 @@ public class student_test_adapter extends RecyclerView.Adapter<student_test_view
                 counts++;
                 if(correct_ans.equals(itemList.get(position).getOption_3())){
                     ans++; // Increment ans by 1
-                    Toast.makeText(context, position + "Correct 3:::   " + ans, Toast.LENGTH_SHORT).show();
                 }
             }
         });
