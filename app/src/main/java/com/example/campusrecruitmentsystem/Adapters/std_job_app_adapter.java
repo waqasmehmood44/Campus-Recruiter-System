@@ -429,7 +429,8 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
                 generate_letter.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        generatePDF(String.valueOf(contact_information) ,String.valueOf(job_location),String.valueOf(company_name),String.valueOf(job_role),String.valueOf(job_salary),String.valueOf(joining_date), itemList.get(position).getStudent_name());
+                        generatePDF(String.valueOf(contact_information.getText()) ,String.valueOf(job_location.getText()),String.valueOf(company_name.getText()) ,String.valueOf(job_role.getText()) ,String.valueOf(job_salary.getText()),String.valueOf(joining_date.getText()), itemList.get(position).getStudent_name());
+                        dialog.dismiss();
                     }
                 });
                 joining_date.setOnClickListener(new View.OnClickListener() {
@@ -639,7 +640,6 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
     private void generatePDF(String contact_information , String job_location,String company_name, String job_role, String job_salary, String joining_date, String student_name) {
         // Creating an object variable for our PDF document.
         PdfDocument pdfDocument = new PdfDocument();
-
         // Variables for paint - "paint" is used for drawing shapes,
         // and we will use "title" for adding text in our PDF file.
         Paint title = new Paint();
@@ -669,16 +669,21 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
         // Defining the offer letter text.
         String offerLetter =
                 "Dear "+student_name+",\n" +
-                "We are thrilled to extend an offer to you for the position of [Job Title] at [Your Company Name]. After careful consideration of your qualifications and experience, we believe that you are an excellent fit for our team.\n" +
                 "We are offering you the following terms:\n" +
                 "Position:"+job_role+"\n" +
                 "Start Date: "+joining_date+"\n" +
                 "Salary: "+job_salary+"\n" +
                 "Working Hours: 40 Hours per week\n" +
                 "Location: "+job_location+"\n" +
-                "We are confident that your skills and expertise will contribute significantly to our company's success. Please review the enclosed documents, including the job description and benefits package, and let us know if you have any questions or concerns.\n" +
-                "To accept this offer, please sign and return a copy of this letter within a week. If you need any accommodations or adjustments to facilitate your acceptance, please let us know, and we will do our best to accommodate your needs.\n" +
-                "We are excited about the possibility of you joining our team and look forward to your positive response.\n" +
+                "We are confident that your skills and expertise will \n" +
+                        "contribute significantly to our company's success.\n " +
+                        "Please review the enclosed documents, including the job \n" +
+                        "description and benefits package, and let us know if \n" +
+                        "you have any questions or concerns.\n" +
+                "To accept this offer, please sign and return a copy \n" +
+                        "of this letter within a week. If you need any \n" +
+                        "accommodations or adjustments to facilitate your acceptance,\n  please let us know, and we will do our best to \n accommodate your needs." +
+                "We are excited about the possibility\n  of you joining our team and look forward to your \n positive response.\n" +
                 "Sincerely,\n" +
                 company_name+"\n" +
                 contact_information;
@@ -720,7 +725,6 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
             // Permission already granted, proceed with writing to the file
             try {
                 // Write PDF to the file
-                Toast.makeText(context, file.getPath(), Toast.LENGTH_SHORT).show();
                 // Create the PDF file
                 pdfDocument.writeTo(new FileOutputStream(file));
                 // Show success message
