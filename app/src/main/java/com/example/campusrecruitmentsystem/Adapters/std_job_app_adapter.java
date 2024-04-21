@@ -668,22 +668,23 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
 
         // Defining the offer letter text.
         String offerLetter =
-                "Dear "+student_name+",\n" +
+                "Dear "+student_name+",\n\n"+
                 "We are offering you the following terms:\n" +
                 "Position:"+job_role+"\n" +
                 "Start Date: "+joining_date+"\n" +
                 "Salary: "+job_salary+"\n" +
                 "Working Hours: 40 Hours per week\n" +
                 "Location: "+job_location+"\n" +
-                "We are confident that your skills and expertise will \n" +
-                        "contribute significantly to our company's success.\n " +
-                        "Please review the enclosed documents, including the job \n" +
-                        "description and benefits package, and let us know if \n" +
-                        "you have any questions or concerns.\n" +
-                "To accept this offer, please sign and return a copy \n" +
-                        "of this letter within a week. If you need any \n" +
-                        "accommodations or adjustments to facilitate your acceptance,\n  please let us know, and we will do our best to \n accommodate your needs." +
-                "We are excited about the possibility\n  of you joining our team and look forward to your \n positive response.\n" +
+                "We are confident that your skills and expertise will contribute\n"+
+                "significantly to our company's success. Please review the\n"+
+                "enclosed documents, including the job description and\n"+
+                "benefits package, and let us know if you have any questions\n"+
+                "or concerns.To accept this offer, please sign and return a\n"+
+                "copy of this letter within a week. If you need any\n"+
+                "accommodations or adjustments to facilitate your acceptance,\n"+
+                "please let us know, and we will do our best to accommodate\n"+
+                "your needs. We are excited about the possibility of you \n"+
+                "joining our team and look forward to your positive response.\n\n"+
                 "Sincerely,\n" +
                 company_name+"\n" +
                 contact_information;
