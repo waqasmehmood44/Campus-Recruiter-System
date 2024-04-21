@@ -1,4 +1,4 @@
-package com.example.campusrecruitmentsystem;
+package com.example.campusrecruitmentsystem.Models;
 
 public class Submit_Application {
     public String name, uri, rec_id, job_id,student_id, job_name, job_salary, job_location, job_desc, application_status, test_id, correct_ans, totals_questions, interview_time_option_1,interview_time_option_2, std_selected_time, interview_meeting_link,current_user_email,student_name;

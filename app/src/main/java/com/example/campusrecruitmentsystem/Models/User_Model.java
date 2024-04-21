@@ -1,4 +1,4 @@
-package com.example.campusrecruitmentsystem;
+package com.example.campusrecruitmentsystem.Models;
 
 public class User_Model {
     String name, contact_no, address, department, user_type, userId;

@@ -7,24 +7,19 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.ScrollView;
 import android.widget.Toast;
 
-import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
+import com.example.campusrecruitmentsystem.RecruiterFragments.RecruiterJobsListFrag;
 import com.example.campusrecruitmentsystem.RecruiterFragments.Recruiter_std_Job_Applications;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
-
-import java.util.ArrayList;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class RecruiterJobsList extends AppCompatActivity {
     DrawerLayout drawerLayout;
@@ -55,6 +50,12 @@ public class RecruiterJobsList extends AppCompatActivity {
                     replaceFragment(new Recruiter_std_Job_Applications());
                     drawerLayout.closeDrawers();
                     return true;
+                } if(item.getItemId() == R.id.logout_1){
+                    Toast.makeText(RecruiterJobsList.this, "Logout", Toast.LENGTH_SHORT).show();
+                    FirebaseAuth mAuth = FirebaseAuth.getInstance();
+                    mAuth.signOut();
+                    Intent intent = new Intent(RecruiterJobsList.this, LoginActivity.class);
+                    startActivity(intent);
                 }
                 return false;
             }
@@ -66,4 +67,11 @@ public class RecruiterJobsList extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_layout1, fragment);
         fragmentTransaction.commit();
     }
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+    }
+
+
+
 }

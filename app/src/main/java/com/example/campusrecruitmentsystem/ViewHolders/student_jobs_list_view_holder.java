@@ -1,4 +1,4 @@
-package com.example.campusrecruitmentsystem;
+package com.example.campusrecruitmentsystem.ViewHolders;
 
 import android.view.View;
 import android.widget.Button;
@@ -6,6 +6,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.campusrecruitmentsystem.R;
 
 public class student_jobs_list_view_holder extends RecyclerView.ViewHolder {
     public TextView job_name;

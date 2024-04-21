@@ -1,4 +1,4 @@
-package com.example.campusrecruitmentsystem;
+package com.example.campusrecruitmentsystem.Models;
 
 public class post_job_model {
     String job, salary, eligibility, location, description,rec_id, job_id;

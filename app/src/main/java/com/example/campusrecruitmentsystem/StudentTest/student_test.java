@@ -3,26 +3,16 @@ package com.example.campusrecruitmentsystem.StudentTest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
 import com.example.campusrecruitmentsystem.R;
 import com.example.campusrecruitmentsystem.StudentJobsList;
-import com.example.campusrecruitmentsystem.Student_Job_Apply.Student_job_apply;
-import com.example.campusrecruitmentsystem.post_job_model;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

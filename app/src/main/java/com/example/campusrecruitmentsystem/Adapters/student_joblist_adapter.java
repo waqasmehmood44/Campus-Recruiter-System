@@ -12,9 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.campusrecruitmentsystem.R;
 import com.example.campusrecruitmentsystem.Student_Job_Apply.Student_job_apply;
-import com.example.campusrecruitmentsystem.jobs_list_view_holder;
-import com.example.campusrecruitmentsystem.post_job_model;
-import com.example.campusrecruitmentsystem.student_jobs_list_view_holder;
+import com.example.campusrecruitmentsystem.Models.post_job_model;
+import com.example.campusrecruitmentsystem.ViewHolders.student_jobs_list_view_holder;
 
 import java.util.List;
 

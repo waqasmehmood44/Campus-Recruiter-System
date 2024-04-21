@@ -16,8 +16,8 @@ import android.widget.Toast;
 
 import com.example.campusrecruitmentsystem.R;
 import com.example.campusrecruitmentsystem.StudentJobsList;
-import com.example.campusrecruitmentsystem.Submit_Application;
-import com.example.campusrecruitmentsystem.post_job_model;
+import com.example.campusrecruitmentsystem.Models.Submit_Application;
+import com.example.campusrecruitmentsystem.Models.post_job_model;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;

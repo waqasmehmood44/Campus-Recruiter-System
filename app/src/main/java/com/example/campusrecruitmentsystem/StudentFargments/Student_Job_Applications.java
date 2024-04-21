@@ -16,9 +16,8 @@ import android.widget.FrameLayout;
 import android.widget.ScrollView;
 
 import com.example.campusrecruitmentsystem.Adapters.std_job_app_adapter;
-import com.example.campusrecruitmentsystem.Adapters.student_joblist_adapter;
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.Submit_Application;
+import com.example.campusrecruitmentsystem.Models.Submit_Application;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;

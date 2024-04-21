@@ -4,14 +4,11 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.Submit_Application;
-import com.example.campusrecruitmentsystem.ViewHolders.std_job_app_view_holder;
 
 import java.util.List;
 

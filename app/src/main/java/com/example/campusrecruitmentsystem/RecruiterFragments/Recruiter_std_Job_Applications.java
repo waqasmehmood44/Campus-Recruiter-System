@@ -3,7 +3,6 @@ package com.example.campusrecruitmentsystem.RecruiterFragments;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,15 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.ScrollView;
 
 import com.example.campusrecruitmentsystem.Adapters.std_job_app_adapter;
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.Submit_Application;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.navigation.NavigationView;
+import com.example.campusrecruitmentsystem.Models.Submit_Application;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

@@ -8,8 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.jobs_list_view_holder;
-import com.example.campusrecruitmentsystem.post_job_model;
+import com.example.campusrecruitmentsystem.ViewHolders.jobs_list_view_holder;
+import com.example.campusrecruitmentsystem.Models.post_job_model;
 
 import java.util.List;
 
