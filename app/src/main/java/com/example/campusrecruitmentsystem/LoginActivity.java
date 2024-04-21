@@ -25,7 +25,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
     TextInputEditText etloginEmail, etloginPass;
-    TextView not_have_account;
+    TextView not_have_account,forgot_password;
     FirebaseAuth mAuth;
     Button login_btn;
     FirebaseDatabase firebaseDatabase;
@@ -36,10 +36,39 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         etloginEmail = findViewById(R.id.etlogin_Email);
+        forgot_password = findViewById(R.id.forgot_password);
         etloginPass = findViewById(R.id.etloginPass);
         login_btn = findViewById(R.id.login_btn);
         not_have_account = findViewById(R.id.not_have_account);
+        forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get the FirebaseAuth instance
+                FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
+                // Get the user's email address from the input field (assuming editTextEmail is your EditText)
+                String email = etloginEmail.getText().toString().trim();
+                if(email.isEmpty()){
+                    Toast.makeText(LoginActivity.this, "Please enter email.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                // Send a password reset email to the user
+                mAuth.sendPasswordResetEmail(email)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()) {
+                                    // Password reset email sent successfully
+                                    Toast.makeText(LoginActivity.this, "Password reset email sent", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    // Failed to send password reset email
+                                    Toast.makeText(LoginActivity.this, "Failed to send password reset email", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+
+            }
+        });
         //Login Button
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override

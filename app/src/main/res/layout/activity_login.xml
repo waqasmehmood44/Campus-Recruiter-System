@@ -61,12 +61,21 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:gravity="end"
+            android:textColor="@color/appColor"
+            app:layout_constraintTop_toBottomOf="@+id/loginPass"
+            tools:layout_editor_absoluteX="20dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login_btn"
+            android:layout_marginTop="@dimen/_5sdp"
             android:layout_width="160dp"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
             android:background="@drawable/button_background_shape_blue"
             android:text="Sign In"
             android:textAllCaps="false"
@@ -76,7 +85,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent=".1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginPass"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_password"
             app:layout_constraintWidth_percent=".5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
