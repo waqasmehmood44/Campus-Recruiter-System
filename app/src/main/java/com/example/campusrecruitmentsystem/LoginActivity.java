@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.campusrecruitmentsystem.AdminList.AdminList;
 import com.example.campusrecruitmentsystem.Models.User_Model;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -84,45 +85,56 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Enter Password", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
-                mAuth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    // Sign in success, update UI with the signed-in user's information
-                                    FirebaseUser user = mAuth.getCurrentUser();
-                                    firebaseDatabase.getReference().child("Users").child("Personal Info")
-                                            .child(user.getUid()).addValueEventListener(new ValueEventListener() {
-                                                @Override
-                                                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                    try {
-                                                        User_Model users = snapshot.getValue(User_Model.class);
-                                                        if (users.getUser_type().equals("Student")) {
-                                                            Toast.makeText(LoginActivity.this, "Student", Toast.LENGTH_SHORT).show();
-                                                            Intent intent = new Intent(LoginActivity.this, StudentJobsList.class);
-                                                            startActivity(intent);
-                                                        } else if(users.getUser_type().equals("Recruiter")){
-                                                            Toast.makeText(LoginActivity.this, "Recruiter", Toast.LENGTH_SHORT).show();
-                                                            Intent intent = new Intent(LoginActivity.this, RecruiterJobsList.class);
-                                                            startActivity(intent);
+                Toast.makeText(LoginActivity.this, email, Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, password, Toast.LENGTH_SHORT).show();
+                if("admin@admin.com".equals(email) && "Admin123*".equals(password)){
+                    Intent intent = new Intent(LoginActivity.this, AdminList.class);
+                    startActivity(intent);
+                    return;
+                } else {
+                    mAuth.signInWithEmailAndPassword(email, password)
+                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()) {
+                                        // Sign in success, update UI with the signed-in user's information
+                                        FirebaseUser user = mAuth.getCurrentUser();
+                                        firebaseDatabase.getReference().child("Users").child("Personal Info")
+                                                .child(user.getUid()).addValueEventListener(new ValueEventListener() {
+                                                    @Override
+                                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                        try {
+                                                            User_Model users = snapshot.getValue(User_Model.class);
+                                                            if (users.getUser_type().equals("Student")) {
+                                                                Toast.makeText(LoginActivity.this, "Student", Toast.LENGTH_SHORT).show();
+                                                                Intent intent = new Intent(LoginActivity.this, StudentJobsList.class);
+                                                                startActivity(intent);
+                                                            } else if(users.getUser_type().equals("Recruiter")){
+                                                                Toast.makeText(LoginActivity.this, "Recruiter", Toast.LENGTH_SHORT).show();
+                                                                Intent intent = new Intent(LoginActivity.this, RecruiterJobsList.class);
+                                                                startActivity(intent);
+                                                            } else {
+                                                                Toast.makeText(LoginActivity.this, "Failed to Login", Toast.LENGTH_SHORT).show();
+                                                            }
+                                                        } catch (Exception e) {
+                                                            Toast.makeText(LoginActivity.this, "Failed to Login", Toast.LENGTH_SHORT).show();
                                                         }
-                                                    } catch (Exception e) {
-
                                                     }
-                                                }
 
-                                                @Override
-                                                public void onCancelled(@NonNull DatabaseError error) {
-
-                                                }
-                                            });
-                                } else {
-                                    // If sign in fails, display a message to the user.
-                                    Toast.makeText(LoginActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                                    @Override
+                                                    public void onCancelled(@NonNull DatabaseError error) {
+                                                        Toast.makeText(LoginActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                                                    }
+                                                });
+                                    } else {
+                                        // If sign in fails, display a message to the user.
+                                        Toast.makeText(LoginActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                    }
                                 }
-                            }
-                });
+                            });
+                }
+
+
             }
         });
         not_have_account.setOnClickListener(new View.OnClickListener() {

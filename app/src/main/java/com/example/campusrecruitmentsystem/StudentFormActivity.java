@@ -77,18 +77,19 @@ public class StudentFormActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    String name, contact_no, address, department, user_type;
+                                    String name, contact_no, address, department, user_type, user_email;
                                     name = String.valueOf(tilName.getText());
                                     contact_no = String.valueOf(tilContactNo.getText());
                                     address = String.valueOf(tilAddress.getText());
                                     department = String.valueOf(tilDepartment.getText());
                                     user_type = String.valueOf(userType111.getText());
+                                    user_email = String.valueOf(tilEmail.getText());
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(StudentFormActivity.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
 
                                     reference=FirebaseDatabase.getInstance().getReference().child("Users").child("Personal Info")
                                             .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()));
-                                    User_Model user_model = new User_Model(name, contact_no, address, department,user_type, FirebaseAuth.getInstance().getCurrentUser().getUid());
+                                    User_Model user_model = new User_Model(name, contact_no, address, department,user_type, FirebaseAuth.getInstance().getCurrentUser().getUid(),user_email);
                                     reference.setValue(user_model).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {

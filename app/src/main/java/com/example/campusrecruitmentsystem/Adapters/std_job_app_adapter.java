@@ -199,8 +199,6 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
                 // Set the inflated view to the dialog builder
                 builder.setView(dialogView);
 
-                // Get reference to the EditText in your custom layout
-                // Get reference to the EditText in your custom layout
                 EditText editText1 = dialogView.findViewById(R.id.edit_text1);
                 EditText editText2 = dialogView.findViewById(R.id.edit_text2);
                 Button save_time_options = dialogView.findViewById(R.id.save_time_options);

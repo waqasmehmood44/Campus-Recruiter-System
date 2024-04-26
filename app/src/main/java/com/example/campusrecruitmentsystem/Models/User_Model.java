@@ -1,15 +1,16 @@
 package com.example.campusrecruitmentsystem.Models;
 
 public class User_Model {
-    String name, contact_no, address, department, user_type, userId;
+    String name, contact_no, address, department, user_type, userId, user_email;
 
-    public User_Model(String name, String contact_no, String address, String department, String user_type, String userId) {
+    public User_Model(String name, String contact_no, String address, String department, String user_type, String userId, String user_email) {
         this.name = name;
         this.contact_no = contact_no;
         this.address = address;
         this.department = department;
         this.user_type = user_type;
         this.userId = userId;
+        this.user_email = user_email;
     }
 
     public User_Model() {
@@ -61,5 +62,13 @@ public class User_Model {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public String getUser_email() {
+        return user_email;
+    }
+
+    public void setUser_email(String user_email) {
+        this.user_email = user_email;
     }
 }

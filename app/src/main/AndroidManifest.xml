@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CampusRecruitmentSystem"
         tools:targetApi="31">
+        <activity
+            android:name=".AdminList.AdminList"
+            android:exported="false"/>
         <activity
             android:name=".StudentTest.student_test"
             android:exported="false"
@@ -45,9 +49,6 @@
             android:exported="true" />
         <activity
             android:name=".PostJobActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RecruiterFormActivity"
             android:exported="false" />
         <activity
             android:name=".StudentFormActivity"
