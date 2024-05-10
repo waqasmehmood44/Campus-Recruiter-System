@@ -29,7 +29,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class StudentJobsListFrag extends Fragment {
+public class StdViewJobs extends Fragment {
 
     FirebaseAuth fauth;
     String key;

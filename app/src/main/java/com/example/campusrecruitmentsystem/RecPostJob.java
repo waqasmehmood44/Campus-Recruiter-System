@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Objects;
 
-public class PostJobActivity extends AppCompatActivity {
+public class RecPostJob extends AppCompatActivity {
     TextInputEditText etJobTitle, etSalary, etEligibility, etLocation, etJobDescription;
     Button post_job;
     DatabaseReference reference, reference1;
@@ -61,8 +61,8 @@ public class PostJobActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         reference1.setValue(post_job_model);
-                        Toast.makeText(PostJobActivity.this, "Job Posted", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(PostJobActivity.this, RecruiterJobsList.class);
+                        Toast.makeText(RecPostJob.this, "Job Posted", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(RecPostJob.this, RecHomeScreen.class);
                         startActivity(intent);
                     }
                 });

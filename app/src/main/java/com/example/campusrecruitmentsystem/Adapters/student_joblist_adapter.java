@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.Student_Job_Apply.Student_job_apply;
+import com.example.campusrecruitmentsystem.ApplyForJobs.ApplyForJobs;
 import com.example.campusrecruitmentsystem.Models.post_job_model;
 import com.example.campusrecruitmentsystem.ViewHolders.student_jobs_list_view_holder;
 
@@ -50,7 +50,7 @@ public class student_joblist_adapter extends RecyclerView.Adapter<student_jobs_l
                 Toast.makeText(context.getApplicationContext(), itemList.get(position).getJob_id(), Toast.LENGTH_SHORT).show();
 //                if (clickedPosition != RecyclerView.NO_POSITION) {
                     if (context != null) {
-                        Intent intent = new Intent(context, Student_job_apply.class);
+                        Intent intent = new Intent(context, ApplyForJobs.class);
                         intent.putExtra("rec_id", itemList.get(position).getRec_id());
                         intent.putExtra("job_id", itemList.get(position).getJob_id());
                         context.startActivity(intent);

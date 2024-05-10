@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StudentFargments.Student_Job_Applications">
+    tools:context=".StudentFargments.StdViewJobStatus">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/std_job_applications"

@@ -85,8 +85,6 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Enter Password", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Toast.makeText(LoginActivity.this, email, Toast.LENGTH_SHORT).show();
-                Toast.makeText(LoginActivity.this, password, Toast.LENGTH_SHORT).show();
                 if("admin@admin.com".equals(email) && "Admin123*".equals(password)){
                     Intent intent = new Intent(LoginActivity.this, AdminList.class);
                     startActivity(intent);
@@ -107,11 +105,11 @@ public class LoginActivity extends AppCompatActivity {
                                                             User_Model users = snapshot.getValue(User_Model.class);
                                                             if (users.getUser_type().equals("Student")) {
                                                                 Toast.makeText(LoginActivity.this, "Student", Toast.LENGTH_SHORT).show();
-                                                                Intent intent = new Intent(LoginActivity.this, StudentJobsList.class);
+                                                                Intent intent = new Intent(LoginActivity.this, StdHomeScreen.class);
                                                                 startActivity(intent);
                                                             } else if(users.getUser_type().equals("Recruiter")){
                                                                 Toast.makeText(LoginActivity.this, "Recruiter", Toast.LENGTH_SHORT).show();
-                                                                Intent intent = new Intent(LoginActivity.this, RecruiterJobsList.class);
+                                                                Intent intent = new Intent(LoginActivity.this, RecHomeScreen.class);
                                                                 startActivity(intent);
                                                             } else {
                                                                 Toast.makeText(LoginActivity.this, "Failed to Login", Toast.LENGTH_SHORT).show();
@@ -140,7 +138,7 @@ public class LoginActivity extends AppCompatActivity {
         not_have_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, StudentFormActivity.class);
+                Intent intent = new Intent(LoginActivity.this, RegisterationFormActivity.class);
                 startActivity(intent);
             }
         });

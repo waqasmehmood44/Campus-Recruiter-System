@@ -25,7 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Objects;
 
-public class StudentFormActivity extends AppCompatActivity {
+public class RegisterationFormActivity extends AppCompatActivity {
     TextInputEditText tilName, tilEmail,  tilContactNo, tilAddress, tilDepartment, signUp_pass;
     AppCompatButton signUp_btn;
     AutoCompleteTextView userType111;
@@ -62,15 +62,15 @@ public class StudentFormActivity extends AppCompatActivity {
                 email = String.valueOf(tilEmail.getText());
                 password = String.valueOf(signUp_pass.getText());
                 if(TextUtils.isEmpty(email)){
-                    Toast.makeText(StudentFormActivity.this, "Enter Email", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterationFormActivity.this, "Enter Email", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if(TextUtils.isEmpty(password)){
-                    Toast.makeText(StudentFormActivity.this, "Enter Password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterationFormActivity.this, "Enter Password", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if(password.length()<6){
-                    Toast.makeText(StudentFormActivity.this, "Password must be greater then 6 numbers", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterationFormActivity.this, "Password must be greater then 6 numbers", Toast.LENGTH_SHORT).show();
                 }
 
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener( new OnCompleteListener<AuthResult>() {
@@ -85,7 +85,7 @@ public class StudentFormActivity extends AppCompatActivity {
                                     user_type = String.valueOf(userType111.getText());
                                     user_email = String.valueOf(tilEmail.getText());
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    Toast.makeText(StudentFormActivity.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(RegisterationFormActivity.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
 
                                     reference=FirebaseDatabase.getInstance().getReference().child("Users").child("Personal Info")
                                             .child(Objects.requireNonNull(FirebaseAuth.getInstance().getUid()));
@@ -93,14 +93,14 @@ public class StudentFormActivity extends AppCompatActivity {
                                     reference.setValue(user_model).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
-                                            Intent intent = new Intent(StudentFormActivity.this, LoginActivity.class);
+                                            Intent intent = new Intent(RegisterationFormActivity.this, LoginActivity.class);
                                             startActivity(intent);
                                         }
                                     });
 
 
                                 } else {
-                                    Toast.makeText(StudentFormActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(RegisterationFormActivity.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                 });
@@ -109,7 +109,7 @@ public class StudentFormActivity extends AppCompatActivity {
         already_have_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(StudentFormActivity.this, LoginActivity.class);
+                Intent intent = new Intent(RegisterationFormActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

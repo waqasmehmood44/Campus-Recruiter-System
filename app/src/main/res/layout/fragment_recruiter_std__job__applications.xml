@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecruiterFragments.Recruiter_std_Job_Applications">
+    tools:context=".RecruiterFragments.RecViewApplication">
 
 
     <androidx.recyclerview.widget.RecyclerView

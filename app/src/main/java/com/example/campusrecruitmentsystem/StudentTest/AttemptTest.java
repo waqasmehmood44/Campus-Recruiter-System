@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.StudentJobsList;
+import com.example.campusrecruitmentsystem.StdHomeScreen;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class student_test extends AppCompatActivity {
+public class AttemptTest extends AppCompatActivity {
     DatabaseReference reference, reference1,test_questions_ref,update_ans_ref_std, update_ans_ref_rec;
     String test_name,key;
     TextView test_name11;
@@ -112,7 +112,7 @@ public class student_test extends AppCompatActivity {
             updates.put("totals_questions", questionsCount);
             update_ans_ref_std.updateChildren(updates);
             update_ans_ref_rec.updateChildren(updates);
-                Intent intent = new Intent(student_test.this, StudentJobsList.class);
+                Intent intent = new Intent(AttemptTest.this, StdHomeScreen.class);
                 startActivity(intent);
             }
         });

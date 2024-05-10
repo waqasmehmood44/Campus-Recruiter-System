@@ -20,14 +20,14 @@
             android:name=".AdminList.AdminList"
             android:exported="false"/>
         <activity
-            android:name=".StudentTest.student_test"
+            android:name=".StudentTest.AttemptTest"
             android:exported="false"
             android:theme="@style/Theme.CampusRecruitmentSystem" />
         <activity
-            android:name=".TestCreation.create_test_questions"
+            android:name=".TestCreation.RecCreateTest"
             android:exported="false" />
         <activity
-            android:name=".Student_Job_Apply.Student_job_apply"
+            android:name=".ApplyForJobs.ApplyForJobs"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
@@ -39,19 +39,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StudentJobsList"
+            android:name=".StdHomeScreen"
             android:exported="false" />
         <activity
-            android:name=".RecruiterJobsList"
+            android:name=".RecHomeScreen"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".PostJobActivity"
+            android:name=".RecPostJob"
             android:exported="false" />
         <activity
-            android:name=".StudentFormActivity"
+            android:name=".RegisterationFormActivity"
             android:exported="true" />
     </application>
 

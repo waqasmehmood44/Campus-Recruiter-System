@@ -10,23 +10,18 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.campusrecruitmentsystem.PostJobActivity;
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.RecruiterJobsList;
+import com.example.campusrecruitmentsystem.RecHomeScreen;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class create_test_questions extends AppCompatActivity {
+public class RecCreateTest extends AppCompatActivity {
     EditText test_name,question_text,option_1,option_2,option_3,correct_ans;
     AppCompatButton save_test, add_question;
     DatabaseReference reference, reference1;
@@ -46,7 +41,7 @@ public class create_test_questions extends AppCompatActivity {
         save_test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), RecruiterJobsList.class);
+                Intent intent = new Intent(getApplicationContext(), RecHomeScreen.class);
                 startActivity(intent);
             }
         });

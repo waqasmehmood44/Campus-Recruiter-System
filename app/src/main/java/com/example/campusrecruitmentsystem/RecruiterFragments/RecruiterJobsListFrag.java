@@ -16,9 +16,9 @@ import android.widget.ScrollView;
 
 import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
 import com.example.campusrecruitmentsystem.Models.post_job_model;
-import com.example.campusrecruitmentsystem.PostJobActivity;
+import com.example.campusrecruitmentsystem.RecPostJob;
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.TestCreation.create_test_questions;
+import com.example.campusrecruitmentsystem.TestCreation.RecCreateTest;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -94,14 +94,14 @@ public class RecruiterJobsListFrag extends Fragment {
         post_job.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), PostJobActivity.class);
+                Intent intent = new Intent(getActivity(), RecPostJob.class);
                 startActivity(intent);
             }
         });
         create_test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), create_test_questions.class);
+                Intent intent = new Intent(getActivity(), RecCreateTest.class);
                 startActivity(intent);
             }
         });

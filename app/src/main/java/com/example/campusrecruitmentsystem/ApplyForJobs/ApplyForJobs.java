@@ -1,4 +1,4 @@
-package com.example.campusrecruitmentsystem.Student_Job_Apply;
+package com.example.campusrecruitmentsystem.ApplyForJobs;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.StudentJobsList;
+import com.example.campusrecruitmentsystem.StdHomeScreen;
 import com.example.campusrecruitmentsystem.Models.Submit_Application;
 import com.example.campusrecruitmentsystem.Models.post_job_model;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -34,7 +34,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.HashMap;
 
-public class Student_job_apply extends AppCompatActivity {
+public class ApplyForJobs extends AppCompatActivity {
 
     Button upload_docs, app_submit;
     EditText etstd_name;
@@ -124,13 +124,13 @@ public class Student_job_apply extends AppCompatActivity {
                                 .child(rec_id).child(job_id);
                         databaseReference.child(FirebaseAuth.getInstance().getUid()).child(job_id).setValue(submit_Application);
                         databaseReference2.setValue(submit_Application);
-                        Intent intent = new Intent(Student_job_apply.this, StudentJobsList.class);
+                        Intent intent = new Intent(ApplyForJobs.this, StdHomeScreen.class);
                         startActivity(intent);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(Student_job_apply.this, "Upload failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ApplyForJobs.this, "Upload failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
             }

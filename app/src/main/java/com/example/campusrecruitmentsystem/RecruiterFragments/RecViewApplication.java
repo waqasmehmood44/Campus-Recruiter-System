@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class Recruiter_std_Job_Applications extends Fragment {
+public class RecViewApplication extends Fragment {
 
     FirebaseAuth fauth;
     String key;

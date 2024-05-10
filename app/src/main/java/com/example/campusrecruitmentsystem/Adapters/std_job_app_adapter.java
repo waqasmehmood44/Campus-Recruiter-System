@@ -47,7 +47,7 @@ import java.util.Map;
 
 import android.Manifest;
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.StudentTest.student_test;
+import com.example.campusrecruitmentsystem.StudentTest.AttemptTest;
 import com.example.campusrecruitmentsystem.Models.Submit_Application;
 import com.example.campusrecruitmentsystem.ViewHolders.std_job_app_view_holder;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -178,7 +178,7 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
         holder.take_test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, student_test.class);
+                Intent intent = new Intent(context, AttemptTest.class);
                 intent.putExtra("Test_id",itemList.get(position).getTest_id());
                 intent.putExtra("recruiter_id",itemList.get(position).getRec_id());
                 intent.putExtra("student_id",itemList.get(position).getStudent_id());

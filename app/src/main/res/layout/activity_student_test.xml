@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_margin="@dimen/_10sdp"
     android:orientation="vertical"
-    tools:context=".StudentTest.student_test">
+    tools:context=".StudentTest.AttemptTest">
     <TextView
         android:id="@+id/job_name_heading"
         android:layout_width="match_parent"

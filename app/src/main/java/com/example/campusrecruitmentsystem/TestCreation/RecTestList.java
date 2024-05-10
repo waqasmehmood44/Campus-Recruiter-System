@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.campusrecruitmentsystem.R;
 
-public class test_list extends Fragment {
+public class RecTestList extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
