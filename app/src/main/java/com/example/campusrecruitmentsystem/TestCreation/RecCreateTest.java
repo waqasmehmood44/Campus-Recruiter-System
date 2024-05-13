@@ -67,7 +67,12 @@ public class RecCreateTest extends AppCompatActivity {
                                     testid = reference.getKey(); // Get the ID of the newly created test
                                     testDetails.put("test_id", testid);
                                     reference.setValue(testDetails);
-                                    Toast.makeText(getApplicationContext(), "New test ID: " + testid, Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(RecCreateTest.this, "Question Added Successfully", Toast.LENGTH_SHORT).show();
+                                    question_text.setText("");
+                                    option_1.setText("");
+                                    option_2.setText("");
+                                    option_3.setText("");
+                                    correct_ans.setText("");
                                     reference1 = FirebaseDatabase.getInstance().getReference().child("Applicants Test Questions").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(testid).push();
                                     reference1.setValue(questionDetails);
                                 }
@@ -81,6 +86,12 @@ public class RecCreateTest extends AppCompatActivity {
                 } else {
                     reference1 = FirebaseDatabase.getInstance().getReference().child("Applicants Test Questions").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(testid).push();
                     reference1.setValue(questionDetails);
+                    Toast.makeText(RecCreateTest.this, "Question Added Successfully", Toast.LENGTH_SHORT).show();
+                    question_text.setText("");
+                    option_1.setText("");
+                    option_2.setText("");
+                    option_3.setText("");
+                    correct_ans.setText("");
                 }
             }
         });

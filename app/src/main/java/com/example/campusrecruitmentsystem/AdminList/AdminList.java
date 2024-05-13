@@ -1,6 +1,7 @@
 package com.example.campusrecruitmentsystem.AdminList;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -42,12 +43,12 @@ public class AdminList extends AppCompatActivity {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Toast.makeText(AdminList.this,"2", Toast.LENGTH_SHORT).show();
                 if(snapshot.exists()){
                     // Add Text on Screen if DataSnapshot is not available
                 }
                 for (DataSnapshot appSnapshot : snapshot.getChildren()) {
                     key = appSnapshot.getKey();
-
                     list.clear();
                     reference1 = FirebaseDatabase.getInstance().getReference().child("Users").child("Personal Info").child(key);
                     recyclerView.setHasFixedSize(true);

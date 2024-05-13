@@ -254,7 +254,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Time Option 1"
+                        android:text="Interview Time Option 1"
                         android:textColor="@color/appColor"
                         android:textSize="18sp"/>
 
@@ -279,7 +279,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Time Option 2"
+                        android:text="Interview Time Option 2"
                         android:textColor="@color/appColor"
                         android:textSize="18sp"/>
 
