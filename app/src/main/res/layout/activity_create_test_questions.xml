@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Question:"
-        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginLeft="@dimen/_20sdp"
         android:textSize="@dimen/_15sdp"/>
     <EditText
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Options:"
-        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginLeft="@dimen/_20sdp"
         android:textSize="@dimen/_15sdp"/>
     <LinearLayout
@@ -64,7 +64,7 @@
         <EditText
             android:id="@+id/option_1"
             android:layout_width="@dimen/_150sdp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_marginRight="@dimen/_20sdp"/>
     </LinearLayout>
     <LinearLayout
@@ -80,7 +80,7 @@
         <EditText
             android:id="@+id/option_2"
             android:layout_width="@dimen/_150sdp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_marginRight="@dimen/_20sdp"/>
     </LinearLayout>
     <LinearLayout
@@ -96,7 +96,7 @@
         <EditText
             android:id="@+id/option_3"
             android:layout_width="@dimen/_150sdp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_marginRight="@dimen/_20sdp"/>
     </LinearLayout>
     <TextView
@@ -114,7 +114,7 @@
         <EditText
             android:id="@+id/correct_ans"
             android:layout_width="@dimen/_150sdp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_marginRight="@dimen/_20sdp"/>
     </LinearLayout>
     <LinearLayout
