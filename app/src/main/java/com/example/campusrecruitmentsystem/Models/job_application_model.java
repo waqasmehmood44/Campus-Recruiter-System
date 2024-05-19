@@ -1,13 +1,13 @@
 package com.example.campusrecruitmentsystem.Models;
 
-public class Submit_Application {
+public class job_application_model {
     public String name, uri, rec_id, job_id,student_id, job_name, job_salary, job_location, job_desc, application_status, test_id, correct_ans, totals_questions, interview_time_option_1,interview_time_option_2, std_selected_time, interview_meeting_link,current_user_email,student_name;
 
-    public Submit_Application() {
+    public job_application_model() {
     }
 
 
-    public Submit_Application(String name, String uri, String rec_id, String job_id, String student_id, String job_name, String job_salary, String job_location, String job_desc, String application_status, String test_id, String correct_ans, String totals_questions, String interview_time_option_1, String interview_time_option_2, String std_selected_time, String interview_meeting_link, String current_user_email, String student_name) {
+    public job_application_model(String name, String uri, String rec_id, String job_id, String student_id, String job_name, String job_salary, String job_location, String job_desc, String application_status, String test_id, String correct_ans, String totals_questions, String interview_time_option_1, String interview_time_option_2, String std_selected_time, String interview_meeting_link, String current_user_email, String student_name) {
         this.name = name;
         this.uri = uri;
         this.rec_id = rec_id;

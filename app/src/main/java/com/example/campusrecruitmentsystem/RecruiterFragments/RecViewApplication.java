@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.campusrecruitmentsystem.Adapters.std_job_app_adapter;
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.Models.Submit_Application;
+import com.example.campusrecruitmentsystem.Models.job_application_model;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -28,7 +28,7 @@ public class RecViewApplication extends Fragment {
     FirebaseAuth fauth;
     String key;
     std_job_app_adapter adapter;
-    ArrayList<Submit_Application> list;
+    ArrayList<job_application_model> list;
     DatabaseReference reference, reference1;
 
     @Override
@@ -59,8 +59,8 @@ public class RecViewApplication extends Fragment {
                     reference1.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot sp_snapshot) {
-                            Submit_Application submit_Application = sp_snapshot.getValue(Submit_Application.class);
-                            list.add(submit_Application);
+                            job_application_model jobapplicationmodel = sp_snapshot.getValue(job_application_model.class);
+                            list.add(jobapplicationmodel);
                             adapter.notifyDataSetChanged();
                         }
 

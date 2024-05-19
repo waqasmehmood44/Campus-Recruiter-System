@@ -48,7 +48,7 @@ import java.util.Map;
 import android.Manifest;
 import com.example.campusrecruitmentsystem.R;
 import com.example.campusrecruitmentsystem.StudentTest.AttemptTest;
-import com.example.campusrecruitmentsystem.Models.Submit_Application;
+import com.example.campusrecruitmentsystem.Models.job_application_model;
 import com.example.campusrecruitmentsystem.ViewHolders.std_job_app_view_holder;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -68,7 +68,7 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
     DatabaseReference reference, reference1,test_list_ref,test_name_ref , reference2,reference3;
 
     String[] items = {"Item 1", "Item 2", "Item 3"};
-    List<Submit_Application> itemList;
+    List<job_application_model> itemList;
 
     // declaring width and height
     // for our PDF file.
@@ -83,7 +83,7 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
     // constant code for runtime permissions
     private static final int PERMISSION_REQUEST_CODE = 200;
     boolean std_fragment;
-    public std_job_app_adapter(Context context, List<Submit_Application> itemList,boolean std_fragment) {
+    public std_job_app_adapter(Context context, List<job_application_model> itemList, boolean std_fragment) {
         this.context = context;
         this.itemList = itemList;
         this.std_fragment = std_fragment;

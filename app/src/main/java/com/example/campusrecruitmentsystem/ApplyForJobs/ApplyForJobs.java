@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import com.example.campusrecruitmentsystem.R;
 import com.example.campusrecruitmentsystem.StdHomeScreen;
-import com.example.campusrecruitmentsystem.Models.Submit_Application;
+import com.example.campusrecruitmentsystem.Models.job_application_model;
 import com.example.campusrecruitmentsystem.Models.post_job_model;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -118,12 +118,12 @@ public class ApplyForJobs extends AppCompatActivity {
                         while(!uriTask.isComplete());
                         Uri url = uriTask.getResult();
 
-                        Submit_Application submit_Application = new Submit_Application(etstd_name.getText().toString(),url.toString(), rec_id, job_id, FirebaseAuth.getInstance().getUid(), job_info.getJob(),job_info.getSalary(),
+                        job_application_model jobapplicationmodel = new job_application_model(etstd_name.getText().toString(),url.toString(), rec_id, job_id, FirebaseAuth.getInstance().getUid(), job_info.getJob(),job_info.getSalary(),
                                 job_info.getLocation(),job_info.getDescription(), "New", "","","","","","","",user_email,student_name);
                         databaseReference2 = FirebaseDatabase.getInstance().getReference("Recruiter Job Applications")
                                 .child(rec_id).child(job_id);
-                        databaseReference.child(FirebaseAuth.getInstance().getUid()).child(job_id).setValue(submit_Application);
-                        databaseReference2.setValue(submit_Application);
+                        databaseReference.child(FirebaseAuth.getInstance().getUid()).child(job_id).setValue(jobapplicationmodel);
+                        databaseReference2.setValue(jobapplicationmodel);
                         Intent intent = new Intent(ApplyForJobs.this, StdHomeScreen.class);
                         startActivity(intent);
                     }

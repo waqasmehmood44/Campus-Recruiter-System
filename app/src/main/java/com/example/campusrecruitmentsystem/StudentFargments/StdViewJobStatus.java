@@ -17,7 +17,7 @@ import android.widget.ScrollView;
 
 import com.example.campusrecruitmentsystem.Adapters.std_job_app_adapter;
 import com.example.campusrecruitmentsystem.R;
-import com.example.campusrecruitmentsystem.Models.Submit_Application;
+import com.example.campusrecruitmentsystem.Models.job_application_model;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -35,7 +35,7 @@ public class StdViewJobStatus extends Fragment {
     String key;
     ScrollView scroll_view_33;
     std_job_app_adapter adapter;
-    ArrayList<Submit_Application> list;
+    ArrayList<job_application_model> list;
     Button post_job;
     DrawerLayout drawerLayout;
     MaterialToolbar materialToolbar;
@@ -70,8 +70,8 @@ public class StdViewJobStatus extends Fragment {
                     reference1.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot sp_snapshot) {
-                            Submit_Application submit_Application = sp_snapshot.getValue(Submit_Application.class);
-                            list.add(submit_Application);
+                            job_application_model jobapplicationmodel = sp_snapshot.getValue(job_application_model.class);
+                            list.add(jobapplicationmodel);
                             adapter.notifyDataSetChanged();
                         }
 
