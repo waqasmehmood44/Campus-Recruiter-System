@@ -33,6 +33,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.File;
@@ -41,6 +42,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -162,17 +164,6 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
 
                 // startActivity with intent with chooser as Email client using createChooser function
                 context.startActivity(intent);
-//                Intent intent = new Intent(Intent.ACTION_SEND);
-//
-
-                // You can set subject and body of the email
-//                intent.putExtra(Intent.EXTRA_SUBJECT, "Interview Meeting Invitation");
-                //intent.putExtra(Intent.EXTRA_TEXT, "Your message here");
-
-                // Verify if there's an app to handle this intent
-//                if (intent.resolveActivity(context.getPackageManager()) != null) {
-//                    context.startActivity(intent);
-//                }
             }
         });
         holder.take_test.setOnClickListener(new View.OnClickListener() {
@@ -416,7 +407,7 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
                 generate_letter.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        generatePDF(String.valueOf(contact_information.getText()) ,String.valueOf(job_location.getText()),String.valueOf(company_name.getText()) ,String.valueOf(job_role.getText()) ,String.valueOf(job_salary.getText()),String.valueOf(joining_date.getText()), itemList.get(position).getStudent_name());
+                        generatePDF(String.valueOf(contact_information.getText()) ,String.valueOf(job_location.getText()),String.valueOf(company_name.getText()) ,String.valueOf(job_role.getText()) ,String.valueOf(job_salary.getText()),String.valueOf(joining_date.getText()), itemList.get(position).getStudent_name(),itemList.get(position).getCurrent_user_email());
                         dialog.dismiss();
                     }
                 });
@@ -624,7 +615,7 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
         return itemList.size();
 }
 
-    private void generatePDF(String contact_information , String job_location,String company_name, String job_role, String job_salary, String joining_date, String student_name) {
+    private void generatePDF(String contact_information , String job_location,String company_name, String job_role, String job_salary, String joining_date, String student_name, String student_email) {
         // Creating an object variable for our PDF document.
         PdfDocument pdfDocument = new PdfDocument();
         // Variables for paint - "paint" is used for drawing shapes,
@@ -715,6 +706,7 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
                 // Write PDF to the file
                 // Create the PDF file
                 pdfDocument.writeTo(new FileOutputStream(file));
+                sendEmailWithAttachment(file, student_email);
                 // Show success message
                 Toast.makeText(context, "PDF file generated successfully.", Toast.LENGTH_SHORT).show();
             } catch (IOException e) {
@@ -726,6 +718,28 @@ public class std_job_app_adapter extends RecyclerView.Adapter<std_job_app_view_h
 
         // Closing our PDF file.
         pdfDocument.close();
+    }
+
+
+    private void sendEmailWithAttachment(File file, String student_email) {
+        Uri uri = FileProvider.getUriForFile(context, context.getPackageName() + ".fileprovider", file);
+
+        Intent emailIntent = new Intent(Intent.ACTION_SEND_MULTIPLE);
+        emailIntent.setType("application/pdf");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{student_email});
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Offer Letter");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "Please find the attached offer letter.");
+        emailIntent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, new ArrayList<>(Collections.singletonList(uri)));
+
+        // Grant temporary read permission to the email client
+        emailIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+
+        // Verify there are email clients installed
+        if (emailIntent.resolveActivity(context.getPackageManager()) != null) {
+            context.startActivity(Intent.createChooser(emailIntent, "Send email using:"));
+        } else {
+            Toast.makeText(context, "No email client found.", Toast.LENGTH_SHORT).show();
+        }
     }
 
 

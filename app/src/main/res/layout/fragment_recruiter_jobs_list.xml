@@ -5,12 +5,19 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search jobs"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rec_jobs_list_RecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
         android:layout_above="@+id/post_job"
-    />
+        android:layout_below="@+id/search_view" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/create_test"

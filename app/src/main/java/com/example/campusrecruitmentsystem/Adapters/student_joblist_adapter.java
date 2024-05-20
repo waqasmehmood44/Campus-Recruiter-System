@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,7 @@ import com.example.campusrecruitmentsystem.ApplyForJobs.ApplyForJobs;
 import com.example.campusrecruitmentsystem.Models.post_job_model;
 import com.example.campusrecruitmentsystem.ViewHolders.student_jobs_list_view_holder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class student_joblist_adapter extends RecyclerView.Adapter<student_jobs_list_view_holder> {
@@ -61,8 +63,39 @@ public class student_joblist_adapter extends RecyclerView.Adapter<student_jobs_l
     }
 
 
+
     @Override
     public int getItemCount() {
         return itemList.size();
     }
+    public Filter getFilter() {
+        return itemFilter;
+    }
+
+    private Filter itemFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            List<post_job_model> filteredList = new ArrayList<>();
+            if (constraint == null || constraint.length() == 0) {
+                filteredList.addAll(itemList);
+            } else {
+                String filterPattern = constraint.toString().toLowerCase().trim();
+                for (post_job_model item : itemList) {
+                    if (item.getJob().toLowerCase().contains(filterPattern)) {
+                        filteredList.add(item);
+                    }
+                }
+            }
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            itemList.clear();
+            itemList.addAll((List<post_job_model>) results.values);
+            notifyDataSetChanged();
+        }
+    };
 }

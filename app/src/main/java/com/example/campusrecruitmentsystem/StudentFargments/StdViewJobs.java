@@ -50,10 +50,31 @@ public class StdViewJobs extends Fragment {
 //        drawerLayout = findViewById(R.id.drawer_layout);
         list = new ArrayList<>();
         View rootView = inflater.inflate(R.layout.fragment_student_jobs_list, container, false);
-
+        androidx.appcompat.widget.SearchView search_view_std = rootView.findViewById(R.id.search_view_std);
         RecyclerView recyclerView = rootView.findViewById(R.id.std_jobs_list_RecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        search_view_std.setOnQueryTextListener(new androidx.appcompat.widget.SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                adapter.getFilter().filter(query);
+                return true;
+            }
 
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if(newText.isEmpty()){
+                    getData(recyclerView);
+                }
+                adapter.getFilter().filter(newText);
+                return true;
+            }
+
+
+        });
+        getData(recyclerView);
+        return rootView;
+    }
+    void getData(RecyclerView recyclerView){
         reference = FirebaseDatabase.getInstance().getReference().child("Student Jobs List");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -94,6 +115,5 @@ public class StdViewJobs extends Fragment {
 
             }
         });
-        return rootView;
     }
 }

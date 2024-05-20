@@ -1,13 +1,13 @@
 package com.example.campusrecruitmentsystem.Models;
 
 public class job_application_model {
-    public String name, uri, rec_id, job_id,student_id, job_name, job_salary, job_location, job_desc, application_status, test_id, correct_ans, totals_questions, interview_time_option_1,interview_time_option_2, std_selected_time, interview_meeting_link,current_user_email,student_name;
+    public String name, uri, rec_id, job_id,student_id, job_name, job_salary, job_location, job_desc, application_status, test_id, correct_ans, totals_questions, interview_time_option_1,interview_time_option_2, std_selected_time, interview_meeting_link,student_email,student_name;
 
     public job_application_model() {
     }
 
 
-    public job_application_model(String name, String uri, String rec_id, String job_id, String student_id, String job_name, String job_salary, String job_location, String job_desc, String application_status, String test_id, String correct_ans, String totals_questions, String interview_time_option_1, String interview_time_option_2, String std_selected_time, String interview_meeting_link, String current_user_email, String student_name) {
+    public job_application_model(String name, String uri, String rec_id, String job_id, String student_id, String job_name, String job_salary, String job_location, String job_desc, String application_status, String test_id, String correct_ans, String totals_questions, String interview_time_option_1, String interview_time_option_2, String std_selected_time, String interview_meeting_link, String student_email, String student_name) {
         this.name = name;
         this.uri = uri;
         this.rec_id = rec_id;
@@ -25,7 +25,7 @@ public class job_application_model {
         this.interview_time_option_2 = interview_time_option_2;
         this.std_selected_time = std_selected_time;
         this.interview_meeting_link = interview_meeting_link;
-        this.current_user_email = current_user_email;
+        this.student_email = student_email;
         this.student_name = student_name;
     }
 
@@ -166,11 +166,11 @@ public class job_application_model {
     }
 
     public String getCurrent_user_email() {
-        return current_user_email;
+        return student_email;
     }
 
-    public void setCurrent_user_email(String current_user_email) {
-        this.current_user_email = current_user_email;
+    public void setCurrent_user_email(String student_email) {
+        this.student_email = student_email;
     }
 
     public String getStudent_name() {

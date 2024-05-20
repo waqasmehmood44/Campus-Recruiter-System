@@ -13,6 +13,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
+import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.campusrecruitmentsystem.Adapters.jobs_list_view_adapter;
 import com.example.campusrecruitmentsystem.Models.post_job_model;
@@ -44,10 +46,48 @@ public class RecruiterJobsListFrag extends Fragment {
         fauth = FirebaseAuth.getInstance();
         post_job = rootView.findViewById(R.id.post_job);
         create_test = rootView.findViewById(R.id.create_test);
+        androidx.appcompat.widget.SearchView searchView = rootView.findViewById(R.id.search_view);
+
         list = new ArrayList<>();
         RecyclerView recyclerView = rootView.findViewById(R.id.rec_jobs_list_RecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        searchView.setOnQueryTextListener(new androidx.appcompat.widget.SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                adapter.getFilter().filter(query);
+                return true;
+            }
 
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if(newText.isEmpty()){
+                    getData(recyclerView);
+                }
+                adapter.getFilter().filter(newText);
+                return true;
+            }
+
+
+        });
+        getData(recyclerView);
+        post_job.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RecPostJob.class);
+                startActivity(intent);
+            }
+        });
+        create_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RecCreateTest.class);
+                startActivity(intent);
+            }
+        });
+        return rootView;
+    }
+
+    void getData(RecyclerView recyclerView){
         reference = FirebaseDatabase.getInstance().getReference().child("Jobs")
                 .child(fauth.getCurrentUser().getUid());
         reference.addValueEventListener(new ValueEventListener() {
@@ -91,20 +131,5 @@ public class RecruiterJobsListFrag extends Fragment {
             }
         });
 
-        post_job.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), RecPostJob.class);
-                startActivity(intent);
-            }
-        });
-        create_test.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), RecCreateTest.class);
-                startActivity(intent);
-            }
-        });
-        return rootView;
     }
 }
